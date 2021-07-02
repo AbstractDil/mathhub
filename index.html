@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  <Head>    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <Title>   
+    Make a footer using Internal CSS and Html
+    </Title>
+    <style>
+    .footer {
+    position:relative;
+    left: 10px;
+    bottom: 5px;
+    right: 10px; 
+    width: 100%;
+    background-color: rgb(128, 0, 128);
+    color: white;
+    text-align: center;
+    }
+    </style>
+    </Head>
+<body>
+  <h1 style="font-size:50px;text-align:center;background-color:lightgreen;"> Welcome to MathHub</h1>
+ <style>
+  .scroll-left {
+   height: 50px;	
+   overflow: hidden;
+   position: relative;
+   background: yellow;
+   color: black;
+   border: 1px solid orange;
+  }
+  .scroll-left p {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   margin: 0;
+   line-height: 50px;
+   text-align: center;
+   /* Starting position */
+   transform:translateX(100%);
+   /* Apply animation to this element */
+   animation: scroll-left 15s linear infinite;
+  }
+  /* Move it (define the animation) */
+  @keyframes scroll-left {
+   0%   {
+   transform: translateX(100%); 		
+   }
+   100% {
+   transform: translateX(-100%); 
+   }
+  }
+  </style>
+  
+  <div class="scroll-left">
+  <p style="font-size:5vw;">This site is under construction  </p>
+  </div>
+ 
+ <h2 style="text-align:center;background-color:lightpink;">This is the site  where you can download pdf books of mathematics hons</h2>
+ <style>
+    a:link {
+      color: blue;
+      background-color: transparent;
+      text-decoration: none;
+    }
+    a:visited {
+      color: blue;
+      background-color: transparent;
+      text-decoration: none;
+    }
+    a:hover {
+      color: red;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+    a:active {
+      color: yellow;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+    </style>
+    </head>
+    <body>
+      <style>
+        .scroll-left {
+         height: 50px;	
+         overflow: hidden;
+         position: relative;
+         background: yellow;
+         color: black;
+         border: 1px solid red;
+        }
+        .scroll-left p {
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         margin: 0;
+         line-height: 50px;
+         text-align: center;
+         /* Starting position */
+         transform:translateX(100%);
+         /* Apply animation to this element */
+         animation: scroll-left 15s linear infinite;
+        }
+        /* Move it (define the animation) */
+        @keyframes scroll-left {
+         0%   {
+         transform: translateX(100%); 		
+         }
+         100% {
+         transform: translateX(-100%); 
+         }
+        }
+        </style>
+        
+        <div class="scroll-left">
+ 
+<p style="font-size:3vw;text-align:center;"><a href="https://freelearnwithsagar.blogspot.com/"target="_blank"><b>Visit our another site</b> </a></p>
+</div>
+<h3 style="text-align:center;background-color:rgb(187, 255, 0);">Book Lists</h3>
+<h3 style="color:purple;">1) Abstract Algebra </h3>
+<style>
+    table, th, td {
+      text-align: center;
+      border: 1px solid black  ;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 20px;
+      text-align:centre;
+    }
+    #t01 {
+      width: 100%;    
+      background-color: #f3f3be;
+    }
+    </style>
+    <table style="width:80%"></table>
+    
+<table id="t01">
+    <tr>
+      <th>Sl. no.</th>
+      <th>Name of the book </th>
+      <th>Get this book</th> 
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Abstract algebra by Dummit and Foote</td>
+    <td>
+    <a href="agdf.pdf" target="_thapa">Download </a>
+    </td>
+         
+      
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Algebra khanna and bhambhari</td>
+      <td><a href="Algebra khanna and bhambhari.pdf" target="_thapa">Download</a></td>
+    
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><a href="Contemporary Abstract Algebra by Joseph A. Gallian.pdf" target </a></td>
+      <td>Download</td>
+    
+    </tr>
+  </table>
+  <h3 style="color:purple;">2) Linear Algebra </h3>
+<style>
+    table, th, td {
+      border: 1px solid black  ;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 20px;
+      text-align:centre;
+    }
+    #t02 {
+      width: 100%;    
+      background-color: #f3f3be;
+    }
+    </style>
+    <table style="width:80%"></table>
+<table id="t02">
+    <tr>
+      <th> Sl. no. </th>
+      <th> Name of the book </th>
+      <th>Get this book</th> 
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Jill</td>
+      <td>Smith</td>
+      
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Eve</td>
+      <td>Jackson</td>
+    
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>John</td>
+      <td>Doe</td>
+    
+    </tr>
+  </table>
+  <br>
+<div class="footer">
+    @Copyright 2021 - All Right Reserved<br>
+  Developed  by Sagar Nandy 
+  </div>
+    
+
+
+</body>
+</html>
