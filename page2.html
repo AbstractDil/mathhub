@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <Head>    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <Title>   
+    MathHub
+    </Title>
+    <style>
+    .footer {
+    position:relative;
+    left: 10px;
+    bottom: 5px;
+    right: 10px; 
+    width: 100%;
+    background-color: rgb(128, 0, 128);
+    color: white;
+    text-align: center;
+    }
+    </style>
+    <style>
+      a1 {
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px 16px;
+        cursor: pointer;
+      }
+      
+      a1:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      
+      .previous {
+        background-color: #f1f1f1;
+        color: black;
+      }
+      a2 {
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px 16px;
+        cursor: pointer;
+      }
+      a2:hover {
+        background-color: rgb(125, 218, 235);
+        color: black;
+      }
+      
+      .next {
+        background-color: #042d9c;
+        color: white;
+      }
+      </style>
+    </Head>
+<body>
+  <h1 style="font-size:50px;text-align:center;background-color:lightgreen;">MathHub</h1>
+ <style>
+  .scroll-left {
+   height: 50px;	
+   overflow: hidden;
+   position: relative;
+   background: yellow;
+   color: black;
+   border: 1px solid orange;
+  }
+  .scroll-left p {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   margin: 0;
+   line-height: 50px;
+   text-align: center;
+   /* Starting position */
+   transform:translateX(100%);
+   /* Apply animation to this element */
+   animation: scroll-left 15s linear infinite;
+  }
+  /* Move it (define the animation) */
+  @keyframes scroll-left {
+   0%   {
+   transform: translateX(100%); 		
+   }
+   100% {
+   transform: translateX(-100%); 
+   }
+  }
+  </style>
+  
+  <div class="scroll-left">
+  <p style="font-size:5vw;">This site is under construction  </p>
+  </div>
+ 
+ <h2 style="text-align:center;background-color:lightpink;">Here you get ebooks without any cost</h2>
+ <style>
+    a:link {
+      color: blue;
+      background-color: transparent;
+      text-decoration: none;
+    }
+    a:visited {
+      color: blue;
+      background-color: transparent;
+      text-decoration: none;
+    }
+    a:hover {
+      color: red;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+    a:active {
+      color: yellow;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+    </style>
+    </head>
+    <body>
+      <style>
+        .scroll-left1{
+         height: 50px;	
+         overflow: hidden;
+         position: relative;
+         background:white;
+         color: black;
+        
+        }
+        .scroll-left1 p {
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         margin: 0;
+         line-height: 50px;
+         text-align: center;
+         /* Starting position */
+         transform:translateX(100%);
+         /* Apply animation to this element */
+         animation: scroll-left1 15s linear infinite;
+        }
+        /* Move it (define the animation) */
+        @keyframes scroll-left1 {
+         0%   {
+         transform: translateX(100%); 		
+         }
+         100% {
+         transform: translateX(-100%); 
+         }
+        }
+        </style>
+        
+        <div class="scroll-left1">
+ 
+<p style="font-size:3vw;text-align:center;"><a href="https://freelearnwithsagar.blogspot.com/"target="_blank"><b>Visit our another site</b> </a></p>
+</div>
+<br>
+<center>
+<a1 href="#" class="previous"onclick="document.location='page1.html'">&laquo; Previous</a1>
+<a2 href="#" class="next">Next &raquo;</a2></center><br>
+<br>
+<div class="footer">
+    @Copyright MathHub 2021 - All Right Reserved<br>
+  Developed  by Sagar Nandy 
+  </div>
+</body>
+</html>

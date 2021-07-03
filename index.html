@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+  <Head>    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <Title>   
+    MathHub
+    </Title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      .navbar {
+        overflow: hidden;
+        background-color: rgb(29, 15, 233);
+        cursor: pointer;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      .navbar a3 {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      .dropdown {
+        float: left;
+        cursor: pointer;
+        overflow: hidden;
+      }
+      
+      .dropdown .dropbtn {
+        font-size: 16px;  
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        cursor: pointer;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+      }
+      
+      .navbar a3:hover, .dropdown:hover .dropbtn {
+        background-color: red;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        cursor: pointer;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a3 {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        cursor: pointer;
+      }
+      
+      .dropdown-content a3:hover {
+        background-color: rgb(158, 243, 243);
+        cursor: pointer;
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+        cursor: pointer;
+      }
+      </style>
+    <style>
+      .button {
+        display: inline-block;
+        border-radius: 5px;
+        background-color: #043fbe;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 18px;
+        padding: 20px;
+        width: 100px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 10px;
+      }
+      
+      .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+      
+      .button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+      }
+      
+      .button:hover span {
+        padding-right: 25px;
+      }
+      
+      .button:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
+      </style>
+    <style>
+    .footer {
+    position:relative;
+    left: 10px;
+    bottom: 5px;
+    right: 10px; 
+    width: 100%;
+    background-color: rgb(128, 0, 128);
+    color: white;
+    text-align: center;
+    }
+    </style>
+    </Head>
+<body>
+  <h1 style="font-size:50px;text-align:center;background-color:lightgreen;"> Welcome to MathHub</h1>
+  <div class="navbar">
+    <a3 href="#home">Home</a3>
+    <a3 href="#" class="next"onclick="document.location='Latest Information.html'">latest information</a3>
+    <a3 href="#" class="next"onclick="document.location='Contact.html'">Contact us</a3>
+    <div class="dropdown">
+      <button class="dropbtn">More 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a3 href="#">Link 1</a3>
+        <a3 href="#">Link 2</a3>
+        <a3 href="#">Link 3</a3>
+      </div>
+    </div> 
+  </div>
+ <style>
+  .scroll-left {
+   height: 50px;	
+   overflow: hidden;
+   position: relative;
+   background: yellow;
+   color: black;
+   border: 1px solid orange;
+  }
+  .scroll-left p {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   margin: 0;
+   line-height: 50px;
+   text-align: center;
+   /* Starting position */
+   transform:translateX(100%);
+   /* Apply animation to this element */
+   animation: scroll-left 15s linear infinite;
+  }
+  /* Move it (define the animation) */
+  @keyframes scroll-left {
+   0%   {
+   transform: translateX(100%); 		
+   }
+   100% {
+   transform: translateX(-100%); 
+   }
+  }
+  </style>
+  
+  <div class="scroll-left">
+  <p style="font-size:5vw;">This site is under construction  </p>
+  </div>
+ 
+ <h2 style="text-align:center;background-color:lightpink;">This is the site  where you can download pdf books of mathematics hons</h2>
+ <style>
+    a:link {
+      color: rgb(38, 0, 255);
+      background-color: transparent;
+      text-decoration: none;
+    }
+    a:visited {
+      color: rgb(255, 0, 157);
+      background-color: transparent;
+      text-decoration: none;
+    }
+    a:hover {
+      color: red;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+    a:active {
+      color: yellow;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+    </style>
+    </head>
+    <body>
+      <style>
+        .scroll-left1 {
+         height: 50px;	
+         overflow: hidden;
+         position: relative;
+         background: rgb(0, 217, 255);
+         color: black;
+         border: 1px solid red;
+        }
+        .scroll-left1 p {
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         margin: 0;
+         line-height: 50px;
+         text-align: center;
+         /* Starting position */
+         transform:translateX(100%);
+         /* Apply animation to this element */
+         animation: scroll-left1 15s linear infinite;
+        }
+        /* Move it (define the animation) */
+        @keyframes scroll-left1 {
+         0%   {
+         transform: translateX(100%); 		
+         }
+         100% {
+         transform: translateX(-100%); 
+         }
+        }
+        </style>
+        
+        <div class="scroll-left1">
+ 
+<p style="font-size:3vw;text-align:center;"><a href="https://freelearnwithsagar.blogspot.com/"target="_blank"><b>Visit our another site</b> </a></p>
+</div>
+<h3 style="text-align:center;background-color:rgb(187, 255, 0);">Book Lists</h3>
+<h3 style="color:purple;">1) Abstract Algebra </h3>
+<style>
+    table, th, td {
+      text-align: center;
+      border: 1px solid black  ;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 20px;
+      text-align:centre;
+    }
+    #t01 {
+      width: 100%;    
+      background-color: #f3f3be;
+    }
+    </style>
+    <table style="width:80%"></table>
+    
+<table id="t01">
+    <tr>
+      <th>Sl. no.</th>
+      <th>Name of the book </th>
+      <th>Get this book</th> 
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Abstract algebra by Dummit and Foote</td>
+    <td>
+    <a href="agdf.pdf" target="_thapa">Download </a>
+    </td>
+         
+      
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Algebra khanna and bhambhari</td>
+      <td><a href="Algebra khanna and bhambhari.pdf" target="_thapa">Download</a></td>
+    
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><a href="Contemporary Abstract Algebra by Joseph A. Gallian.pdf" target </a></td>
+      <td>Download</td>
+    
+    </tr>
+    
+  </table>
+  
+
+  <h3 style="color:purple;">2) Linear Algebra </h3>
+<style>
+    table, th, td {
+      border: 1px solid black  ;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 20px;
+      text-align:centre;
+    }
+    #t02 {
+      width: 100%;    
+      background-color: #f3f3be;
+    }
+    </style>
+    <table style="width:80%"></table>
+<table id="t02">
+    <tr>
+      <th> Sl. no. </th>
+      <th> Name of the book </th>
+      <th>Get this book</th> 
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Jill</td>
+      <td>Smith</td>
+      
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Eve</td>
+      <td>Jackson</td>
+    
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>John</td>
+      <td>Doe</td>
+    
+    </tr>
+  </table>
+  <br>
+  <center>
+    <button class="button" style="vertical-align:middle"onclick="document.location='page1.html'"><span>Next</span></button> 
+    </center>
+    <br>
+<div class="footer">
+    @Copyright MathHub 2021 - All Right Reserved<br>
+  Developed  by Sagar Nandy 
+  </div>
+    
+
+
+</body>
+</html>
