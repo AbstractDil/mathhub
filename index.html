@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <Head>    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <Title>   
+    MathHub
+    </Title>
+   
+    <style>
+      .scroll-left {
+       height: 50px;	
+       overflow: hidden;
+       position: relative;
+       background: rgb(35, 252, 216);
+       color: black;
+       border-radius: 25px;
+       border: 1px solid rgb(255, 60, 0);
+      }
+      .scroll-left p {
+       position: absolute;
+       width: 60%;
+       height: 60%;
+       margin: 0;
+       line-height: 50px;
+       text-align: center;
+       /* Starting position */
+       transform:translateX(100%);
+       /* Apply animation to this element */
+       animation: scroll-left 15s linear infinite;
+      }
+      /* Move it (define the animation) */
+      @keyframes scroll-left {
+       0%   {
+       transform: translateX(100%); 		
+       }
+       100% {
+       transform: translateX(-100%); 
+       }
+      }
+      </style>
+    <style>
+      .footer {
+      position:relative;
+      left: 10px;
+      bottom: 5px;
+      right: 10px; 
+      width: 100%;
+      background-color: rgb(128, 0, 128);
+      color: white;
+      text-align: center;
+      }
+      </style>
+    
+      
+    <style>
+      .button {
+        display: inline-block;
+        border-radius: 5px;
+        background-color: #043fbe;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 18px;
+        padding: 20px;
+        width: 100px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 10px;
+      }
+      
+      .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+      
+      .button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+      }
+      
+      .button:hover span {
+        padding-right: 25px;
+      }
+      
+      .button:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
+      </style>
+    <center>
+        <style>
+          body {
+            background-image: url("logo.png");
+            background-repeat: no-repeat;
+            background-position:center top;
+          }
+          </style>
+          </center>
+          <style> #rcorners2 {
+            border-radius: 25px;
+            border: 2px solid #f38b14;
+            padding: 15px; 
+            width: 250px;
+            height: 40px;  
+          } 
+          </style>
+  </Head>
+  
+    <body>
+      
+      <center>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        
+      <h2  id="rcorners2"style="background-color:yellow ;text-align:center"> Welcome to MathHub </h2>
+        
+    
+    <div class="content">
+      <h2 style="text-align:center;background-color:lightpink;">This is the site  where you can download pdf books of mathematics hons</h2>
+       </center>
+       <div class="scroll-left">
+        <p style="font-size:4vw;">This site is under construction  </p>
+        </div>
+      <br>
+      <br>
+
+
+      <center>
+        <button class="button" style="vertical-align:middle"onclick="document.location='home.html'"><span>Go</span></button> 
+        </center>
+        <br>
+        <br>
+        <br>
+        
+<div class="footer">
+    @Copyright MathHub 2021 - All Right Reserved<br>
+  Developed  by Sagar Nandy 
+  </div>
+
+
+  </body>
+    </html>
+    
