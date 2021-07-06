@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+  <Head>    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <Title>   
+    MathHub
+    </Title>
+    <style>
+      #Algebra{
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 80%;
+      }
+      
+      #Algebra td, #Algebra th {
+        text-align: center;
+        border: 1px solid #ddd;
+        padding: 8px;
+        cursor: pointer;
+      }
+      
+      #Algebra tr:nth-child(even){background-color: #f2f2f2;}
+      
+      #Algebra tr:hover {background-color: rgb(156, 232, 238);}
+      
+      #Algebra th {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        text-align: center;
+        background-color: #04AA6D;
+        color: white;
+      }
+      </style>
+    <style>
+      .loader {
+        border: 16px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 16px solid #3498db;
+        width: 120px;
+        height: 120px;
+        -webkit-animation: spin 2s linear infinite; /* Safari */
+        animation: spin 2s linear infinite;
+      }
+      
+      /* Safari */
+      @-webkit-keyframes spin {
+        0% { -webkit-transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(360deg); }
+      }
+      
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      </style>
+    <style>
+    .footer {
+    position:relative;
+    left: 10px;
+    bottom: 5px;
+    right: 10px; 
+    width: 100%;
+    background-color: rgb(128, 0, 128);
+    color: white;
+    text-align: center;
+    }
+    </style>
+    <style>
+      a1 {
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px 16px;
+        cursor: pointer;
+      }
+      
+      a1:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      
+      .previous {
+        background-color: #f1f1f1;
+        color: black;
+      }
+      a2 {
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px 16px;
+        cursor: pointer;
+      }
+      a2:hover {
+        background-color: rgb(125, 218, 235);
+        color: black;
+      }
+      
+      .next {
+        background-color: #042d9c;
+        color: white;
+      }
+      </style>
+    </Head>
+<body>
+  <h1 style="font-size:50px;text-align:center;background-color:lightgreen;"> Algebra </h1>
+ <style>
+  .scroll-left {
+   height: 50px;	
+   overflow: hidden;
+   position: relative;
+   background: yellow;
+   color: black;
+   border-radius: 25px;
+   border: 1px solid orange;
+  }
+  .scroll-left p {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   margin: 0;
+   line-height: 50px;
+   text-align: center;
+   /* Starting position */
+   transform:translateX(100%);
+   /* Apply animation to this element */
+   animation: scroll-left 15s linear infinite;
+  }
+  /* Move it (define the animation) */
+  @keyframes scroll-left {
+   0%   {
+   transform: translateX(100%); 		
+   }
+   100% {
+   transform: translateX(-100%); 
+   }
+  }
+  </style>
+  
+  <div class="scroll-left">
+  <p style="font-size:5vw;">This site is under construction  </p>
+  </div>
+ 
+ <h2 style="text-align:center;background-color:lightpink;">Here you get ebooks without any cost</h2>
+ <style>
+    a:link {
+      color: blue;
+      background-color: transparent;
+      text-decoration: none;
+    }
+    a:visited {
+      color: blue;
+      background-color: transparent;
+      text-decoration: none;
+    }
+    a:hover {
+      color: red;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+    a:active {
+      color: yellow;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+    </style>
+    </head>
+    <body>
+      <style>
+        .scroll-left1{
+         height: 50px;	
+         overflow: hidden;
+         position: relative;
+         background:white;
+         color: black;
+        
+        }
+        .scroll-left1 p {
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         margin: 0;
+         line-height: 50px;
+         text-align: center;
+         /* Starting position */
+         transform:translateX(100%);
+         /* Apply animation to this element */
+         animation: scroll-left1 15s linear infinite;
+        }
+        /* Move it (define the animation) */
+        @keyframes scroll-left1 {
+         0%   {
+         transform: translateX(100%); 		
+         }
+         100% {
+         transform: translateX(-100%); 
+         }
+        }
+        </style>
+        
+        <div class="scroll-left1">
+ 
+<p style="font-size:3vw;text-align:center;"><a href="https://freelearnwithsagar.blogspot.com/"target="_blank"><b>Visit our another site</b> </a></p>
+</div>
+<br>
+<center>
+<table id="Algebra">
+  <tr>
+    <th>Sl. No.</th>
+    <th>Name of the Book</th>
+    <th>Get the Book</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Algebra, Second Edition, Michael Artin </td>
+    <td style="color: blue;"><a href="#" onclick="document.location=' https://www.mediafire.com/file/dgkuaih1pk9mtj0/Algebra+-+Michael+Artin.pdf/file '">Download</a></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Abstract Algebra By Malik , Moderson and M.K. Sen </td>
+    <td style="color: blue;"><a href="#" onclick="document.location=' https://www.mediafire.com/file/khwwvnbrxvnks92/AbstractAlgebraByMalik%252CMordeson_%2526MKSen.pdf/file '">Download</a></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>A First Course in Abstract Algebra By Joseph J Rotman </td>
+    <td style="color: blue;"><a href="#" onclick="document.location='https://www.mediafire.com/file/eky4qbmyh4cinvp/A_First_Course_in_Abstract_Algebra-_Joseph_J_Rotman.pdf/file  '">Download</a></td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td> Introduction to Abstract Algebra By Jonathon DH Smith</td>
+    <td style="color: blue;"><a href="#" onclick="document.location=' https://www.mediafire.com/file/9ndqlbl6ml6jtny/Introduction_to_Abstract_Algebra-_Jonathon_DH_Smith.pdf/file '">Download</a></td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Solution of Linear Algebra Friedberg </td>
+    <td style="color: blue;"><a href="#" onclick="document.location=' https://www.mediafire.com/file/yhwbbp8mh2cpjik/Linear_Algebra_friedberg_Solution.pdf/file '">Download</a></td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Introduction to Linear Algebra by Serge Lang </td>
+    <td style="color: blue;"><a href="#" onclick="document.location=' https://www.mediafire.com/file/vvk4tbrykust5id/Introduction+to+Linear+Algebra+by+Serge+Lang.pdf/file '">Download</a></td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Number Theory by David M. Burton </td>
+    <td style="color: blue;"><a href="#" onclick="document.location=' https://freelearnwithsagar.blogspot.com/2021/06/number-theory-book.html '">Download</a></td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td> I.N. Herstein - Topics in Algebra</td>
+    <td style="color: blue;"><a href="#" onclick="document.location=' https://www.mediafire.com/file/08kmd20guwvw5r9/I.N._Herstein_-_Topics_in_Algebra.pdf/file  '">Download</a></td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>S.K. Mapa Higher Algebra Abstract </td>
+    <td style="color: blue;"><a href="#" onclick="document.location=' https://www.mediafire.com/file/bki1t8au8d4i2ga/_Mapa_Higher_Algebra_Abstract.pdf/file '">Download</a></td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>Gallian solution manual </td>
+    <td style="color: blue;"><a href="#" onclick="document.location=' https://www.mediafire.com/file/s7nlvso8v70k853/gallian_silution_manual.pdf/file '">Download</a></td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>Basic-Modern-Algebra-with-applications by Avishek Adhikari </td>
+    <td style="color: blue;"><a href="#" onclick="document.location=' https://www.mediafire.com/file/6vxse4ta83d9h0b/basic-modern-algebra-with-applications.pdf/file '">Download</a></td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td> Linear Algebra and Its Applications (Fourth Edition) by Gilbert Strang</td>
+    <td style="color: blue;"><a href="#" onclick="document.location=' https://www.mediafire.com/file/eajsvbl1ru5clt5/Linear+Algebra+and+Its+Applications+(Fourth+Edition).pdf/file '">Download</a></td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td> S K Mapa Linear Algebra </td>
+    <td style="color: blue;"><a href="#" onclick="document.location=' https://www.mediafire.com/file/gm3v8wl6d6a2sd1/S+K+Mapa+Linear+Algebra.pdf/file '">Download</a></td>
+  </tr>
+  <tr>
+    <td>14</td>
+    <td>Dips-LinearAlgebra-HandWrittenNotes-220pages </td>
+    <td style="color: blue;"><a href="#" onclick="document.location='https://www.mediafire.com/file/96gmfihddlnjz4w/Dips-LinearAlgebra-HandWrittenNotes-220pages.pdf/file  '">Download</a></td>
+  </tr>
+  
+  </table>
+<br>
+<br>
+<div class="loader"></div>
+<br>
+<br>
+<center>
+<a1 href="#" class="previous"onclick="document.location='Calculus.html'">&laquo; Previous</a1>
+<a2 href="#" class="next"onclick="document.location='Differential Equation.html'">Next &raquo;</a2>
+</center><br>
+
+
+<br>
+<div class="footer">
+    @Copyright MathHub 2021 - All Right Reserved<br>
+  Developed  by Sagar Nandy 
+  </div>
+</body>
+</html>
