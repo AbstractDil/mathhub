@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 200px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: center;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+    cursor: pointer;
+    text-align: center;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.styled-table tbody tr:hover {background-color: rgb(211, 250, 221);}
+    </style>
+       
+             <style>
+                .footer {
+                position:relative;
+                left: 10px;
+                bottom: 5px;
+                right: 10px; 
+                width: 100%;
+                background-color: rgb(128, 0, 128);
+                color: white;
+                text-align: center;
+                }
+                </style>
+        <style>
+          body {
+            background-image: url("logo.png");
+            background-repeat: no-repeat;
+            background-position:center top;
+          }
+          </style>
+          </center>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <!--wbbse books style-->
+    <style>
+        .center {
+            border-radius: 25px;
+               background:white;
+                padding: 20px; 
+              width: 400px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 60px;
+          border: 3px solid rgb(46, 212, 46);
+          border-radius: 25px; 
+        }
+        </style>
+    <!--Navbar Style-->
+        <style>
+    body {margin: 0;}
+    .navbar {
+      list-style-type: none;
+      position: -webkit-sticky;
+      overflow: hidden;
+      background-color: rgb(29, 15, 233);
+      cursor: pointer;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .navbar a3 {
+      float: left;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    .dropdown {
+      float: left;
+      cursor: pointer;
+      overflow: hidden;
+    }
+    
+    .dropdown .dropbtn {
+      font-size: 16px;  
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      cursor: pointer;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+    
+    .navbar a3:hover, .dropdown:hover .dropbtn {
+      background-color: red;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      cursor: pointer;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a3 {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+      cursor: pointer;
+    }
+    
+    .dropdown-content a3:hover {
+      background-color: rgb(158, 243, 243);
+      cursor: pointer;
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+      cursor: pointer;
+    }
+    </style>
+    <!--link style-->
+    <style>
+        a:link {
+            color: blue;
+          text-decoration: none;
+        }
+        
+        a:visited {
+            color: rgb(248, 51, 16);
+          text-decoration: none;
+        }
+        
+        a:hover {
+            color: rgb(20, 131, 5);
+          text-decoration: underline;
+        }
+        
+        a:active {
+          text-decoration: underline;
+        }
+        </style>
+    <style>
+        .scroll-left1{
+         height: 50px;	
+         overflow: hidden;
+         position: relative;
+         background:rgb(235, 255, 124);
+         color: black;
+        
+        }
+        .scroll-left1 p {
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         margin: 0;
+         line-height: 50px;
+         text-align: center;
+         /* Starting position */
+         transform:translateX(100%);
+         /* Apply animation to this element */
+         animation: scroll-left1 15s linear infinite;
+        }
+        /* Move it (define the animation) */
+        @keyframes scroll-left1 {
+         0%   {
+         transform: translateX(100%); 		
+         }
+         100% {
+         transform: translateX(-100%); 
+         }
+        }
+        </style>
+  <style>
+      
+    .button {
+      display: inline-block;
+      border-radius: 5px;
+      background-color: #043fbe;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 18px;
+      padding: 20px;
+      width: 100px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 10px;
+    }
+    
+    .button span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+    
+    .button span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+    
+    .button:hover span {
+      padding-right: 25px;
+    }
+    
+    .button:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+    </style>
+    </head>
+    <body>
+    <div class="navbar">
+    <a3 href="#" class="next" onclick="document.location='index.html'">Home</a3>
+    <div class="dropdown">
+        <button class="dropbtn">Syllabus
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a3 href="#" class="next"onclick="document.location='Syllabus.html'">Universities Syllabus</a3>
+            <a3 href="# " class="next"onclick="document.location='JAM Syllabus.html'"">Jam Syllabus</a3>
+            <a3 href="#" class="next"onclick="document.location='JECA Syllabus.html'">Jeca Syllabus</a3>
+            <a3 href="#" class="next"onclick="document.location='CSIR-NET.html'">CSIR NET Syllabus</a3>
+            
+          </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Mathemactics Books 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a3 href="#" class="next"onclick="document.location='Topology.html'">Topology</a3>
+        <a3 href="# " class="next"onclick="document.location='Calculus.html'"">Calculus</a3>
+        <a3 href="#" class="next"onclick="document.location='Algebra.html'">Algebra</a3>
+        <a3 href="#" class="next"onclick="document.location='Differential Equation.html'">Differential Equation</a3>
+        <a3 href="#" class="next"onclick="document.location='Other.html'">Other</a3>
+        <a3 href="#" class="next"onclick="document.location='WBBSE Books.html'">WBBSE Math Books</a3>
+      </div>
+    </div> 
+    <a3 href="#" class="next"onclick="document.location='Contact.html'">Contact us</a3>
+  </div>  
+    <div class="scroll-left1">
+
+<p style="font-size:3vw;text-align:center;color: crimson;"><b>This site is under construction</b></p>
+</div><br>
+  
+  <center>
+  <div class="center">
+    <h1 style="font-size: xx-large;color: brown;">WBBSE Mathematics Books</h1>
+</div><br>
+  </center>
+  <marquee behavior="scroll" direction="right" style="font-size: 15px;"><a href="https://freelearnwithsagar.blogspot.com"target="_blank"><b>Visit our another site</a></b></marquee>
+<center>
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <th>Class</th>
+                <th>View book</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>3</td>
+                <td style="color: blue" onclick="document.location='https://bit.ly/2UGu3CJ'">View</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td style="color: blue" onclick="document.location='https://bit.ly/3r1UGy9'">View</td>
+            </tr>
+            <!-- and so on... -->
+            <tr>
+                <td>5</td>
+                <td style="color: blue;" onclick="document.location='https://bit.ly/3k5aWNv'">View</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td style="color: blue;" onclick="document.location='https://bit.ly/3yJgtxl'">View</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td style="color: blue;" onclick="document.location='https://bit.ly/3r1qrra'">View</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td style="color: blue;" onclick="document.location='https://bit.ly/3yLUWnC'">View</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td style="color: blue;" onclick="document.location='https://bit.ly/3hU3WR2'">View</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td style="color: blue;" onclick="document.location='https://bit.ly/3i1v6pb'">View</td>
+    </tr>
+
+        </tbody>
+    </table>
+    </center>
+   
+<br>
+<br>
+<div class="footer">
+  @Copyright MathHub 2021 - All Right Reserved<br>
+Developed  by Sagar Nandy 
+</div>
+</html>
+</body>
