@@ -16,6 +16,37 @@
     MathHub
     </Title>
     <style>
+      .button3 {
+background-color: white; 
+color: black; 
+border: 2px solid #f44336;
+cursor: pointer;
+border-radius: 5px;
+text-align:center;
+font-size: 18px;
+ padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  margin: 10px;
+}
+
+      .button3:hover span {
+        padding-right: 25px;
+        background-color: #f44336;
+color: white;
+      }
+      
+      .button3:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
+
+.button3:hover {
+background-color: #f44336;
+color: white;
+}
+</style>
+    <style>
       a:link {
           color: blue;
         text-decoration: none;
@@ -164,6 +195,11 @@
     <div class="content">
       <h2 style="text-align:center;background-color:lightpink;">This is the site  where you can download pdf books of mathematics hons</h2>
        </center>
+        <br>
+      <center>
+        <button class="button3" style="vertical-align: middle"  onclick="document.location='Question Paper.html'">Question Papers</button>
+      </center>
+      <br>
        <div class="scroll-left">
         <p style="font-size:3vw;color:black;">This site is under construction  </p>
         </div>
