@@ -5,7 +5,7 @@ function myFunction()
   var Pw = document.forms["myForm"]["Pass"].value;
   if(Un=="Sagar" &&  Pw=="2019")
   {
-	window.location.href="home.html";
+	window.location.href="Waiting2.html";
   }
   else{
 	alert("Invalid Username or Password");
