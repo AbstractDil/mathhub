@@ -1,407 +1,413 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-85ZR9XPNTG"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<html lang="en"><head>
 
-  gtag('config', 'G-85ZR9XPNTG');
-</script>
-    <script type="text/javascript">
+    <title>MathHub-A Online Learning Platform</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    
+    
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+   
+    
+    
+    
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<!-- === start datatable == -->
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap4.min.css">
+<!-- === end datatable == -->
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css"> 
+
+<style type="text/css">
+	#prblm-allowShow
+	{
+		font-weight: bold;
+		color: purple;
+	}
+	#problemFormError
+	{
+		font-weight: bold;
+		color: red;
+	}
+</style>  
+ <!-- Global site tag (gtag.js) - Google Analytics -->
+ <script async src="https://www.googletagmanager.com/gtag/js?id=G-85ZR9XPNTG"></script>
+ <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+ 
+   gtag('config', 'G-85ZR9XPNTG');
+ </script>
+     <script type="text/javascript">
+   
+     // disable right click
+     document.addEventListener('contextmenu', event => event.preventDefault());
   
-    // disable right click
-    document.addEventListener('contextmenu', event => event.preventDefault());
+     document.onkeydown = function (e) {
+  
+         // disable F12 key
+         if(e.keyCode == 123) {
+             return false;
+         }
+  
+         // disable I key
+         if(e.ctrlKey && e.shiftKey && e.keyCode == 73){
+             return false;
+         }
+  
+         // disable J key
+         if(e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+             return false;
+         }
+  
+         // disable U key
+         if(e.ctrlKey && e.keyCode == 85) {
+             return false;
+         }
+         // disable r key
+         if(e.ctrlKey  && e.shiftKey && e.keyCode == 114) {
+             return false;
+         } 
+         // disable R key
+         if(e.ctrlKey  && e.shiftKey && e.keyCode == 82) {
+             return false;
+         }
+         if(e.ctrlKey && e.keyCode == 82) {
+             return false;
+         }
+         //f5 disable
+         if(e.keyCode == 116) {
+             return false;
+         }
+     }
+  $('body').bind('copy paste',function(e) {
+     e.preventDefault(); return false; 
+ });
  
-    document.onkeydown = function (e) {
  
-        // disable F12 key
-        if(e.keyCode == 123) {
-            return false;
-        }
+   $(document).ready(function() {
  
-        // disable I key
-        if(e.ctrlKey && e.shiftKey && e.keyCode == 73){
-            return false;
-        }
+       window.history.pushState(null, "", window.location.href);        
  
-        // disable J key
-        if(e.ctrlKey && e.shiftKey && e.keyCode == 74) {
-            return false;
-        }
+       window.onpopstate = function() {
  
-        // disable U key
-        if(e.ctrlKey && e.keyCode == 85) {
-            return false;
-        }
-        // disable r key
-        if(e.ctrlKey  && e.shiftKey && e.keyCode == 114) {
-            return false;
-        } 
-        // disable R key
-        if(e.ctrlKey  && e.shiftKey && e.keyCode == 82) {
-            return false;
-        }
-        if(e.ctrlKey && e.keyCode == 82) {
-            return false;
-        }
-        //f5 disable
-        if(e.keyCode == 116) {
-            return false;
-        }
-    }
- $('body').bind('copy paste',function(e) {
-    e.preventDefault(); return false; 
-});
-
-
-  $(document).ready(function() {
-
-      window.history.pushState(null, "", window.location.href);        
-
-      window.onpopstate = function() {
-
-          window.history.pushState(null, "", window.location.href);
-
-      };
-
-  });
-   
-
-</script>
-    <title>MathHub - A Online Learning Platform</title>
-   
-    <style>
-        /* Style the header with a grey background and some padding */
-.header {
-  overflow: hidden;
-  background-color: #f1f1f1;
-  padding: 20px 10px;
-}
-
-/* Style the header links */
-.header a {
-  float: left;
-  color: black;
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 25px;
-  border-radius: 4px;
-}
-
-/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
-.header a.logo {
-  font-size: 25px;
-  font-weight: bold;
-}
-
-/* Change the background color on mouse-over */
-.header a:hover {
-  background-color: rgb(171, 242, 247);
-  color: black;
-}
-
-/* Style the active/current link*/
-.header a.active {
-  background-color: dodgerblue;
-  color: white;
-}
-
-/* Float the link section to the right */
-.header-right {
-  float: right;
-}
-
-/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-@media screen and (max-width: 500px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .header-right {
-    float: none;
-  }
-}
-    </style>
-    <style>
-      .footer {
-    background: #130466;
-    color: #f8f8f5;
-    padding: 10px;
-    line-height: 14px;
-    position: fixed;
-    text-align: center;
-    width: 100%;
-    font-size: 13px;
-    bottom: 0;
-    left: 0;
-      }
-      .heading{
-        color: red;
-      }
-      .button {
-        display: inline-block;
-        border-radius: 5px;
-        background-color: #043fbe;
-        border: none;
-        color: #FFFFFF;
-        text-align: center;
-        font-size: 18px;
-        padding: 20px;
-        width: 100px;
-        transition: all 0.5s;
-        cursor: pointer;
-        margin: 10px;
-        right: 0;
-      }
-      
-      .button span {
-        cursor: pointer;
-        display: inline-block;
-        position: relative;
-        transition: 0.5s;
-      }
-      
-      .button span:after {
-        content: '\00bb';
-        position: absolute;
-        opacity: 0;
-        top: 0;
-        right: -20px;
-        transition: 0.5s;
-      }
-      
-      .button:hover span {
-        padding-right: 25px;
-      }
-      
-      .button:hover span:after {
-        opacity: 1;
-        right: 0;
-      }
-      
-      </style>
-      <style>
-        #customers {
-          font-family: Arial, Helvetica, sans-serif;
-          border-collapse: collapse;
-          width: 100%;
-        }
-        
-        #customers td, #customers th {
-          border: 1px solid #ddd;
-          padding: 8px;
-        }
-        
-        #customers tr:nth-child(even){background-color: #f2f2f2;}
-        
-        #customers tr:hover {background-color: #ddd;}
-        
-        #customers th {
-          padding-top: 12px;
-          padding-bottom: 12px;
-          text-align: left;
-          background-color: #04AA6D;
-          color: white;
-        }
-        </style>
-     <style>
-      a:link {
-          color: blue;
-        text-decoration: none;
-      }
-      
-      </style>
+           window.history.pushState(null, "", window.location.href);
+ 
+       };
+ 
+   });
+    
+ 
+ </script>
 </head>
-<body>
-    <style>
-        body {
-          background-image: url("logo.png");
-          background-color: rgb(238, 235, 230);
-          background-repeat: no-repeat;
-          background-position:center top;
-          opacity:1080px;
-        }
-        </style>
-        Last Updated:1<sup>th</sup>September,2021 <br>
-        Time - 1:00 p.m.
-        </center>
-        <br><br><br><br><br><br>
-        <br>
-    <div class="header">
-        <a href="https://nandysagar.in/" class="logo">MathHub - A Online Learning Platform</a>
-        <div class="header-right">
-          <a class="active" href="User Login.html">Home</a>
-          <a href="PG Admission/ "target="_blank"> Admission Links <img src="newicon.gif" alt=""></a>
-         <a href="#"> Combined <img src="newicon.gif" alt=""></a>
-          <a href="Contact.html">Contact</a>
-          
-        </div>
+<body class="modal-open">
+<section class="top-bg position-relative">
+   <div class="text-center">
+      	<ul class="top-menu list-inline">
+	         <li>
+             <a href="pdf/noti.pdf" class="" target="_blank">
+             <!-- <img src="images/star.gif" height="30" width="32"> -->
+             <img src="images/star.gif" alt="">
+             <span>  Official Site  </span>
+             <img src="images/star.gif" alt=""> </a></li>
+      	</ul>
+   </div>
+   <div class="top-bar"></div>
+</section><section class="top-menu-bar">
+   <div class="container ">
+      <div class="row">
+         <div class="col-lg-12 col-12 ">
+            <div class="header-bot-wrap">
+               <div class="header-bot-left">
+
+                    <div class="site-logo faux-heading"><a href="https://nandysagar.in" class="custom-logo-link" rel="home" aria-current="page"><img src="images/lg2.png" class="custom-logo" alt="logo"></a>
+                    </div>
+               </div>
+               <span class="btn-menu-mobile" onclick="openNav()">☰</span>
+               <div class="header-bot-right ml-auto">
+                  <nav class="sidenav main-nav-wrap logo-bar " id="mySidenav">
+                     <a href="javascript:void(0)" class="closebtn dxt-none" onclick="closeNav()">×</a>
+                     <ul class="list-inline top-menu">                      
+                       <li class="list-inline-item"> 
+                        <a href="User Login.html"><i class="fas fa-home"></i><span>HOME</span></a>
+                      </li>
+
+                      <!-- <li class="list-inline-item">  -->
+                        <!-- <a href="login.php"><i class="fas fa-book"></i><span>LOGIN</span></a> -->
+                      <!-- </li> -->
+                      <li class="list-inline-item"> 
+                        <a href="https://developer.nandysagar.in" target="_blank"><i class="fas fa-book"></i><span>PG Admission Updates</span></a>
+                      </li>
+                      <li class="list-inline-item"> 
+                        <a href="https://freelearnwithsagar.blogspot.com"><i class="fas fa-link"></i><span>VISIt ANOTHER SITE</span></a>
+                        
+                      </li>
+                       <li class="list-inline-item"> 
+                        <a href="User Login.html"><i class="fas fa-book-reader"></i><span>Other Books</span></a>
+                      </li> 
+                      <li class="list-inline-item"> 
+                        <a href="index.html"><i class="fas fa-link"></i><span>Back to Previous page</span></a>
+                      </li>
+                     <li class="list-inline-item"> 
+                        <a href="error/"><i class="fas fa-flag"></i><span>View NOTICES</span></a>
+                      </li>
+                      <li class="list-inline-item"> 
+                        <a href="error/"><i class="fas fa-phone"></i><span>CONTACT</span></a>
+                      <!-- </li>  -->
+
+
+                    </ul>
+                  </nav>
+               </div>
+            </div>
+         </div>
       </div>
-      <marquee behavior="scroll" direction="left" style="color: red;"><b>
-        This site is under construction.Here you can download pdf books of Mathematics Hons. and also get latest information.</b><a href="https://freelearnwithsagar.blogspot.com"target="_blank" style="color: blue;"><b>Visit our another site</a></b></marquee>
-      <!-- Latest Update start -->
-      <div class="w3-container">
-        <h2 style="color:darkblue"><br>
-          <img src="star.gif" alt=""><b>  Latest Updates </b><img src="star.gif" alt=""></h2>
-        <div class="w3-panel w3-pale-green">
-          <marquee scrolldelay="250" onmouseover="stop()" onmouseout="start()" direction="up" height="228">
-            <p><b> 1) KALYANI UNIVERSITY Online admission  (Directorate of Open and Distance Learning)(<a href="http://admissiondodl.klyuniv.ac.in/Notice/Admission_Notice_of_DODL_2021-22_for_Website_25.08.21.pdf" target="_blank" style="color: rgb(18, 48, 136);">See Official Notification</a>) for PG Courses notification released. </b>(<b style="color: red;">No Application Fess</b>)<a href="http://admissiondodl.klyuniv.ac.in/" target="_blank" style="color:#043fbe"> Click here  </a><img src="newicon.gif" alt=""> 
-              <br> 1.1) <b style="color: red;"> Notification List : - </b><a href="http://admissiondodl.klyuniv.ac.in/Home/Notice" target="_blank"style="color:blue;"><b>Click Here.</b></a><img src="newicon.gif" alt=""> 
-              <br> 1.2) <b style="color: red;"> Online Application Link : - </b><a href="http://admissiondodl.klyuniv.ac.in/" target="_blank"style="color:blue;"><b>Click Here.</b></a><img src="newicon.gif" alt=""> 
-              <br> 1.3) <b style="color: red;"> How to apply  : - </b><a href="http://admissiondodl.klyuniv.ac.in/Notice/h2aDODL.pdf" target="_blank"style="color:blue;"><b>Click Here.</b></a><img src="newicon.gif" alt=""> 
-              <br> 1.4) <b style="color: red;"> Read the notification : - </b><a href="http://admissiondodl.klyuniv.ac.in/Notice/Admission_Notice_of_DODL_2021-22_for_Website_25.08.21.pdf" target="_blank"style="color:blue;"><b>Click Here.</b></a><img src="newicon.gif" alt=""> 
-              
-              </p>
-              <p><b> 2) MURSHIDABAD UNIVERSITY Online admission (<a href="https://murshidabaduniversity.ac.in/Pop-up/Admission%20open%20notice.jpeg" target="_blank" style="color: rgb(18, 48, 136);">See Official Notification</a>) for PG Courses notification released. </b>(<b style="color: red;">No Application Fess</b>)<a href="https://murshidabaduniversity.ac.in/" target="_blank" style="color:#043fbe"> Click here  </a><img src="newicon.gif" alt="">  </p>
-              <p><b> 3) DIAMOND HARBOUR WOMEN'S UNIVERSITY  Online admission (<a href="http://dhwu.ac.in/pdf/notice/admission/Information%20Brochure%202021%20for%20admission_Final.pdf" target="_blank" style="color: rgb(18, 48, 136);">See Official Notification</a>) for PG Courses notification released. </b>(<b style="color: red;">No Application Fess</b>)<a href="http://dhwu.ac.in/#" target="_blank" style="color:#043fbe"> Click here  </a><img src="newicon.gif" alt="">
-                <br> 1.1) <b style="color: red;">Admission Notice : - </b><a href="http://dhwu.ac.in/pdf/notice/admission/Admission%20Notice%202020-21%20for%20Website.pdf" target="_blank"style="color:blue;"><b>Click Here.</b></a><img src="newicon.gif" alt=""> 
-                <p><b> 4) KAZI NAJRUL UNIVERSITY  Online admission for PG Courses notification released. </b><a href="https://www.knu.ac.in/view-details-announcement-pages/1257" target="_blank" style="color:#043fbe"> Click here  </a><img src="newicon.gif" alt="">
-                  <p><b> 5) BANKURA UNIVERSITY  Online admission for PG Courses notification released. </b><a href="https://www.bankurauniv.ac.in/Upload/Files/29_PGS28821.pdf" target="_blank" style="color:#043fbe"> Click here  </a><img src="newicon.gif" alt="">
-                    <p><b> 6) COOCH BEHAR PANCHANAN BARMA UNIVERSITY  Online admission for PG Courses notification released. </b><a href="https://www.cbpbu.ac.in/userfiles/file/2021/Admission/AUG/PG_Course_Leaflet_2021-22.pdf" target="_blank" style="color:#043fbe"> Click here  </a><img src="newicon.gif" alt="">
-                      <br> 1.1) <b style="color: red;">Admission Link : - </b><a href="http://admission.cbpbu.ac.in/" target="_blank"style="color:blue;"><b>Click Here.</b></a><img src="newicon.gif" alt=""> 
-                      <p><b> 7) VIDYASAGAR UNIVERSITY  Online admission for PG Courses notification released. </b><a href="http://ecircular.vidyasagar.ac.in/Admission" target="_blank" style="color:#043fbe"> Click here  </a><img src="newicon.gif" alt="">
-                        <p><b> 8) KALYANI UNIVERSITY Online admission (<a href="http://admission.klyuniv.ac.in" target="_blank" style="color: rgb(18, 48, 136);">See Official Notification</a>) for PG Courses notification released. </b>(<b style="color: red;">No Application Fess</b>)<a href="http://162.144.89.90/upload/admission2021/CIRMFINALP.G.AdmissionNotification2021.pdf" target="_blank" style="color:#043fbe"> Click here  </a><img src="newicon.gif" alt=""> 
-                          <br> 1.1) <b style="color: red;"> Notification List : - </b><a href="http://162.144.89.90/upload/admission2021/CIRMFINALP.G.AdmissionNotification2021.pdf" target="_blank"style="color:blue;"><b>Click Here.</b></a><img src="newicon.gif" alt=""> 
-                          <br> 1.2) <b style="color: red;"> Online Application Link : - </b><a href="http://admission.klyuniv.ac.in/" target="_blank"style="color:blue;"><b>Click Here.</b></a><img src="newicon.gif" alt="">
-                          <br> 1.3) <b style="color: red;"> How to apply : - </b><a href="https://admission.klyuniv.ac.in/Notice/PG_h2a.pdf"target="_blank"style="color:blue;"><b>Click Here.</b></a><img src="newicon.gif" alt=""> 
-                          <br> 1.4) <b style="color: red;"> Fees Structure : - </b><a href="https://admission.klyuniv.ac.in/Notice/phd-fees-structure.pdf" target="_blank"style="color:blue;"><b>Click Here.</b></a><img src="newicon.gif" alt="">
-                    
-                  
-                </p>
-          <p> 9) <b>SOF IMO 2021: </b><img src="newicon.gif" alt=""> <br>
-          <div class="heading">a) Exam Schedule -  <a href="https://sofworld.org/imo/about-imo-exam/imo-exam-dates" target="_blank" style="color: #043fbe;">Click here</a></div>
-            <div class="heading">b) About IMO Exam - <a href="https://sofworld.org/imo/about-imo-exam/how-to-participate" target="_blank" style="color:#043fbe"> Click here</a></div>
-            <div class="heading">c) Registration Link - <a href="https://ors.sofworld.org/studentregistration" target="_blank" style="color: #043fbe;">Click here</a></div>
-            d) Registration Fee : 150/- <br>
-            e) Syllabus for SOF IMO : 
-              
-                <a href="https://sofworld.org/imo/class-1/imo-syllabus/imo-syllabus-class-1" target="_blank"> Class-1</a>
-                <a href="https://sofworld.org/imo/class-2/imo-syllabus/imo-syllabus-class-2" target="_blank">    Class-2</a><a href="https://sofworld.org/imo/class-3/imo-syllabus/imo-syllabus-class-3" target="_blank">   Class-3</a>
-                <a href="https://sofworld.org/imo/class-4/imo-syllabus/imo-syllabus-class-4" target="_blank">    Class-4</a>
-                <a href="https://sofworld.org/imo/class-5/imo-syllabus/imo-syllabus-class-5" target="_blank">    Class-5</a>
-                <a href="https://sofworld.org/imo/class-6/imo-syllabus/imo-syllabus-class-6" target="_blank">    Class-6</a>
-                <a href="https://sofworld.org/imo/class-7/imo-syllabus/imo-syllabus-class-7" target="_blank">    Class-7</a>
-                <a href="https://sofworld.org/imo/class-8/imo-syllabus/imo-syllabus-class-8" target="_blank">    Class-8</a>
-                <a href="https://sofworld.org/imo/class-9/imo-syllabus/imo-syllabus-class-9" target="_blank">    Class-9</a>
-                <a href="https://sofworld.org/imo/class-10/imo-syllabus/imo-syllabus-class-10" target="_blank">    Class-10</a>
-                <a href="https://sofworld.org/imo/class-11/imo-syllabus/imo-syllabus-class-11" target="_blank">   Class-11</a>
-                <a href="https://sofworld.org/imo/class-12/imo-syllabus/imo-syllabus-class-12" target="_blank">   Class-12</a>
+   </div>
+</section>
+<!-- =====latest news===== -->
+<section class="bg-dark-pink p-2 mb-3">
+  <div class="container ">
+    <div class="row">
+      <div class="col-lg-12">
+    <span class="latestNewsSpan"><img src="images/CAMP.png" height="30" width="32"> Latest News <i class="fa fa-caret-right"></i></span>
+    <marquee class="marquee" onmouseover="this.stop()" onmouseout="this.start()"> 
 
-              
-
-
-          </p>
-          <p><b>10) MathHub Students Portal - </b>  <a href="https://students.nandysagar.in" target="_blank" style="color:#043fbe"> Click here  </a><img src="newicon.gif" alt=""></p>
-        
-        <p><b> 11) JECA Syllabus - </b><a href="JECA Syllabus.html" target="_blank" style="color:#043fbe"> Click here  </a><img src="newicon.gif" alt="">  </p>
-        <p><b>12) Purshase Saree and Sanitary Pad for Woman from Sun Saree Centre - </b>  <a href="https://store.nandysagar.in" target="_blank" style="color:#043fbe"> Click here  </a><img src="newicon.gif" alt=""></p>
-        
-        
-      </marquee>
-      </div>
-      <!-- End latest update -->
-      <!-- msc update -->
-      <div class="w3-container w3-teal">
-        <h1><img src="star.gif" alt="">  M.Sc Admission Related Updates: <img src="star.gif" alt=""></h1>
-        </div>
-      
-        <div class="w3-container">
-          <p> 1) KALYANI UNIVERSITY  (<a href="http://klyuniv.ac.in/"  target="_blank" style="color: #043fbe;" >Official Site</a>) Online form fill up for PG  (Directorate of Open and Distance Learning),2021-2022 (<b style="color: red;">Date of application : 26/08/2021 to 25/09/2021</b>)  <a href="http://admissiondodl.klyuniv.ac.in/" target="_blank" style="color: #0039b4;">Click here</a><img src="newicon.gif" alt=""> </p>
-          
-          <p> 2) MURSHIDABAD UNIVERSITY  (<a href="https://murshidabaduniversity.ac.in/"  target="_blank" style="color: #043fbe;" >Official Site</a>) Online form fill up for PG,2021-2022 (<b style="color: red;">Date of application : 1/09/2021 to 15/09/2021</b>)  <a href="https://murshidabaduniversity.ac.in/admission/index.aspx#" target="_blank" style="color: #0039b4;">Click here</a><img src="newicon.gif" alt=""> </p>
-          
-          <p> 3) DIAMOND HARBOUR WOMEN'S UNIVERSITY  (<a href="http://dhwu.ac.in/#"  target="_blank" style="color: #043fbe;" >Official Site</a>) Online form fill up for M.Sc./ M.A. ,2021-2022 (<b style="color: red;">Date of application : 01/09/2021 to 15/09/2021 within 5:00 pm</b>)  <a href="http://dhwu.ac.in/pdf/notice/admission/Information%20Brochure%202021%20for%20admission_Final.pdf" target="_blank" style="color: #0039b4;">Click here</a><img src="newicon.gif" alt=""> </p>
-          <p> 4)KAZI NAJRUL UNIVERSITY  (<a href="http://dhwu.ac.in/#"  target="_blank" style="color: #043fbe;" >Official Site</a>) Online form fill up for M.Sc./ M.A. ,2021-2022 (<b style="color: red;">Starting Date of application : 01/09/2021</b>)  <a href="https://www.knu.ac.in/view-details-announcement-pages/1257" target="_blank" style="color: #0039b4;">Click here</a><img src="newicon.gif" alt=""> </p>
-          <p> 5)BANKURA UNIVERSITY  (<a href="https://bankurauniv.ac.in/"  target="_blank" style="color: #043fbe;" >Official Site</a>) Online form fill up for M.Sc./ M.A. ,2021-2022 (<b style="color: red;">Date of application : 01/09/2021 to 15/09/2021</b>)  <a href="https://www.bankurauniv.ac.in/Upload/Files/29_PGS28821.pdf" target="_blank" style="color: #0039b4;">Click here</a><img src="newicon.gif" alt=""> </p>
-          <p> 6)COOCH BEHAR PANCHANAN BARMA UNIVERSITY  (<a href="http://cbpbu.ac.in/"  target="_blank" style="color: #043fbe;" >Official Site</a>) Online form fill up for M.Sc./ M.A. ,2021-2022 <a href="https://www.cbpbu.ac.in/userfiles/file/2021/Admission/AUG/PG_Course_Leaflet_2021-22.pdf" target="_blank" style="color: #0039b4;">Click here</a><img src="newicon.gif" alt=""> </p>
-          <p> 7)VIDYASAGAR UNIVERSITY  (<a href="http://vidyasagar.ac.in/"  target="_blank" style="color: #043fbe;" >Official Site</a>) Online form fill up for M.Sc./ M.A. ,2021-2022 (<b style="color: red;">Date of application : 01/09/2021 to 15/09/2021</b>) <a href="http://ecircular.vidyasagar.ac.in/Admission" target="_blank" style="color: #0039b4;">Click here</a><img src="newicon.gif" alt=""> </p>
-          <p> 8) KALYANI UNIVERSITY  (<a href="http://klyuniv.ac.in/"  target="_blank" style="color: #043fbe;" >Official Site</a>) Online form fill up for PG,2021-2022 (<b style="color: red;">Date of application : 01/09/2021 to 15/09/2021</b>)  <a href="http://admission.klyuniv.ac.in/" target="_blank" style="color: #0039b4;">Click here</a><img src="newicon.gif" alt=""> </p>
-          
-
-          <p> 9) Jadavpur University (<a href="https://www.knu.ac.in/"  target="_blank" style="color: #043fbe;" >Official Site</a>) Online form fill up for PG,2021-2022 - Notice <a href="http://www.jaduniv.edu.in/#/#" target="_blank" style="color: #0039b4;">Click here</a><img src="newicon.gif" alt=""> </p>
-          <p> 10) Presidency University Kolkata(<a href="https://www.presiuniv.ac.in/web/index.php"  target="_blank" style="color: #043fbe;" >Official Site</a>) Online form fill up for PG , 2021-2022 - Notice <a href="https://www.presiuniv.ac.in/web/admission.php" target="_blank" style="color: #0039b4;"> Click here  </a> <img src="newicon.gif" alt=""> </p>
-          <p> 11) Visva-Bharati University (<a href="http://visvabharati.ac.in/Admissions.html"  target="_blank" style="color: #043fbe;" >Official Site</a>) Online form fill up for PG,2021-2022 - Notice <a href="https://visvabharatiadmission.samarth.edu.in/" target="_blank" style="color: #0039b4;">Click here</a><img src="newicon.gif" alt=""> </p>
-          <p> 12) Krishnagar Government College  (<a href="http://krishnagargovtcollege.org/ugadmissionnotice21.php"  target="_blank" style="color: #043fbe;" >Official Site</a>) Online form fill up for PG,2021-2022 - Notice  <a href="http://krishnagargovtcollege.org/ugadmissionnotice21.php" target="_blank" style="color: #0039b4;">Click here</a><img src="newicon.gif" alt=""> </p>
-         
-          
-          
-          
-    
-        </div>
-        <!-- end msc update -->
-      
-      <!-- B.Sc admission start  -->
-      <div class="w3-container w3-teal">
-        <h1><img src="star.gif" alt="">  B.Sc Admission Related Updates: <img src="star.gif" alt=""></h1>
-        </div>
-      <!-- Santipur College start  -->
-        <div class="w3-container">
-          <p> 1) Santipur College (<a href="http://santipurcollege.in/" target="_blank" style="color: #043fbe;" >Official Site</a>) Online form fill up for UG ,2021-2022- <a href=" http://santipurcollege.in/1819/index.aspx" target="_blank" style="color: #043fbe;">Click here</a><img src="newicon.gif" alt=""> </p>
-          <!-- santipur college end  -->
-          <!-- Ranaghat College start  -->
-  
-       <p> 2) Ranaghat College (<a href="http://www.ranaghatcollege.org.in/index.aspx"  target="_blank" style="color: #043fbe;" >Official Site</a>) Online form fill up for UG and merit list,2021-2022 - <a href="http://onlineranaghatcollege.org/" target="_blank" style="color: #0039b4;">Click here</a><img src="newicon.gif" alt=""> </p>
-       <!-- Ranaghat College End  -->
-       <!-- Chakdaha  College start  -->
-  
-       <p> 3) Chakdaha College (<a href="https://chakdahacollege.ac.in/" target="_blank" style="color: #043fbe;" >Official Site</a>) Online form fill up for UG,2021-2022 - <a href="http://www.chakdahacollege.co.in/1819/index.aspx" target="_blank" style="color: #0039b4;">Click here Portal-1</a> and <a href="http://www.chakdahacollege.org/1819/index.aspx"  target="_blank" style="color: #043fbe;"> Click here Portal-2</a><img src="newicon.gif"  alt=""> </p>
-       <!-- Chakdaha College End  -->
-       <p> 4) Srikrishna College (<a href="https://srikrishnacollegebagula.ac.in/"  target="_blank" style="color: #043fbe;" >Official Site</a>) Online form fill up for UG,2021-2022<b>(Last Date:20/08/2021)</b> - <a href="https://skcbadmission.in/" target="_blank" style="color: #0039b4;">Click here</a><img src="newicon.gif" alt=""> </p>
-       <p> 5) Jadavpur University (<a href="http://www.jaduniv.edu.in/#/#"  target="_blank" style="color: #043fbe;" >Official Site</a>) Online form fill up for UG,2021-2022 <b>(Last Date:20/08/2021)</b> - <a href="https://admission.jdvu.ac.in/" target="_blank" style="color: #0039b4;">Click here</a><img src="newicon.gif" alt=""> </p>
-       <p> 6) Presidency University Kolkata(<a href="https://www.presiuniv.ac.in/web/index.php"  target="_blank" style="color: #043fbe;" >Official Site</a>) Online form fill up for UG,2021-2022 <b>(Last Date:20/08/2021,till 3:00pm)</b> - <a href="http://14.139.217.92/ugadmission/" target="_blank" style="color: #0039b4;"> Click here  </a> <img src="newicon.gif" alt=""> </p>
-       <p> 7) Krishnagar Government College  (<a href="http://krishnagargovtcollege.org/ugadmissionnotice21.php"  target="_blank" style="color: #043fbe;" >Official Site</a>) Online form fill up for UG,2021-2022 - <a href="http://online.krishnagargovtcollege.org/" target="_blank" style="color: #0039b4;">Click here</a><img src="newicon.gif" alt=""> </p>
-    
-        </div>
-     
-      <div class="w3-container">
-        <h2 style="color: darkblue;"><img src="star.gif" alt=""><b>
-          Examination Related Updates:</b>  <img src="star.gif" alt=""></h2>
-      
-        <div class="w3-panel w3-pale-green">
-          <marquee scrolldelay="250" onmouseover="stop()" onmouseout="start()" direction="up" height="228">
-          <p> 1) SOF(Science Olympiad Foundation) IMO (International Mathematics Olympiad) - 2021 notification released.<img src="newicon.gif" alt=""><a href="https://sofworld.org/" target="_blank" style="color: blue;">Click here</a></p>
-          <p>2) JECA 2021 (<a href="https://wbjeeb.in/jeca " target="_blank" style="color:blue;">Official Site) </a> admit download - <a href="https://examinationservices.nic.in/ExamSys21/Root/downloadadmitcard.aspx?enc=Ei4cajBkK1gZSfgr53ImFXOqst/U25OMPjcwCHthZnf423bcR9d04fWylhPKWkB1" target="_blank" style="color:blue;"> Click here</a>
-
-            <img src="newicon.gif" alt=""> </p>
-            <p>3) JAM 2022 notification released - <a href="https://jam.iitr.ac.in/" target="_blank" style="color:blue;"> Click here </a> <img src="newicon.gif" alt="">
-
-               </p>
-        </marquee>
-        </div>
-      </div>
- 
-        </div>
-        
-        </div>
-        <br>
-      
-       <center>
-          <button class="button" style="vertical-align:middle"onclick="document.location='User Login.html'"><span>Go</span></button> 
-          </center>
-          <br>
-          <br>
-          <br>
-          
-        
-<div class="footer">
-    @ Copyright MathHub 2021 - All Right Reserved<br>
-  Developed  by Sagar Nandy 
+            <a class="marquee-style" href="pdf/noti.pdf"><i class="fas fa-hand-point-right">View JECA-2021 results  || Welcome to MathHub - A Online Learning Platform   || Here you get mathematics books,latest examination updates & others updates. </i>
+            </a> 
+            <span style="color:#fff;">&nbsp;||&nbsp;&nbsp;</span>
+   
+  </marquee>
+</div>    </div>
   </div>
-       
-       
-     
+</section>
+<!-- ======= end latest news======= -->
 
+
+<!-- ======= Start Important notice section ======= -->
+<section class=" pb-5">
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-lg-2 col-sm-12 pr-lg-0">
+        <a class="datcard shadow mb-3" href="User Login.html">
+          <span class="font-weight-boldh">LOGIN</span>
+          <div class="go-corner">
+          </div>
+      </a>
+      <a class="datcard shadow mb-3" href="CombinedBooks.html">
+          <span class="font-weight-boldh"><img src="images/new_icon.gif"  height="30" width="32" alt="new"> Books for competitive examination</span>
+          <div class="go-corner">
+          </div>
+      </a>
+      
+      <a class="datcard shadow mb-3" href="https://developer.nandysagar.in">
+          <span class="font-weight-boldh"><img src="images/new_icon.gif"  height="30" width="32" alt="new"> PG ADMISSION UPDATES</span>
+          <div class="go-corner">
+          </div>
+      </a>
+      <a class="datcard shadow mb-3" href="User Login.html">
+          <span class="font-weight-boldh">GO to main page</span>
+          <div class="go-corner">
+          </div>
+      </a>
+      
+</div>
+      <div class="col-lg-4 col-sm-12 home-imp-date">
+        <div class="row">
+            <!-- ==== information section  ===== -->
+	
+		
+	<div class="col-12">
+		<div class="card pb-3">
+      <div class="clearfix title-wrap">
+        <h3 class="pageTitle"><span></span><b> Important Links</b></h3>
+    </div>
+		<a href="https://freelearnwithsagar.blogspot.com"><span style="font-size:24px; font-weight:bold; color:red;padding-left:10px;">Visit our another site</span></a>
+		</div> 
+	</div>
+	<div class="col-12">
+		<div class="card pb-3">
+		<img src="images/Welcome Friends!.gif" width="auto" height="300">
+		</div> 
+	</div>
+	
+          <div class="col-12">
+            <div class="card pb-3">
+              <div class="clearfix title-wrap">
+                  <h3 class="pageTitle"><span></span><b> Important dates of 2021</b></h3>
+              </div>
+              <div class="card-body h-200">
+                
+                <ul class="cus-list-inline">
+                  <li class="shadow mb-3">
+                          <a href="https://joaps.iitr.ac.in/" target="_blank">
+                            <div class="date-holder">
+                              <span class="month-m">Oct</span>
+                              <span class="date-m">11<sup>th</sup></span> 
+                                          
+                            </div>
+                            <span > Last date of JAM-2022 form fill up</span>
+                          </a>
+                        </li>
+                        <li class="shadow mb-3">
+                          <a href="https://wbjeeb.nic.in/EXMJECACMS/Page/Page?PageId=1&LangId=P">
+                            <div class="date-holder">
+                              <span class="month-m">Oct</span>
+                              <span class="date-m">06<sup>th</sup></span>                
+                            </div>
+                            <span>JECA-2021 Results Out</span>
+                          </a>
+                        </li>                </ul>  
+              </div>
+            </div>
+          </div>        </div>
+      </div>
+      <div class="col-lg-6 col-sm-12">
+          <div class="card pb-3">
+            <div class="clearfix title-wrap">
+              <h3 class="pageTitle font-weight-bold">About us</h3>
+            </div>
+
+            <div class="card-body">
+              <div class="vc-box">
+            <h2 class="vcsMessageH">
+              <img src="images/maths2.gif" alt="" class="img-vc">
+              <span><strong class="font-20">MOLP</strong> <br>Estd:2021<br>Santipur,Nadia,West Bengal</span>
+            </h2>
+
+            <p class="text-justify text-details">
+              Dear Friends,
+              <br><br>
+              Congratulations! now you can download your favourite mathematics books with pdf format for free.Also you can download other books like competitive exam books,programming books etc. We serve you without any cost. Our main moto is to server books to all. Students, who doesn't purshase books for money,our website helps those students to continue their study.We regularly update our website for giving you best features of our services. 
+              </p>
+
+            
+
+            
+          </div>
+            </div>
+          </div>
+          <!-- ==== vc message ==== -->
+
+          <div class="card pb-3">
+            <div class="clearfix title-wrap">
+              <h3 class="pageTitle"><span></span> <b>Latest Notifications & Notices</b> </h3>
+            </div>
+          <div class="card-body h-200">
+<h5 class="font-weight-bold">Notices:</h5>Nothing is here.<br>   
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+<!-- ======= end Important notice section ======= -->
+
+
+<!-- ===== Start onloadModal modal ===== -->
+<div class="modal fade " id="onloadModal" aria-hidden="true"  style="display: none;">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal body -->
+      <div class="modal-body bg-light-yellow position-relative">
+        <div class="modal-top-bar"></div>
+        <button type="button" class="close" data-dismiss="modal">×</button>
+        <h4 class="text-danger big-text "><strong>1. If you want to download books from here you must be logged in our portal.</strong> </h4>
+        <a href="https://wbjeeb.nic.in/EXMJECACMS/Page/Page?PageId=1&LangId=P" target="_blank"class="text-danger big-text "><strong> <img src="images/new_icon.gif" width="40"height="45" alt="">  2. View JECA-2021 Results</strong> </a>
+        <img src="images/Indie Music Festival 2020.gif" width="720" height="480" alt="">
+       
+           
+   
+          
+            <h5 class="text-black">
+            
+</h5>
+  <h4 class="text-black big-text "><strong>MOAL Says</strong> </h4>
+  <h5 class="text-black">
+ <!-- HAPPY DURGA PUJA  <br> -->
+
+<div class="card pb-3">
+  <h5 class="text-danger"><span style="font-size:24px; font-weight:bold; color:red;padding-left:10px;">HAPPY DURGA PUJA</span>
+      
+    </h5>
+
+		<!-- <a href="https://wbsupgadmission.com/PG/login.php"><span style="font-size:24px; font-weight:bold; color:red;padding-left:10px;">HAPPY DURGA PUJA</span></a> -->
+		</div> 
+
+
+  
+  
+         <!--     <a class="btn btn-sm btn-success float-right mb-100" target="_blank" href=""></a></h5> -->
+      
+    </div>
+    </div>
+  </div>
+</div><!-- ===== End onloadModal modal ===== -->
+
+
+
+<a href="javascript:" id="return-to-top"> <i class="fa fa-arrow-up" aria-hidden="true"></i> </a>
+
+<footer class="footer main-footer">
+    <div class="container">
+        <div class="row bg-weather">
+            <div class="col-lg-6 col-sm-12 text-lg-left text-center">
+
+              
+                    <p class="mb-0 text-white">© Copyright 2021 <a href="https://wbsu.ac.in/" class="font-weight-bold text-warning text-decoration-none">MathHub - A Online Learning Platform</a> All rights reserved</p>
+                
+            </div>
+            <div class="col-lg-6 col-sm-12 text-lg-right text-center">
+                <p class="mb-0 text-light">
+    Edited & Managed By <b class="text-warning">Sagar Nandy</b> (Frontend Developer at beginners level) 
     
+                         <!-- <a href="academic-calendar.php" class="text-warning text-decoration-none" target="_blank">Academic Calendar </a>|| -->
+                         <!-- <a href="faq.php" class="text-warning text-decoration-none" target="_blank">FAQ </a>|| -->
+                         <!-- <a href="how-to-apply.php" class="text-warning text-decoration-none" target="_blank">How to Apply </a>|| -->
+                         <!-- <a href="contact.php" class="text-warning text-decoration-none" target="_blank">Contact</a>                    -->
+                </p>
+            </div>
+        </div>
+    </div>     
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- ===== Mobile Menu ===== -->
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+</script>    
+
+
+<!-- ===== Onload Popup ===== -->
+<script>
+  $(window).on('load',function(){
+    var delayMs = 1500; // delay in milliseconds
+
+    setTimeout(function(){
+        $('#onloadModal').modal('show');
+    }, delayMs);
+});   
+</script>
+
+  
+
+
 </body>
 </html>
