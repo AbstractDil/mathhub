@@ -734,6 +734,13 @@ background-color: #dee0e0;
 }
 
 .modal-content{ background-color: #dfffde !important;}
+#loading{
+    position: fixed;
+    width:100%;
+    height: 100vh;
+    background:#fff  url('https://students.nandysagar.in/Images/Preloader.gif') no-repeat   center;
+    z-index: 99999;
+}
 .blink 
 	{        
 		 animation: blinker 1.5s linear infinite;       
