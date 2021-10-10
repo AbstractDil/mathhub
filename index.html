@@ -107,7 +107,8 @@
  
  </script>
 </head>
-<body class="modal-open">
+<body onload="Sagar()" class="modal-open">
+	 <div id="loading" style="display: none;"></div>
 <section class="top-bg position-relative">
    <div class="text-center">
       	<ul class="top-menu list-inline">
@@ -424,6 +425,13 @@
         $('#onloadModal').modal('show');
     }, delayMs);
 });   
+</script>
+	<script>
+  var preloader = document.getElementById('loading');
+ function Sagar(){
+   preloader.style.display='none';
+ }
+
 </script>
 
   
