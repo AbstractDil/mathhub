@@ -1,4 +1,4 @@
-const url = 'combined/StudyMaterials/julysrc/31+July-+Important+Days+of+JULY.pdf';
+const url = '/combined/StudyMaterials/julysrc/31+July-+Important+Days+of+JULY.pdf';
 
 let pdfDoc = null,
   pageNum = 1,
