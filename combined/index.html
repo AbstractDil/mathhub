@@ -75,7 +75,8 @@ $('body').bind('copy paste',function(e) {
 </script>
   
 </head>
-<body> 
+<body onload="Sagar()" class="" style="">
+    <div id="loading" style="display: none;"></div> 
   
       <nav class="navbar navbar-default menubar navbar-inverse ">
         <div class="container-fluid">
@@ -469,6 +470,13 @@ $('body').bind('copy paste',function(e) {
     </div>
   
   </div>
+     <script>
+        var preloader = document.getElementById('loading');
+       function Sagar(){
+         preloader.style.display='none';
+       }
+      
+      </script>                                 
   <script>
     $(window).on('load',function(){
       var delayMs = 1000; // delay in milliseconds
