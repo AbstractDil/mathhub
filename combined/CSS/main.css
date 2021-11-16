@@ -255,9 +255,10 @@ body{
 	{        
 		 animation: blinker 1.5s linear infinite;       
 		   color: #dd2121;  
-			font-size: 30x;     
+			/* font-size: 30x;     
 				font-weight: bold;     
-					font-family: sans-serif;       }  
+					font-family: sans-serif; */
+}  
 						 @keyframes blinker {         10% {           opacity: 0;         }       }
              .blink-one {         animation: blinker-one 1s linear infinite;       }   
 							   @keyframes blinker-one {         0% {           opacity: 0;         }       }       
