@@ -283,31 +283,121 @@ $('body').bind('copy paste',function(e) {
     <div class="panel panel-primary">
       <div class="panel-heading" style="font-size: x-large;background-image: linear-gradient(90deg,rgb(150, 6, 28),rgb(14, 44, 180));"><img src="Images/star.gif" alt=""> Table of  Links <img src="Images/star.gif" alt=""></div>
       <div class="panel-body" style="background-image: url('Images/bg.jpg');">
-        <table class="table table-hover table-bordered" style="border: indigo;">
-          <thead style="font-size: larger; color: rgb(255, 250, 250);background-color: green;">
-            <tr>
-              <th>Examination</th>
-              <th>Links</th>
-              
-            </tr>
-          </thead>
-          <tbody style="font-size: larger; background-color: rgb(190, 251, 253);"  >
-            <tr>
-              <td>John</td>
-              <td>Doe</td>
-              
-            </tr>
-            <tr>
-              <td>Mary</td>
-              <td>Moe</td>
-             
-            </tr>
-            <tr>
-              <td>July</td>
-              <td>Dooley</td>
-              
-          </tbody>
-        </table>
+         <!-- content start -->
+        <div class="panel-group" id="accordion">
+          <div class="panel" style="background-image: linear-gradient(90deg,rgb(115, 236, 236),rgb(59, 218, 109)); color: rgb(5, 2, 2); font-weight: 600;font-size: larger">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+               <strong style="font-weight: 600;font-size:larger ; color: rgb(182, 12, 26);"><img src="https://students.nandysagar.in/Images/moving%20star.gif" width="30" height="31" alt=""> The Hindu E-Paper <img src="https://students.nandysagar.in/Images/moving%20star.gif" width="30" height="31" alt=""></strong> <span class="label label-danger blink">Click me</span></a>
+              </h4>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse ">
+              <div class="panel-body">
+                 <table class="table table-hover table-bordered" style="border: indigo;">
+                <thead style="font-size: larger; color: rgb(255, 250, 250);background-color: rgb(146, 59, 163);">
+                  <tr>
+                    <th>  Date of E-Paper </th>
+                    <th> Download </th>
+                    
+                  </tr>
+                </thead>
+                <tbody style="font-size: larger; background-color: rgb(190, 251, 253);"  >
+                  <tr>
+                    <td> The Hindu - 16/11/2021 </td>
+                    <td> <a class="btn btn-read"  href="combined/The Hindu/TH-16_11_2021.pdf" type="button"><span class="glyphicon glyphicon-download"></span> Download </a> <span>
+                      <!-- <a class="btn btn-down my-2"  href="/StudyMaterials/july.html" type="button"><span class="glyphicon glyphicon-download"></span> Download</a> -->
+                    </span></td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Mary</td>
+                    <td>Moe</td>
+                   
+                  </tr>
+                  <tr>
+                    <td>July</td>
+                    <td>Dooley</td>
+                    
+                </tbody>
+              </table>
+            </div>
+            </div>
+          </div>
+          <div class="panel" style="background-image: linear-gradient(90deg,rgb(245, 238, 137),rgb(59, 218, 109)); color: rgb(5, 2, 2); font-weight: 600;font-size: larger">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+              <strong style="font-weight: 600;font-size:larger;color: darkblue; "><img src="https://students.nandysagar.in/Images/moving%20star.gif" width="30" height="31" alt=""> Daily Current Affairs <img src="https://students.nandysagar.in/Images/moving%20star.gif" width="30" height="31" alt=""></strong> <span class="label label-danger blink">Click me</span> </a>
+              </h4>
+            </div>
+            <div id="collapse2" class="panel-collapse collapse">
+              <div class="panel-body">
+                <table class="table table-hover table-bordered" style="border: indigo;">
+                  <thead style="font-size: larger; color: rgb(255, 250, 250);background-color: rgb(146, 59, 163);">
+                    <tr>
+                      <th>  Current Affairs </th>
+                      <th> Download </th>
+                      
+                    </tr>
+                  </thead>
+                  <tbody style="font-size: larger; background-color: rgb(190, 251, 253);"  >
+                    <tr>
+                      <td> Important Dates Of July </td>
+                      <td> <a class="btn btn-down"  href="/combined/StudyMaterials/july.html" type="button"> <span class="glyphicon glyphicon-download"></span> Download</a></td>
+                      
+                    </tr>
+                    <tr>
+                      <td>Mary</td>
+                      <td>Moe</td>
+                     
+                    </tr>
+                    <tr>
+                      <td>July</td>
+                      <td>Dooley</td>
+                      
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="panel" style="background-image: linear-gradient(90deg,rgb(115, 236, 236),rgb(59, 218, 109)); color: rgb(5, 2, 2); font-weight: 600;font-size: larger">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                  <strong style="font-weight: 600;font-size:larger;color:rgb(119, 10, 28) "> <img src="https://students.nandysagar.in/Images/moving%20star.gif" width="30" height="31" alt=""> Collapsible Group 3 <img src="https://students.nandysagar.in/Images/moving%20star.gif" width="30" height="31" alt=""></strong> </a>
+              </h4>
+            </div>
+            <div id="collapse3" class="panel-collapse collapse">
+              <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+              minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat.</div>
+            </div>
+            
+          </div>
+        </div>
+        <div class="panel" style="background-image: linear-gradient(90deg,rgb(245, 238, 137),rgb(59, 218, 109)); color: rgb(5, 2, 2); font-weight: 600;font-size: larger">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                <strong style="font-weight: 600;font-size:larger;color:darkblue "> <img src="https://students.nandysagar.in/Images/moving%20star.gif" width="30" height="31" alt=""> Collapsible Group 4 <img src="https://students.nandysagar.in/Images/moving%20star.gif" width="30" height="31" alt=""></strong> </a>
+            </h4>
+          </div>
+          <div id="collapse4" class="panel-collapse collapse">
+            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat.</div>
+          </div>
+          
+        </div>
+      </div>
+
+
+
+
+       
       </div>
     </div>
 
