@@ -192,6 +192,30 @@ body{
     
 
 }
+.btn-read{
+    border-radius: 20px; 
+    background-color: rgb(241, 141, 82);
+    color: cornsilk;
+    font-weight: 500;
+    font-size: 18px;
+}
+.btn-read:hover{
+    background-color: rgb(212, 65, 20);
+    color:#fff;
+    font-weight: 600;
+}   
+.btn-down{
+    border-radius: 20px; 
+    background-color: rgb(45, 137, 153);
+    color: cornsilk;
+    font-weight: 500;
+    font-size: 18px;
+}
+.btn-down:hover{
+    background-color: rgb(7, 71, 90);
+    color:#fff;
+    font-weight: 600;
+}   
 .payment:hover{
     background-color: #0d8567;
     color:#fff;
