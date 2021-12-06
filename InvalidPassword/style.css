@@ -1,0 +1,139 @@
+ 
+ @import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Playfair+Display:ital,wght@0,400;1,500&family=Roboto&family=Shippori+Antique&family=Shippori+Antique+B1&display=swap');
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    
+
+}
+
+body{
+    font-family: 'PT Sans', sans-serif;
+    
+    font-size: 15px;
+
+}
+/* .breadcrumb-item + .breadcrumb-item::before {
+    content: ">";
+
+} */
+
+  
+  .table td, .table th {
+    
+    border: 1px solid #ddd;
+   
+    
+  }
+  
+  .table tr:nth-child(even){background-color: #fffbc7;}
+  
+  /* .sg:hover {background-color: rgb(189, 243, 203);} */
+  .sg-style{
+      font-size: 17px;
+  }
+  
+ 
+#accordion .card .card-link:after{
+    font-family: FontAwesome;
+    content:"\f068";
+    float:right;
+    color: #000;
+    
+}
+#accordion .card .collapsed:after{
+    font-family: FontAwesome;
+    content:"\f067";
+    
+}
+#accordion .card .card-header{
+    background-image: linear-gradient(-90deg,rgb(169, 204, 240),rgb(169, 240, 222));
+    
+}
+#accordion .card .card-link{
+    color: rgb(1, 0, 8);
+    font-weight: 600;
+    font-size: 18px;
+}
+.navbar {
+    background-image: linear-gradient(-90deg,rgb(184, 253, 127),rgb(125, 245, 252));
+}
+.btn-down{
+    
+    background-color: rgb(33, 112, 68);
+    color: cornsilk;
+    box-shadow: cornsilk;
+    font-size: 20px;
+    box-shadow: 0 9px rgb(219, 221, 221);
+}
+.btn-down:hover{
+    background-color: rgb(7, 71, 90);
+    color:rgb(250, 227, 18);
+    box-shadow: 0 9px rgb(184, 185, 185);
+    
+}
+.btn-read{
+    border-radius: 20px; 
+    background-color: rgb(241, 141, 82);
+    color: cornsilk;
+    font-weight: 500;
+    font-size: 18px;
+}
+.btn-read:hover{
+    background-color: rgb(212, 65, 20);
+    color:#fff;
+    font-weight: 600;
+}   
+.blink 
+	{        
+		 animation: blinker 1.5s linear infinite;       
+		   color: #ffffff;  
+			font-size: 30x;     
+				font-weight: bold;     
+					font-family: sans-serif;       }
+                    @keyframes blinker {         10% {           opacity: 0;         }       }
+                    .blink-one {         animation: blinker-one 1s linear infinite;       }   
+                                      @keyframes blinker-one {         0% {           opacity: 0;         }       }       
+                                      .blink-two {         animation: blinker-two 1.4s linear infinite;       }       @keyframes blinker-two {         10% {           opacity: 0;         }       } 
+                                      
+   .btn-sagarOne{
+            border-radius: 20px; 
+            background-color: rgb(235, 8, 84);
+            color: cornsilk;
+            font-weight: 500;
+            font-size: 18px;
+            }
+                             
+            .btn-sagarOne:hover{
+                                  background-color: rgb(209, 41, 12);
+                                  color:#fff;
+                                  
+                              }   
+                              
+                              .btn-sagarThree{
+                                border-radius: 20px; 
+                                background-color: rgb(12, 163, 12);
+                                color: cornsilk;
+                                font-weight: 500;
+                                font-size: 18px;
+                                }
+                                                 
+                                .btn-sagarThree:hover{
+                                                      background-color: rgb(7, 121, 22);
+                                                      color:#fff;
+                                                      
+                                                  }   
+       .btn-sagarTwo{
+                 border-radius: 20px; 
+                 background-color: rgb(11, 43, 184);
+                 color: cornsilk;
+                font-weight: 500;
+                 font-size: 18px;
+                 }
+                                                                     
+            .btn-sagarTwo:hover{
+              background-color: rgb(5, 27, 124);
+            color:#fff;
+                                                                          
+         }                        
