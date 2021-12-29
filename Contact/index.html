@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact With Sagar</title>
+    <!-- bulma css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- custom css -->
+    <style>
+        .panel {
+    position: relative;
+    align-items: center;
+    display: block;
+    margin: 30px;
+    padding: 15px;
+    
+   
+    
+}
+
+#loading {
+    position: fixed;
+    width:100%;
+    height: 100vh;
+    background:#fff  url('https://web.personal.nandysagar.in/Images_Video/Loading.gif') no-repeat   center;
+    z-index: 99999;
+}
+    </style>
+</head>
+<body onload="Sagar()">
+  <div id="loading" style="display: none;"></div>
+  
+      <p class="panel-heading has-background-success-light has-text-centered">Mathhub - A Online Learning Platform</p>
+  
+     
+    
+    <div class="container " >
+        <article class="panel is-primary ">
+            <p class="panel-heading">
+             Contact With Us
+            </p>
+            <span id="response" class="has-text-success" style="font-weight: 700;margin-top: 10px;"></span>
+            <div class="card-content">
+              
+
+           <form method="post" name="google-sheet">
+            <div class="field">
+                <label class="label"><i class="fa fa-user"></i> Name</label>
+                <div class="control">
+                  <input class="input" type="text" name="Name" placeholder="Enter Your Full Name">
+                </div>
+                
+              </div>
+              <div class="field">
+                <label class="label"><i class="fa fa-envelope"></i> Email</label>
+                <div class="control">
+                  <input class="input" type="email" name="Email" placeholder="Enter Your Email">
+                </div>
+                
+              </div>
+              <div class="field">
+                <label class="label"><i class="fa fa-mobile"></i> Mobile Number</label>
+                <div class="control">
+                  <input class="input" type="number" name="Mobile" placeholder="Enter Your Mobile Number">
+                </div>
+                </div>
+                <div class="field">
+                    <label class="label"><i class="fa fa-comments"></i> Your Message   </label>
+                    <div class="control">
+                        <textarea class="textarea" name="YourSMS" placeholder="Your Secret Message"></textarea>
+                    </div>
+                    </div>  
+                
+
+               
+                    <div class="control " style="margin-top: 15px;">
+                        <button class="button is-danger  is-rounded"  type="submit" name="Submit">
+                          
+                          <span class="icon is-small"><i class="fa fa-check"></i></span>
+                          <span>Submit</span>
+                          
+                        </button>
+                      </div>
+              </div>
+
+           </form>
+        </div>
+           
+          </article>
+
+
+    </div>
+    <footer class="footer has-text-centered has-background-success-light">
+      
+       
+           <strong>© Mathhub - A Online Learning Platform - All Right Reserved </strong>  <br>
+          <strong>Developed By  : <span class="has-text-info">Sagar Nandy</span>  </strong> 
+          
+        
+      
+    </footer>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbyAxUB09wm-Lqbaw3v6E7D9vi9rMi51vakCIpuUC2f3ZeAiJXFzJr4h0FprNXpLwYBsEg/exec'
+      const form = document.forms['google-sheet']
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response =>  alert("Thanks for Contacting us..! We Will Contact You Soon... \n Please close this window after you see thanks message."))
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+    
+    <script>
+      var preloader = document.getElementById('loading');
+     function Sagar(){
+       preloader.style.display='none';
+     }
+    
+    </script>
+
+
+</body>
+</html>
