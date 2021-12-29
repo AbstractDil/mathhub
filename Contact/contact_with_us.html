@@ -110,7 +110,7 @@
       form.addEventListener('submit', e => {
         e.preventDefault()
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response =>  alert("Thanks for Contacting us..! We Will Contact You Soon... \n Please close this window."))
+          .then(response =>  document.getElementById("response").innerHTML="✔️ Thanks for contacting with us. ")
           .catch(error => console.error('Error!', error.message))
       })
     </script>
