@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>MOAL - Combined </title>
+  <title>MathHub | Combined </title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=0.8">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="CSS/main.css">
+  <link rel="stylesheet" href="https://nandysagar.in/combined/CSS/main.css">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,500&display=swap');
-    </style>
-    
-      <script type="text/javascript">
+  </style>
+
+  <!-- <script type="text/javascript">
    
    // disable right click
    document.addEventListener('contextmenu', event => event.preventDefault());
@@ -72,531 +75,832 @@ $('body').bind('copy paste',function(e) {
  });
   
 
-</script>
-  
+</script> -->
+
 </head>
-<body onload="Sagar()" class="" style="">
-    <div id="loading"></div> 
-  
-      <nav class="navbar navbar-default menubar navbar-inverse ">
-        <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header ">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            
-            <a class="navbar-brand" href="https://combined.nandysagar.in"><p style="font-weight: 400; font-size:x-large larger;padding-left: 5px; margin-left: 5px;">Math<span style="color:rgb(251, 255, 0);">Hub</span> - Combined</p></a>
-          </div>
-      
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-           
-            
-            <ul class="nav navbar-nav navbar-right">
-              <li><a class="menu " href="#">Home</a></li>
-              <li><a class="menu" href="Syllabus/">Syllabus</a></li>
-              <li><a class="menu" href="https://nandysagar.in/CombinedBooks.html" target="_blank">E-Books</a></li>
-              <li><a class="menu" href="#"> Study Materials </a></li>
-           
-              <li><a class="menu" href="#">Exams Details</a></li>
-             
-              <!-- <li><a class="menu" href="#">About Us</a></li> -->
-             
 
-              <!-- <li class="dropdown">
-                <a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown 
-                  <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu btn-primary">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#">Separated link</a></li>
-                </ul>
-              </li> -->
-            </ul>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-      </nav>
-    
+<body onload="Sagar()">
+  <div id="loading"></div>
 
-<!-- Show Modal -->
-<div class="container">
-   <!-- Modal -->
+  <nav class="navbar navbar-default menubar navbar-inverse ">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header ">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+          data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <a class="navbar-brand" href="https://nandysagar.in/combined">
+          <p
+            style="font-weight: 400; font-size:x-large larger;padding-left: 5px; margin-left: 5px; font-family: Georgia, 'Times New Roman', Times, serif;">
+            Math<span style="color:rgb(251, 255, 0);">Hub</span> - Combined</p>
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a class="menu " href="#">Home</a></li>
+          <li><a class="menu"  style="cursor: pointer;" onclick="erroralrt()">Syllabus</a></li>
+          <li><a class="menu" href="https://nandysagar.in/CombinedBooks.html" target="_blank">E-Books</a></li>
+          <li><a class="menu " onclick="about()" style="cursor: pointer;">About Us</a></li>
+          <li><a class="menu" href="https://nandysagar.in/Contact/contact_with_us.html" target="_blank">Contact Us</a>
+          </li>
+
+
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <!-- Show Modal -->
+  <div class="container">
+    <!-- Modal -->
     <div class="modal fade" id="myModal" role="dialog">
-      <div class="modal-dialog modal-sm ">
+      <div class="modal-dialog modal-md ">
         <div class="modal-content border">
-          <div class="modal-header  ">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            
-            <h3 class="modal-title"><b style="color: brown;">Latest Announcement</b></h3>
-          </div>
-          <div class="modal-body " >
-           
-            <div class="panel-heading">
-              
-           <div class="panel-body">
+          <div class="modal-header  text-center" style="border-bottom: none;">
 
-              <h3> Download Economics Notes - <a href=" https://ln5.sync.com/dl/cd6a83720/x2g83upz-pimuwuwk-cpmnzzcy-7uaneic2"> Click Here </a> </h3>
+            <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+            <div class="well well-sm " style="background-color: rgb(53, 114, 86);">Latest Announcement </div>
 
-            </div>
-            </div>
-            
           </div>
-          <div class="modal-footer">
+          <div class="modal-body " style="margin-left: 20px; ">
+            <ol count="1">
+              <li class="noti-text"><a onclick="JCI()" target="_blank"><img
+                    src="https://nandysagar.in/combined/Images/new_gif.gif" width="25" height="26"> Apply JCI for
+                  recruitment in non-executive cadre.
+                </a> </li>
+              <li class="noti-text"><a onclick="SscCgle()" target="_blank"><img
+                    src="https://nandysagar.in/combined/Images/new_gif.gif" width="25" height="26"> Apply SSC - CGL
+                  2021-2022.
+                </a> </li>
+
+
+
+
+
+
+          </div>
+          <div class="modal-footer" style="border-top: none;">
             <button type="button" class="btn btn-default btn-danger" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="container  heading" style="background-image: linear-gradient(90deg,rgb(150, 6, 28),rgb(14, 44, 180));">
-    
-    <div class="col-md-3 " style="color: wheat; font-size: x-large;"  ><img src="Images/bulb.gif" alt="" width="30" height="32">Latest News <img src="Images/next.png" alt="" width="30" height="32"> 
-      
-     </div>
-     <div class="col-md-9 "><marquee class="marquee" onmouseover="this.stop()" onmouseout="this.start()"> 
-
-      <a class=""  style="color: white;" href="https://students.nandysagar.in"><img src="Images/new_gif.gif" alt="" width="40" height="42"><strong style="font-family: 'Times New Roman'; font-size: 18px;">রাস উৎসবের ‌কারণে 19.11.2021 এবং 20.11.2021 তারিখের The Hindu Epaper Upload করা হয়নি। </strong><span style="color:#fff;">&nbsp;||&nbsp;&nbsp;</span>
-      </a> 
-      <span style="color:#fff;">&nbsp;||&nbsp;&nbsp;</span>
-    
-    </marquee></div>
-</div>
-
   <!-- End Modal -->
+  <div class="container  heading" style="background-image: linear-gradient(90deg,rgb(150, 6, 28),rgb(14, 44, 180));">
+
+    <div class="col-md-3 " style="color: wheat; font-size:larger;"><img src="/src/Images/bulb.gif" alt="" width="30"
+        height="32">Latest News <img src="/src/Images/next.png" alt="" width="25" height="26">
+
+    </div>
+    <div class="col-sm-9 ">
+      <marquee class="marquee" onmouseover="this.stop()" onmouseout="this.start()">
+
+        <a class="" style="color: white;" href="https://students.nandysagar.in"><img src="Images/new_gif.gif" alt=""
+            width="40" height="42"><strong style="font-family: 'Times New Roman'; font-size: 18px;">Welcome to MathHub
+            Combined Portal </strong>
+        </a>
+        <span style="color:#fff;">&nbsp;||&nbsp;&nbsp;</span>
+        <a style="color: white;"><img src="Images/new_gif.gif" alt="" width="40" height="42"><strong
+            style="font-family: 'Times New Roman'; font-size: 18px;">ESIC Recruitment of UDC , STENO and MTS 2022
+            Notification Out. </strong>
+        </a>
+        <span style="color:#fff;">&nbsp;||&nbsp;&nbsp;</span>
+        <a style="color: white;"><img src="Images/new_gif.gif" alt="" width="40" height="42"><strong
+            style="font-family: 'Times New Roman'; font-size: 18px;">JCI Recruitment in non-executive cadre 2021-2022
+            Notification Out. </strong>
+        </a>
+        <span style="color:#fff;">&nbsp;||&nbsp;&nbsp;</span>
+        <a style="color: white;"><img src="Images/new_gif.gif" alt="" width="40" height="42"><strong
+            style="font-family: 'Times New Roman'; font-size: 18px;"> SSC-CGLE 2021-22 Notification Out.</strong>
+        </a>
+        <span style="color:#fff;">&nbsp;||&nbsp;&nbsp;</span>
+
+      </marquee>
+    </div>
+  </div>
+
+
   <div class="container" style="margin-top: 15px;">
     <div class="row">
-      
+
       <div class="col-md-7">
-        <div class="panel panel-primary">
-        <div class="panel-heading" style="background-image:linear-gradient(-90deg,rgb(219, 52, 211),rgb(245, 43, 12)) ; font-size:x-large;"><img src="Images/moving star.gif" width="30" height="32" alt=""> Our Featured Photos <img src="Images/moving star.gif" width="30" height="32" alt=""></div>
-      
-      <div class="panel-body" style="background-image: url('/src/Images/bg.jpg');">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-          <li data-target="#myCarousel" data-slide-to="3"></li>
-          <li data-target="#myCarousel" data-slide-to="4"></li>
-        </ol>
-      
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-          <div class="item active">
-            <img src="Images/c1.jpg" alt="Start Learning ">
+        <div class="panel panel-primary shadow">
+          <div class="panel-heading"
+            style="background-image:linear-gradient(-90deg,rgb(219, 52, 211),rgb(245, 43, 12)) ; font-size:x-large;">
+            <img src="/src/Images/moving star.gif" width="30" height="32" alt=""> Our Featured Photos <img
+              src="/src/Images/moving star.gif" width="30" height="32" alt="">
           </div>
-      
-          <div class="item">
-            <img src="Images/cw2.png" alt="Chicago" class="img-responsive">
-          </div>
-          <div class="item">
-            <img src="Images/c2.png" alt="Chicago" class="img-responsive">
-          </div>
-      
-          <div class="item">
-            <img src="Images/cw.png" alt="New York">
-          </div>
-          <div class="item">
-            <img src="Images/c3.png" alt="Chicago" class="img-responsive">
+
+          <div class="panel-body" style="background-image: url('/src/Images/bg.jpg');">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img src="/src/Images/c1.jpg" alt="Start Learning ">
+                </div>
+
+                <div class="item">
+                  <img src="/src/Images/cw2.png" alt="Chicago" class="img-responsive">
+                </div>
+                <div class="item">
+                  <img src="/src/Images/c2.png" alt="Chicago" class="img-responsive">
+                </div>
+
+                <div class="item">
+                  <img src="/src/Images/cw.png" alt="New York">
+                </div>
+                <div class="item">
+                  <img src="/src/Images/c3.png" alt="Chicago" class="img-responsive">
+                </div>
+              </div>
+
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
           </div>
         </div>
-      
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    </div>
-  </div>
       </div>
       <div class="col-md-5">
-        <div class="panel-group">
-          <div class="panel panel-primary"  style="height:368px;">
-              <div class="panel-heading" style="font-size: x-large;"><img src="Images/Siren.gif" alt="" width="35" height="38"> Jobs Updates <img src="Images/Siren.gif" alt="" width="35" height="38"> </div>
-              <div class="panel-body">
-                <marquee scrolldelay="250" onmouseover="stop()" onmouseout="start()" direction="up" height="232">
-                  <ul >
-  
-  
-                    <li><img src="Images/rgt.gif" alt="" width="30" height="32 "> <a style="color: rgb(206, 7, 7); font-size:larger" href="#">Enquiry Form</a></li> <br>
-                    <li><img src="Images/rgt.gif" alt="" width="30" height="32 "> <a style="color: rgb(206, 7, 7); font-size:larger" href="#">Enquiry Form</a></li> <br>
-    
-                  </ul>
+        <div class="panel-group shadow">
+          <div class="panel panel-primary" style="height:368px;">
+            <div class="panel-heading" style="font-size: x-large;"><img src="/src/Images/Siren.gif" alt="" width="35"
+                height="38"> Jobs Updates <img src="/src/Images/Siren.gif" alt="" width="35" height="38"> </div>
+            <div class="panel-body">
+              <marquee scrolldelay="250" onmouseover="stop()" onmouseout="start()" direction="up" height="232">
+                <ul class="noti-text">
 
-                </marquee>
-              </div>
+
+                  <li><img src="/src/Images/rgt.gif" alt="" width="30" height="32 "> <a
+                      style="color: rgb(206, 7, 7); font-size:larger" onclick="SscCgle()"> Apply SSC CGLE 2021-2022
+                      <img src="https://nandysagar.in/images/10.gif" alt=""></a></li> <br>
+                  <li><img src="/src/Images/rgt.gif" alt="" width="30" height="32 "> <a
+                      style="color: rgb(206, 7, 7); font-size:larger" href="https://www.jutecorp.in/recruitment/"
+                      onclick="alert('This link redirected you to the recruitment page of JCI.')" target="_blank">JCI
+                      Recruitment in non-executive cadre 2021-2022 <img
+                        src="https://nandysagar.in/images/10.gif" alt=""></a></li> <br>
+
+                </ul>
+
+              </marquee>
             </div>
-        </div>
-      </div>
-  </div>
-  </div>
- 
-  <div class="container heading">
-    
-    <div class="well" style="background-image:linear-gradient(90deg,rgb(54, 7, 73),rgb(161, 12, 136)) ;"><img src="Images/bulb.gif" alt="" width="35"  height="37"> Govt. Jobs Update <img src="Images/bulb.gif" alt="" width="35"  height="37"></div>
-    <div class="row">
-      <div class="col-md-3">
-        <div class="panel panel-primary">
-          <div class="panel-heading " style="font-size: larger; background-color: rgb(65, 7, 131);"><img src="Images/Siren.gif" alt="" width="30"  height="32"> Important Buttons <img src="Images/Siren.gif" alt="" width="30"  height="32"></div>
-          <div class="panel-body ">
-            <ul class="list-group">
-          <li class="list-group-item"><a href="https://nandysagar.in/CombinedBooks.html" target="_blank" class="btn btn-lg  payment " role="button"> <img src="Images/ebook.png" width="30" height="32" alt=""> E-Books</a></li>  
-          <li class="list-group-item"><a href="Syllabus/" target="_blank" class="btn btn-lg  bttn " role="button"> <img src="Images/syllabus.png" width="30" height="32" alt=""> Syllabus</a></li> 
-          <li class="list-group-item"><a href="#" target="_blank" class="btn btn-lg  payment " role="button"> <img src="Images/ebook.png" width="30" height="32" alt=""> Study Materials</a></li>  
-          <!-- <li class="list-group-item"><a href="Syllabus/" target="_blank" class="btn btn-lg  bttn " role="button"> <img src="Images/syllabus.png" width="30" height="32" alt=""> English</a></li>
-          <li class="list-group-item"><a href="#" target="_blank" class="btn btn-lg  payment " role="button"> <img src="Images/ebook.png" width="30" height="32" alt=""> Computer Awarness</a></li> 
-          <li class="list-group-item"><a href="Syllabus/" target="_blank" class="btn btn-lg  bttn " role="button"> <img src="Images/syllabus.png" width="30" height="32" alt=""> Mathematics </a></li> -->
-          
-
-            
-          </ul>
           </div>
         </div>
-      </div>
-      <div class="col-md-9">
-    <div class="panel panel-primary">
-      <div class="panel-heading" style="font-size: x-large;background-image: linear-gradient(90deg,rgb(150, 6, 28),rgb(14, 44, 180));"><img src="Images/star.gif" alt=""> Table of  Links <img src="Images/star.gif" alt=""></div>
-      <div class="panel-body" style="background-image: url('Images/bg.jpg');">
-         <!-- content start -->
-        <div class="panel-group" id="accordion">
-          <div class="panel" style="background-image: linear-gradient(90deg,rgb(115, 236, 236),rgb(59, 218, 109)); color: rgb(5, 2, 2); font-weight: 600;font-size: larger">
-            <div class="panel-heading">
-              <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-               <strong style="font-weight: 600;font-size:larger ; color: rgb(182, 12, 26);"><img src="https://students.nandysagar.in/Images/moving%20star.gif" width="30" height="31" alt=""> The Hindu E-Paper <img src="https://students.nandysagar.in/Images/moving%20star.gif" width="30" height="31" alt=""></strong> <span class="label label-danger blink ">Click me</span></a>
-              </h4>
-            </div>
-            <div id="collapse1" class="panel-collapse collapse ">
-              <div class="panel-body">
-                 <table class="table table-hover table-bordered" style="border: indigo;">
-                <thead style="font-size: larger; color: rgb(255, 250, 250);background-color: rgb(146, 59, 163);">
-                  <tr>
-                    <th>  Date of E-Paper </th>
-                    <th> Download </th>
-                    
-                  </tr>
-                </thead>
-                <tbody style="font-size: larger; background-color: rgb(190, 251, 253);"  >
-                   <tr>
-                    <td> The Hindu - 24/11/2021 </td>
-                    <td> <a class="btn btn-read" onclick="alert('This link redirected you MediaFire page.\n Are you agree ?');" title="MediaFire Link"  href="https://www.mediafire.com/file/1cr3aiy0pxojct0/24_11_2021.pdf/file" type="button"><span class="glyphicon glyphicon-download"></span> Download </a> <span>
-                      
-                    </span></td>
-                    
-                  </tr>
-                   <tr>
-                    <td> The Hindu - 23/11/2021 </td>
-                    <td> <a class="btn btn-read" onclick="alert('This link redirected you MediaFire page.\n Are you agree ?');" title="MediaFire Link"  href="https://www.mediafire.com/file/vv1o47clxhkzjph/23-NOV-2021.pdf/file" type="button"><span class="glyphicon glyphicon-download"></span> Download </a> <span>
-                      
-                    </span></td>
-                    
-                  </tr>
-                   <tr>
-                    <td> The Hindu - 22/11/2021 </td>
-                    <td> <a class="btn btn-read" onclick="alert('This link redirected you MediaFire page.\n Are you agree ?');" title="MediaFire Link"  href="https://www.mediafire.com/file/zncyz9kxmuht1w0/22-Nov-2021.pdf/file" type="button"><span class="glyphicon glyphicon-download"></span> Download </a> <span>
-                      
-                    </span></td>
-                    
-                  </tr>
-                   <tr>
-                    <td> The Hindu - 21/11/2021 </td>
-                    <td> <a class="btn btn-read" onclick="alert('This link redirected you MediaFire page.\n Are you agree ?');" title="MediaFire Link"  href="https://www.mediafire.com/file/yqyfmp19y3binnt/21_Nov_2021.pdf/file" type="button"><span class="glyphicon glyphicon-download"></span> Download </a> <span>
-                      
-                    </span></td>
-                    
-                  </tr>
-                   <tr>
-                    <td> The Hindu - 18/11/2021 </td>
-                    <td> <a class="btn btn-read" onclick="alert('This link redirected you MediaFire page  , are you agree ?');" title="MediaFire Link"  href="https://www.mediafire.com/file/r7e16mjk773xjp5/TH_-18-11-2021.pdf/file" type="button"><span class="glyphicon glyphicon-download"></span> Download </a> <span>
-                      <!-- <a class="btn btn-down my-2"  href="/combined/StudyMaterials/july.html" type="button"><span class="glyphicon glyphicon-download"></span> Download</a> -->
-                    </span></td>
-                    
-                  </tr>
-                  <tr>
-                    <td> The Hindu - 17/11/2021 </td>
-                    <td> <a class="btn btn-read"  href="https://www.mediafire.com/file/jb4ml9lw7eqyctv/TH-_17_11_2021.pdf/file" type="button"><span class="glyphicon glyphicon-download"></span> Download </a> <span>
-                      <!-- <a class="btn btn-down my-2"  href="/combined/StudyMaterials/july.html" type="button"><span class="glyphicon glyphicon-download"></span> Download</a> -->
-                    </span></td>
-                    
-                  </tr>
-                  <tr>
-                    <td> The Hindu - 16/11/2021 </td>
-                    <td> <a class="btn btn-read"  href="/combined/The Hindu/TH-16_11_2021.pdf" type="button"><span class="glyphicon glyphicon-download"></span> Download </a> <span>
-                      <!-- <a class="btn btn-down my-2"  href="/combined/StudyMaterials/july.html" type="button"><span class="glyphicon glyphicon-download"></span> Download</a> -->
-                    </span></td>
-                    
-                  </tr>
-                  
-                    
-                </tbody>
-              </table>
-            </div>
-            </div>
-          </div>
-          <div class="panel" style="background-image: linear-gradient(90deg,rgb(245, 238, 137),rgb(59, 218, 109)); color: rgb(5, 2, 2); font-weight: 600;font-size: larger">
-            <div class="panel-heading">
-              <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-              <strong style="font-weight: 600;font-size:larger;color: darkblue; "><img src="https://students.nandysagar.in/Images/moving%20star.gif" width="30" height="31" alt=""> Daily Current Affairs <img src="https://students.nandysagar.in/Images/moving%20star.gif" width="30" height="31" alt=""></strong> <span class="label label-danger blink">Click me</span> </a>
-              </h4>
-            </div>
-            <div id="collapse2" class="panel-collapse collapse">
-              <div class="panel-body">
-                <table class="table table-hover table-bordered" style="border: indigo;">
-                  <thead style="font-size: larger; color: rgb(255, 250, 250);background-color: rgb(146, 59, 163);">
-                    <tr>
-                      <th>  Current Affairs </th>
-                      <th> Download </th>
-                      
-                    </tr>
-                  </thead>
-                  <tbody style="font-size: larger; background-color: rgb(190, 251, 253);"  >
-                    <tr>
-                      <td> Important Dates Of July </td>
-                      <td> <a class="btn btn-down"  href="/combined/StudyMaterials/july.html" type="button"> <span class="glyphicon glyphicon-download"></span> Download</a></td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Mary</td>
-                      <td>Moe</td>
-                     
-                    </tr>
-                    <tr>
-                      <td>July</td>
-                      <td>Dooley</td>
-                      
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-          <div class="panel" style="background-image: linear-gradient(90deg,rgb(115, 236, 236),rgb(59, 218, 109)); color: rgb(5, 2, 2); font-weight: 600;font-size: larger">
-            <div class="panel-heading">
-              <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-                  <strong style="font-weight: 600;font-size:larger;color:rgb(119, 10, 28) "> <img src="https://students.nandysagar.in/Images/moving%20star.gif" width="30" height="31" alt=""> Collapsible Group 3 <img src="https://students.nandysagar.in/Images/moving%20star.gif" width="30" height="31" alt=""></strong> </a>
-              </h4>
-            </div>
-            <div id="collapse3" class="panel-collapse collapse">
-              <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-              minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-              commodo consequat.</div>
-            </div>
-            
-          </div>
-        </div>
-        <div class="panel" style="background-image: linear-gradient(90deg,rgb(245, 238, 137),rgb(59, 218, 109)); color: rgb(5, 2, 2); font-weight: 600;font-size: larger">
-          <div class="panel-heading">
-            <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
-                <strong style="font-weight: 600;font-size:larger;color:darkblue "> <img src="https://students.nandysagar.in/Images/moving%20star.gif" width="30" height="31" alt=""> Collapsible Group 4 <img src="https://students.nandysagar.in/Images/moving%20star.gif" width="30" height="31" alt=""></strong> </a>
-            </h4>
-          </div>
-          <div id="collapse4" class="panel-collapse collapse">
-            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat.</div>
-          </div>
-          
-        </div>
-      </div>
-
-
-
-
-       
       </div>
     </div>
+  </div>
+  <!-- Upcoming Examination Section  -->
+  <div class="container heading">
+
+    <div class="well" style="background-image:linear-gradient(90deg,rgb(33, 2, 172),rgb(161, 12, 136)) ;"><img
+        src="/src/Images/bulb.gif" alt="" width="35" height="37"> Upcoming Examinations <img src="/src/Images/bulb.gif"
+        alt="" width="35" height="37"></div>
+    <div class="container">
+      <div class="row justify content center">
+        <!-- 1st card  -->
+        <div class="col-md-4">
+          <div class="panel panel-default shadow">
+            <div class="panel-heading">
+
+              <h3 class="panel-title"> SSC-CGLE 2021-2022
+                (<a target="_blank" onclick="SscCgle()">Official Site </a>) <img
+                  src="https://nandysagar.in/images/10.gif" alt=""></h3>
+
+            </div>
+            <span id="msg"
+              style="color: red; font-weight: bolder; align-items: center; justify-content: center; display: flex; "></span>
+            <div class="panel-body">
+              <div class="thumbnail">
+                <img src="https://ssc.nic.in/Content/library/assets/images/ssc-logo.png" alt="..." class="img-circle">
+              </div>
+              <div class="caption">
+                <h4>Combined Graduate Level Examination 2021-2022</h4>
+              </div>
+              <div class="well-sm">
+                <ul style="margin-left: 5px; padding: 10px ;">
+                  <li>
+                    <b>Download Notification:</b><span> <a
+                        href="https://ssc.nic.in/SSCFileServer/PortalManagement/UploadedFiles/notice_CGLE_23122021.pdf"
+                        target="_blank">Download</a> </span>
+                  </li>
+                  <li>
+                    <b>Dates for submission of online applications:</b> <span
+                      style="color: red; font-weight: 600;">23-12-2021 to 23-01-2022</span>
+                  </li>
+                  <li>
+                    <b style="color: rgb(47, 6, 88);">Application Fee For General & OBC: </b> <span
+                      style="color: green; font-weight: 600;"> Rs. 100/- </span>
+                  </li>
+                  <li>
+                    <b style="color: rgb(47, 6, 88);">Application Fee For Others: </b> <span
+                      style="color: green; font-weight: 600;"> Nil </span>
+                  </li>
+                  <li>
+                    <b>Scheme & Syllabus of the Examination: </b> <span><a href="https://nandysagar.in/Combined_Books/SSC%20CGLE%202021%20SYLLABUS.pdf" target="_blank">Download</a></span>
+                  </li>
+                  <li>
+                    <b>For More Info : </b> <span><a href="https://www.careerpower.in/ssc-cgl-apply-online.html"
+                        target="_blank"
+                        onclick="alert('This link redirected you to  https://www.careerpower.in/ssc-cgl-apply-online.html' )">Click
+                        Here </a></span>
+                  </li>
+
+                </ul>
+              </div>
+              <div style="display: flex; justify-content: center; align-items: center;">
+                <a style="margin-right: 2px;" onclick="SscCgle()" class="btn btn-success " target="_blank"
+                  role="button"><span class="glyphicon glyphicon-hand-right" aria-hidden="true"> </span> Apply Now</a>
+                <span>
+                  <a style="margin-left: 3px;" target="_blank" class="btn btn-primary" onclick="SscCgleReg()"
+                    role="button"><span class="glyphicon glyphicon-hand-right" aria-hidden="true"> </span> Register
+                    Now</a></span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- end 1st card -->
+        <!-- 2nd card start -->
+        <div class="col-md-4">
+          <div class="panel panel-default shadow">
+            <div class="panel-heading">
+              <h3 class="panel-title">JCI 2021-2022
+                (<a target="_blank" onclick="JCI()">Official Site </a>) <img
+                  src="https://nandysagar.in/images/10.gif" alt=""></h3>
+            </div>
+            <span id="jci"
+              style="color: red; font-weight: bolder; align-items: center; justify-content: center; display: flex; "></span>
+            <div class="panel-body">
+              <div class="thumbnail">
+                <img src="https://nandysagar.in/images/jci.jpg" alt="">
+              </div>
+              <div class="caption">
+                <h4> JCI Recruitment in non-executive cadre 2021-2022</h4>
+
+                </span>
+              </div>
+              <div class="well-sm">
+                <ul style="margin-left: 5px; padding: 10px ;">
+                  <li>
+                    <b>Download Notification:</b><span><a
+                        href="https://jci.onlineregistrationform.org/JCIDOC/Advertisement_notification.pdf"
+                        target="_blank"> Download</a></span>
+                  </li>
+                  <li>
+                    <b>Date For Submission Online Application:</b> <span
+                      style="color: red; font-weight: 600;">24/12/2021 (10.00 Hrs.) to 13/01/2022 (23.59 Hrs.)</span>
+                  </li>
+                  <li>
+                    <b style="color: rgb(47, 6, 88);">Application Fee:</b><span style="color: green; font-weight: 600;">
+                      Rs.200/- For General/OBC/EWS and <span style="color: tomato;"> NIL</span> For Others.</span>
+                  </li>
+                  <li>
+                    <b>Syllabus of the Examination: </b> <span><a
+                        href="https://jci.onlineregistrationform.org/JCIDOC/Syllabus_portal.pdf"
+                        target="_blank">Download</a></span>
+                  </li>
+                  <li><b> Read the instruction before apply:</b> <span><a
+                        href="https://jci.onlineregistrationform.org/JCI/instructions2.jsp" target="_blank"
+                        onclick="alert('This link redirected you to the instruction page of JCI Recruitment in non-executive cadre 2021-2022.')">Read
+                        Now</a></span></li>
+                </ul>
+              </div>
+              <div style="display: flex; justify-content: center; align-items: center;">
+                <a style="margin-right: 2px;" onclick="JCIaply()" class="btn btn-success " target="_blank"
+                  role="button"><span class="glyphicon glyphicon-hand-right" aria-hidden="true"> </span> Apply Now</a>
+                <span>
+                  <a style="margin-left: 3px;" target="_blank" class="btn btn-primary" onclick="JCIreg()"
+                    role="button"><span class="glyphicon glyphicon-hand-right" aria-hidden="true"> </span> Register
+                    Now</a></span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- 2nd card end -->
+        <!-- 3rd card start -->
+        <div class="col-md-4">
+          <div class="panel panel-default shadow">
+            <div class="panel-heading">
+              <h3 class="panel-title">ESIC 2021-2022 (<a target="_blank" onclick="eSIc()">Official Site </a>) <img
+                  src="https://nandysagar.in/images/10.gif" alt=""></h3>
+            </div>
+            <div class="panel-body">
+              <div class="thumbnail">
+                <img src="https://www.esic.nic.in/attachments/photos/big/61cf0fdf-3460-44ea-9160-6a7b0af63c87.jpg"
+                  alt="" height="100">
+              </div>
+              <div class="caption">
+                <h4>ESIC Recruitment for UDC , STENO and MTS 2022</h4>
+              </div>
+              <div class="well-sm">
+                <ul style="margin-left: 5px; padding: 10px ;">
+                  <li><b>Download Notification:</b> <span><a href="https://nandysagar.in/Combined_Books/ESIC_Maharashtra_bharti_2021_-_2022.pdf" target="_blank">Download</a></span></li>
+                  <li>
+                    <b>Date For Submission Online Application:</b> <span
+                      style="color: red; font-weight: 600;">15/01/2022 to 15/02/2022 </span>
+                  </li>
+                  <li>
+                    <b>Syllabus of the Examination: </b> <span><a href="" target="_blank">Download</a></span>
+                  </li>
+                  <li>
+                    <b style="color: rgb(47, 6, 88);">Application Fee For General & OBC & EWS: </b> <span
+                      style="color: green; font-weight: 600;"> Rs. 500/- </span>
+                  </li>
+                  <li>
+                    <b style="color: rgb(47, 6, 88);">Application Fee For Others: </b> <span
+                      style="color: green; font-weight: 600;"> Rs. 250/- <span
+                        style="color: black; background-color: yellow;">(Refundable on appearing phase-1)</span> </span>
+                  </li>
+
+                  <li><b style="color: red;"> Application link is not provided yet.</b></li>
+                </ul>
+
+              </div>
+              <div style="display: flex; justify-content: center; align-items: center;">
+                <a style="margin-right: 2px;" onclick="erroralrt()" class="btn btn-success " target="_blank"
+                  role="button"><span class="glyphicon glyphicon-hand-right" aria-hidden="true"> </span> Apply Now</a>
+                <span>
+                  <a style="margin-left: 3px;" target="_blank" class="btn btn-primary" onclick="erroralrt()"
+                    role="button"><span class="glyphicon glyphicon-hand-right" aria-hidden="true"> </span> Register
+                    Now</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 3rd card ends -->
+
+      </div>
+      <!-- ends 1st row -->
+      <!-- start 2d row -->
+      <!-- <div class="row justify content center" style="margin-top: 5px;"> -->
+      <!-- 2-1 card start -->
+      <!-- <div class="col-md-4">
+          <div class="panel panel-default shadow">
+            <div class="panel-heading">
+              <h3 class="panel-title">Panel title</h3>
+            </div>
+            <div class="panel-body">
+              <div class="thumbnail"></div>
+              <div class="caption"></div>
+              <div class="well-sm">
+                <ul style="margin-left: 5px; padding: 10px ;">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                   
+                
+                </ul>
+
+              </div>
+              <div style="display: flex; justify-content: center; align-items: center;">
+                <a style="margin-right: 2px;" onclick="JCIaply()" class="btn btn-success " target="_blank"
+                  role="button"><span class="glyphicon glyphicon-hand-right" aria-hidden="true"> </span> Apply Now</a>
+                <span>
+                  <a style="margin-left: 3px;" target="_blank" class="btn btn-primary" onclick="JCIreg()"
+                    role="button"><span class="glyphicon glyphicon-hand-right" aria-hidden="true"> </span> Register
+                    Now</a></span>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      <!-- 2-1 card ends -->
+
+    </div>
+    <!--2nd row ends div-->
 
   </div>
-</div>
-</div>
-  
-<footer class="footer1">
-  <div class="container">
-  
-  <div class="row"><!-- row -->
-              
-                  <div class="col-lg-3 col-md-3"><!-- widgets column left -->
-                  <ul class="list-unstyled clear-margins"><!-- widgets -->
-                          
-                            <li class="widget-container widget_nav_menu"><!-- widgets list -->
-                      
-                                  <h1 class="title-widget">Official Links</h1>
-                                  
-                                  <ul >
-                                    <li><a style="color: rgb(227, 247, 117);"" href="https://ibps.in" target="_blank">IBPS</a></li>
-                                      <li><a style="color: rgb(227, 247, 117);" href="https://ibpsonline.ibps.in/sbijascapr21/" target="_blank">SBI Clerk 2021</a></li>
-                                      <li><a style="color: rgb(227, 247, 117);" href="https://www.sbi.co.in/web/careers#lattest" target="_blank "> SBI Career </a></li>
-                                      <li><a style="color: rgb(227, 247, 117);" href="https://bank.sbi/web/careers" target="_blank">Another portal SBI Career </a></li>
-                                      <li><a style="color: rgb(227, 247, 117);" href="https://ssc.nic.in/" target="_blank"> SSC </a></li>
-                                      <li><a style="color: rgb(227, 247, 117);" href="https://ibpsonline.ibps.in/rrbsx23may21/index.php" target="_blank">  IBPS-RRB</a></li>
-                                      <li><a style="color: rgb(227, 247, 117);"  href="#"> Test & Discussion</a></li>
-                                      <li><a style="color: rgb(227, 247, 117);"  href="#">  Fast Track T & D</a></li>
-                                  </ul>
-                      
-                </li>
-                              
-                          </ul>
-                           
-                        
-                  </div><!-- widgets column left end -->
-                  
-                  
-                  
-                  <div class="col-lg-3 col-md-3"><!-- widgets column left -->
-              
-                  <ul class="list-unstyled clear-margins"><!-- widgets -->
-                          
-                            <li class="widget-container widget_nav_menu"><!-- widgets list -->
-                      
-                                  <h1 class="title-widget">Important Links</h1>
-                                  
-                                  <ul>
-                     <li><a  style="color: rgb(227, 247, 117);"  href="https://www4.digialm.com/OnlineAssessment/index.html?167@@M152" target="_blank"> IBPS Test</a></li>
-                                      <li><a style="color: rgb(227, 247, 117);"  href="https://www.ibps.in/online-testing/" target="_blank"> Online Mock Test</a></li>
-                                      <li ><img src="Images/youtube2.png" width="30" height="32" alt=""> <a style="color: rgb(227, 247, 117);" href="https://www.youtube.com/watch?v=IUIUt6d2u58" target="_blank " class="blink two" > Polity Lecture </a></li>
-                                      <li><img src="Images/youtube2.png" width="30" height="32" alt=""><a style="color: rgb(227, 247, 117);"  href="https://www.youtube.com/channel/UCABe2FgVNv2hgBeMu2mySVg">  Current Affairs</a></li>
-                                      <li><a style="color: rgb(227, 247, 117);"  href="https://play.google.com/store/apps/details?id=vocab.lalrajivsscenglish.com.englishquiz" target="_blank">  SSC English Quiz</a></li>
-                                      <li><a style="color: rgb(227, 247, 117);" href="https://play.google.com/store/apps/details?id=com.englishvocabulary" target="_blank"> Vocab App</a></li>
-                                      <li><a style="color: rgb(227, 247, 117);" href="https://play.google.com/store/apps/details?id=com.merriamwebster" target="_blank">  	
-                                        Dictionary - Merriam-Webster</a></li>
-                                      <li><a style="color: rgb(227, 247, 117);"  href="https://www.youtube.com/playlist?list=PLhJT4Hx6LtqrWwyWzBVGv7IjbdrOq12NU" target="_blank"> Word Power Made Easy</a></li>
-                                      
-                                  </ul>
-                      
-                </li>
-                              
-                          </ul>
-                           
-                        
-                  </div><!-- widgets column left end -->
-                  
-                  
-                  
-                  <div class="col-lg-3 col-md-3"><!-- widgets column left -->
-              
-                  <ul class="list-unstyled clear-margins"><!-- widgets -->
-                          
-                            <li class="widget-container widget_nav_menu"><!-- widgets list -->
-                      
-                                  <h1 class="title-widget">Helpful links</h1>
-                                  
-                                  <ul>
-  
-  
-                  <li><a style="color: rgb(227, 247, 117);" href="https://www.adda247.com/ebooks" target="_blank"> ebooks</a></li>
-           <li><a style="color: rgb(227, 247, 117);" href="https://libgen.is/" target="_blank"> Library Genesis</a></li>
-          <li><a style="color: rgb(227, 247, 117);" href="https://t.me/adda247youtube" target="_blank"> free Study Material by Adda247</a></li>
-          <li><a style="color: rgb(227, 247, 117);" href="#"></i> Subject Wise Test Series</a></li>
-          <li><a style="color: rgb(227, 247, 117);" href="#"> Smart Book</a></li>
-          <li><a style="color: rgb(227, 247, 117);" href="#"> Test Centres</a></li>
-                  <li><a style="color: rgb(227, 247, 117);" href="#"> Admission Form</a></li>
-          <li><a style="color: rgb(227, 247, 117);" href="#">  Computer Live Test</a></li>
-  
-                                  </ul>
-                      
-                </li>
-                              
-                          </ul>
-                           
-                        
-                  </div><!-- widgets column left end -->
-                  
-                  
-                  <div class="col-lg-3 col-md-3"><!-- widgets column center -->
-                  
-                     
-                      
-                          <ul class="list-unstyled clear-margins"><!-- widgets -->
-                          
-                            <li class="widget-container widget_recent_news"><!-- widgets list -->
-                      
-                                  <h1 class="title-widget">Contact Details </h1>
-                                  
-                                  <div class="footerp"> 
-                                  
-                                  <h2 class="title-median">Moal-Combined</h2>
-                                  <p><img src="Images/gmail.png" width="25" height="27"><b style="color: rgb(246, 248, 246);"> Email id:</b> <a style="color: rgb(56, 253, 56);"  href="https://mail.google.com" target="_blank">mathhub.sagar@gmail.com</a></p>
-                                  <p style="color: rgb(56, 253, 56);"><img src="Images/phone-call.png" width="25" height="27"> <b style="color: rgb(246, 248, 246);"> Helpline Number </b>
-  
-      <b style="color:#ff8b06;">(10 A.M. to 10 P.M.):</b> +916295980525  </p>
-      
-      <p><b style="color: rgb(251, 255, 251);" > <img src="Images/location.png" width="25" height="27"> Santipur , Nadia , West Bengal</b></p>
-      <p  > <img src="Images/whatsapp.png" width="25" height="27"> <b style="color: ghostwhite;"> Whatsapp Number : </b> <a style="color: rgb(56, 253, 56);" href="https://wa.me/916295980525?text=Hi%20There!" target="_blank"> +916295980525</a>  </p>
-      <!-- <p>This is number </p> -->
-                                  </div>
-                                  
-                                  
-                          </li>
-                            </ul>
-                         </div>
-                  </div>
+  <!--container ends div-->
+
+
   </div>
+  <!-- ends upcoming examination  -->
+
+  <!-- study material starts  -->
+  <div class="container heading">
+
+    <div class="well" style="background-image:linear-gradient(90deg,rgb(33, 2, 172),rgb(161, 12, 136)) ;"><img
+        src="/src/Images/bulb.gif" alt="" width="35" height="37"> Study Materials <img src="/src/Images/bulb.gif" alt=""
+        width="35" height="37"></div>
+
+    <div class="container">
+      
+      <div class="row justify content center " style="margin-top: 5px;"> <!-- study material row div starts-->
+        <div class="col-md-4">
+          <!-- 1st panel -->
+          <div class="panel panel-default shadow">
+            <div class="panel-heading">
+              <h3 class="panel-title">Dictionary - Merriam-Webster</h3>
+            </div>
+            <div class="panel-body">
+
+              <div class="thumbnail">
+                <img
+                  src="https://play-lh.googleusercontent.com/dyiHgxZowtgJLfiCIoZA1V_duEiGo7jD23VNuoNj-yA9nFP6xh3khIKXev6p9z4JEuw=s180-rw"
+                  alt="">
+              </div>
+              <div class="caption">
+                <h4 class="text-center">Download Merriam - Webster</h4>
+              </div>
+              <div style="display: flex; justify-content: center; align-items: center;">
+                <a style="margin-right: 2px;" onclick="mDdown()" class="btn  btn-down " target="_blank"
+                  role="button"><span class="glyphicon glyphicon glyphicon-download" aria-hidden="true"> </span>
+                  Download Now</a>
+
+              </div>
+            </div>
+          </div>
+          <!-- 1st panel ends -->
+        </div>
+        <!-- 2nd study material starts  -->
+        <div class="col-md-4">
+          <!-- 2nd panel -->
+          <div class="panel panel-default shadow">
+            <div class="panel-heading">
+              <h3 class="panel-title">Vocabulary Builder : Vocab 24 </h3>
+            </div>
+            <div class="panel-body">
+
+              <div class="thumbnail">
+                <img
+                  src="https://play-lh.googleusercontent.com/5BQlXGoeDQQlSmbaD0zTe5jP-lDKvLl3ubyVckMF8djnd7fBKyQGAwdpHjMju9rsNeY=s180-rw"
+                  alt="">
+              </div>
+              <div class="caption">
+                <h4 class="text-center">Download Vocab App: Hindu Editorial, Grammar, Dictionary</h4>
+              </div>
+              <div style="display: flex; justify-content: center; align-items: center;">
+                <a style="margin-right: 2px;" onclick="Vocab24()" class="btn  btn-down " target="_blank"
+                  role="button"><span class="glyphicon glyphicon glyphicon-download" aria-hidden="true"> </span>
+                  Download Now</a>
+
+              </div>
+            </div>
+          </div>
+          <!-- 2nd panel ends -->
+        </div>
+        <!-- 2nd study material ends -->
+         <!-- 3 study material starts  -->
+         <div class="col-md-4">
+          <!-- 3 panel -->
+          <div class="panel panel-default shadow">
+            <div class="panel-heading">
+              <h3 class="panel-title">SSC English Quiz </h3>
+            </div>
+            <div class="panel-body">
+
+              <div class="thumbnail">
+                <img
+                  src="https://play-lh.googleusercontent.com/tLbO2_fmrq2E5W8yky0GtKQho4hGkP5WRvFcoxznBcHX0AXcfkJnNZKyj017i81Rvw=s180-rw"
+                  alt="">
+              </div>
+              <div class="caption">
+                <h4 class="text-center">	
+                  SSC English Quiz</h4>
+              </div>
+              <div style="display: flex; justify-content: center; align-items: center;">
+                <a style="margin-right: 2px;" onclick="Vocab24()" class="btn  btn-down " target="_blank"
+                  role="button"><span class="glyphicon glyphicon glyphicon-download" aria-hidden="true"> </span>
+                  Download Now</a>
+
+              </div>
+            </div>
+          </div>
+          <!-- 3 panel ends -->
+        </div>
+        <!-- 3 study material ends -->
+      </div> <!-- study material row div ends-->
+      <div class="row justify content center " style="margin-top: 5px;"> <!-- 2 study material row div starts-->
+        <div class="col-md-4">
+          <!-- 4 panel -->
+          <div class="panel panel-default shadow">
+            <div class="panel-heading">
+              <h3 class="panel-title">English Grammar : Noob to Pro</h3>
+            </div>
+            <div class="panel-body">
+
+              <div class="thumbnail">
+                <iframe  height="240" src="https://www.youtube.com/embed/uSZ4PHORaEQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="caption">
+                <h4 class="text-center">English Grammar For All Competitive Exams | By Ravi Sir</h4>
+              </div>
+              <div style="display: flex; justify-content: center; align-items: center;">
+                <a style="margin-right: 2px;" onclick="rvwatch()" class="btn  btn-down " target="_blank"
+                  role="button">
+                  Watch Now</a>
+
+              </div>
+            </div>
+          </div>
+          <!-- 4 panel ends -->
+        </div>
+        <!-- 5 study material starts  -->
+        <div class="col-md-4">
+          <!-- 5 panel -->
+          <div class="panel panel-default shadow">
+            <div class="panel-heading">
+              <h3 class="panel-title">Word Power Made Easy </h3>
+            </div>
+            <div class="panel-body">
+
+              <div class="thumbnail">
+                <iframe  height="240" src="https://www.youtube.com/embed/rzN3PaRMp-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="caption">
+                <h4 class="text-center">Word Power Made Easy | By Norman Lewis</h4>
+              </div>
+              <div style="display: flex; justify-content: center; align-items: center;">
+                <a style="margin-right: 2px;" onclick="wordPwer()" class="btn  btn-down " target="_blank"
+                  role="button">
+                  Watch Now</a>
+
+              </div>
+            </div>
+          </div>
+          <!-- 5 panel ends -->
+        </div>
+        <!-- 5 study material ends -->
+         <!-- 6 study material starts  -->
+         <div class="col-md-4">
+          <!-- 6 panel -->
+          <div class="panel panel-default shadow">
+            <div class="panel-heading">
+              <h3 class="panel-title">  The Hindu E-Paper </h3>
+            </div>
+            <div class="panel-body">
+
+              <div class="thumbnail">
+                <img
+                  src="https://dailyepaper.in/wp-content/uploads/2020/05/15.png"
+                  alt="">
+              </div>
+              <div class="caption">
+                <h4 class="text-center">	
+                  Download The Hindu E-Paper For Free</h4>
+              </div>
+              <div style="display: flex; justify-content: center; align-items: center;">
+                <a style="margin-right: 2px;" onclick="hindu()" class="btn  btn-down " target="_blank"
+                  role="button"><span class="glyphicon glyphicon glyphicon-download" aria-hidden="true"> </span>
+                  Download Now</a>
+
+              </div>
+            </div>
+          </div>
+          <!-- 6 panel ends -->
+        </div>
+        <!-- 6 study material ends -->
+      </div> <!-- study material row div ends-->
+    </div> <!--Conatiner heading div ends-->
+
+
+  </div>
+  <!-- study material ends  -->
+
+  <footer class="footer1">
+    <div class="container">
+
+      <div class="row">
+        <!-- row -->
+
+        <div class="col-lg-3 col-md-3">
+          <!-- widgets column left -->
+          <ul class="list-unstyled clear-margins">
+            <!-- widgets -->
+
+            <li class="widget-container widget_nav_menu">
+              <!-- widgets list -->
+
+              <h1 class="title-widget">Official Links</h1>
+
+              <ul>
+                <li><a style="color: rgb(227, 247, 117);"" href=" https://ibps.in" target="_blank">IBPS</a></li>
+                <li><a style="color: rgb(227, 247, 117);" href="https://ibpsonline.ibps.in/sbijascapr21/"
+                    target="_blank">SBI Clerk 2021</a></li>
+                <li><a style="color: rgb(227, 247, 117);" href="https://www.sbi.co.in/web/careers#lattest"
+                    target="_blank "> SBI Career </a></li>
+                <li><a style="color: rgb(227, 247, 117);" href="https://bank.sbi/web/careers" target="_blank">Another
+                    portal SBI Career </a></li>
+                <li><a style="color: rgb(227, 247, 117);" href="https://ssc.nic.in/" target="_blank"> SSC </a></li>
+                <li><a style="color: rgb(227, 247, 117);" href="https://ibpsonline.ibps.in/rrbsx23may21/index.php"
+                    target="_blank"> IBPS-RRB</a></li>
+                <li><a style="color: rgb(227, 247, 117);" href="#"> Test & Discussion</a></li>
+                <li><a style="color: rgb(227, 247, 117);" href="#"> Fast Track T & D</a></li>
+              </ul>
+
+            </li>
+
+          </ul>
+
+
+        </div><!-- widgets column left end -->
+
+
+
+        <div class="col-lg-3 col-md-3">
+          <!-- widgets column left -->
+
+          <ul class="list-unstyled clear-margins">
+            <!-- widgets -->
+
+            <li class="widget-container widget_nav_menu">
+              <!-- widgets list -->
+
+              <h1 class="title-widget">Important Links</h1>
+
+              <ul>
+                <li><a style="color: rgb(227, 247, 117);"
+                    href="https://www4.digialm.com/OnlineAssessment/index.html?167@@M152" target="_blank"> IBPS Test</a>
+                </li>
+                <li><a style="color: rgb(227, 247, 117);" href="https://www.ibps.in/online-testing/" target="_blank">
+                    Online Mock Test</a></li>
+                <li><img src="/src/Images/youtube2.png" width="30" height="32" alt=""> <a
+                    style="color: rgb(227, 247, 117);" href="https://www.youtube.com/watch?v=IUIUt6d2u58"
+                    target="_blank " class="blink two"> Polity Lecture </a></li>
+                <li><img src="/src/Images/youtube2.png" width="30" height="32" alt=""><a
+                    style="color: rgb(227, 247, 117);" href="https://www.youtube.com/channel/UCABe2FgVNv2hgBeMu2mySVg">
+                    Current Affairs</a></li>
+                <li><a style="color: rgb(227, 247, 117);"
+                    href="https://play.google.com/store/apps/details?id=vocab.lalrajivsscenglish.com.englishquiz"
+                    target="_blank"> SSC English Quiz</a></li>
+                <li><a style="color: rgb(227, 247, 117);"
+                    href="https://play.google.com/store/apps/details?id=com.englishvocabulary" target="_blank"> Vocab
+                    App</a></li>
+                <li><a style="color: rgb(227, 247, 117);"
+                    href="https://play.google.com/store/apps/details?id=com.merriamwebster" target="_blank">
+                    Dictionary - Merriam-Webster</a></li>
+                <li><a style="color: rgb(227, 247, 117);"
+                    href="https://www.youtube.com/playlist?list=PLhJT4Hx6LtqrWwyWzBVGv7IjbdrOq12NU" target="_blank">
+                    Word Power Made Easy</a></li>
+
+              </ul>
+
+            </li>
+
+          </ul>
+
+
+        </div><!-- widgets column left end -->
+
+
+
+        <div class="col-lg-3 col-md-3">
+          <!-- widgets column left -->
+
+          <ul class="list-unstyled clear-margins">
+            <!-- widgets -->
+
+            <li class="widget-container widget_nav_menu">
+              <!-- widgets list -->
+
+              <h1 class="title-widget">Helpful links</h1>
+
+              <ul>
+
+
+                <li><a style="color: rgb(227, 247, 117);" href="https://www.adda247.com/ebooks" target="_blank">
+                    ebooks</a></li>
+                <li><a style="color: rgb(227, 247, 117);" href="https://libgen.is/" target="_blank"> Library Genesis</a>
+                </li>
+                <li><a style="color: rgb(227, 247, 117);" href="https://t.me/adda247youtube" target="_blank"> free Study
+                    Material by Adda247</a></li>
+                <li><a style="color: rgb(227, 247, 117);" href="#"></i> Subject Wise Test Series</a></li>
+                <li><a style="color: rgb(227, 247, 117);" href="#"> Smart Book</a></li>
+                <li><a style="color: rgb(227, 247, 117);" href="#"> Test Centres</a></li>
+                <li><a style="color: rgb(227, 247, 117);" href="#"> Admission Form</a></li>
+                <li><a style="color: rgb(227, 247, 117);" href="#"> Computer Live Test</a></li>
+
+              </ul>
+
+            </li>
+
+          </ul>
+
+
+        </div><!-- widgets column left end -->
+
+
+        <div class="col-lg-3 col-md-3">
+          <!-- widgets column center -->
+
+
+
+          <ul class="list-unstyled clear-margins">
+            <!-- widgets -->
+
+            <li class="widget-container widget_recent_news">
+              <!-- widgets list -->
+
+              <h1 class="title-widget">Contact Details </h1>
+
+              <div class="footerp">
+
+                <h2 class="title-median">Moal-Combined</h2>
+                <p><img src="/src/Images/gmail.png" width="25" height="27"><b style="color: rgb(246, 248, 246);"> Email
+                    id:</b> <a style="color: rgb(56, 253, 56);" href="https://mail.google.com"
+                    target="_blank">mathhub.sagar@gmail.com</a></p>
+                <p style="color: rgb(56, 253, 56);"><img src="/src/Images/phone-call.png" width="25" height="27"> <b
+                    style="color: rgb(246, 248, 246);"> Helpline Number </b>
+
+                  <b style="color:#ff8b06;">(10 A.M. to 10 P.M.):</b> +916295980525
+                </p>
+
+                <p><b style="color: rgb(251, 255, 251);"> <img src="/src/Images/location.png" width="25" height="27">
+                    Santipur , Nadia , West Bengal</b></p>
+                <p> <img src="/src/Images/whatsapp.png" width="25" height="27"> <b style="color: ghostwhite;"> Whatsapp
+                    Number : </b> <a style="color: rgb(56, 253, 56);" href="https://wa.me/916295980525?text=Hi%20There!"
+                    target="_blank"> +916295980525</a> </p>
+                <!-- <p>This is number </p> -->
+              </div>
+
+
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </footer>
   <!--header-->
-  
+
   <div class="footer-bottom">
-  
+
     <div class="container">
-  
+
       <div class="row">
-  
+
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-  
+
           <div class="copyright">
-  
+
             © 2021 , MathHub-Combined , All rights reserved
-  
+
           </div>
-  
+
         </div>
-  
+
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-  
+
           <div class="design">
-  
-             <a href="https://nandysagar.in">Frontend Developer </a> |  <a target="_blank" href="https://developer.nandysagar.in"> Designed & Developed by Sagar Nandy </a>
-  
+
+            <a href="https://nandysagar.in">Frontend Developer </a> | <a target="_blank"
+              href="https://combined.nandysagar.in"> Designed & Developed by Sagar Nandy </a>
+
           </div>
-  
+
         </div>
-  
+
       </div>
-  
+
     </div>
-  
+
   </div>
-     <script>
-        var preloader = document.getElementById('loading');
-       function Sagar(){
-         preloader.style.display='none';
-       }
-      
-      </script>                                 
+  <script type="text/javascript" src="https://nandysagar.in/combined/CSS/govtjobsupdate.js"></script>
   <script>
-    $(window).on('load',function(){
+
+    $(window).on('load', function () {
       var delayMs = 1000; // delay in milliseconds
-  
-      setTimeout(function(){
-          $('#myModal').modal('show');
+
+      setTimeout(function () {
+        $('#myModal').modal('show');
       }, delayMs);
-  });   
+    });   
   </script>
+  <script>
+    var preloader = document.getElementById('loading');
+    function Sagar() {
+      preloader.style.display = 'none';
+    }
+
+  </script>
+
+
 </body>
+
 </html>
