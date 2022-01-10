@@ -84,7 +84,7 @@ body{
     position: fixed;
     width:100%;
     height:100vh;
-    background:#fff  url('/Images/load.gif') no-repeat   center;
+    background:#fff  url('https://web.personal.nandysagar.in/Images_Video/Loading.gif') no-repeat   center;
     z-index: 99999;
 }
 .menubar{
