@@ -1,28 +1,38 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Arial', serif;
 }
 body{
   background-image: url('https://nandysagar.in/combined/Images/bg4.jpg'); 
+  /* filter: blur(8px);
+  -webkit-filter: blur(8px); */
     
-}
-#loading{
-    position: fixed;
-    width:100%;
-    height: 100vh;
-    background:#fff  url('/combined/Images/load.gif') no-repeat   center;
-    z-index: 99999;
 }
 
 .border{
-   border: 5px solid red;
-  background-color: rgb(217, 241, 185);
+   /* border: 5px solid rgb(245, 7, 173); */
+  background-color: rgb(248, 250, 246);
   padding-left: 5px;
 }
 .heading{
     padding-top: 5px;
     
+}
+.blink_me {
+    animation: blinker 1s linear infinite;
+}
+@keyframes blinker {
+    80% {
+        background: rgb(2, 232, 248);
+    }
+}
+        	.popupbox {
+	position:fixed;
+    background:rgba(0,0,0,0.5);
+    top:0;right:0;left:0;bottom:0;
+    padding:30px;
+    z-index:1010101010101;
 }
 .well{
     background-color: rgb(10, 124, 153);
@@ -30,6 +40,33 @@ body{
     font-size:25px;
     text-align: center;
     font-family: Georgia, 'Times New Roman';
+}
+.blink_me2 {
+    color:white;
+    animation: blinker 2s linear infinite;
+    background-color: tomato;
+}
+
+@keyframes blinker {
+  0% {
+    background-color: green;
+  }
+  50% {
+    background-color: black;
+  }
+  100% {
+    background-color:  red;
+  }
+}
+@media print {
+    .onprinthide {
+        display:none;
+    }
+}
+.colorred {
+    color:red;
+    padding: 5;
+    border-radius: 5px;
 }
 .logo{
     background-color: rgb(251, 254, 255);
@@ -43,8 +80,17 @@ body{
     
     padding-left: 5px;
 }
+#loading{
+    position: fixed;
+    width:100%;
+    height:100vh;
+    background:#fff  url('/Images/load.gif') no-repeat   center;
+    z-index: 99999;
+}
 .menubar{
-    background-image: linear-gradient(-90deg, rgb(83, 25, 7), rgb(6, 109, 57),rgb(11,12,14));
+    background-image: linear-gradient(-90deg,rgb(245, 43, 12), rgb(177, 20, 169),rgb(245, 43, 12));
+    border:none;
+   
    
 }
 .navbar-brand,.dropdown{
@@ -52,10 +98,6 @@ body{
     font-size: 18px;
     margin:3px;
     font-weight: 500;
-}
-.dropdown:hover{
-    font-weight: 600;
-    border-bottom:2px solid yellow;
 }
 .menu,.dropdown-toggle{
     color: #fff !important;
@@ -65,19 +107,23 @@ body{
 }
 .menu:hover{
     
-    font-weight: 600;
+    font-weight:bold;
     border-bottom:2px solid yellow;
     
-    
-
+   
 }
+.dropdown:hover{
+    font-weight: 600;
+    border-bottom:2px solid yellow;
+}
+
 .navbar-nav{
     margin-right: 20px;
   
 }
 .footer1 {
     /* background: #fff url("/src/Images/bg.jpg") repeat scroll left top; */
-    background-image: linear-gradient(90deg,rgb(139, 50, 8),rgb(8, 39, 139));
+    background-image: linear-gradient(90deg,rgb(245, 43, 12), rgb(177, 20, 169),rgb(245, 43, 12));
 	padding-top: 40px;
 	padding-right: 0;
 	padding-bottom: 20px;
@@ -104,7 +150,7 @@ body{
 }
 
 .title-widget::before {
-    background-color: #eae744;
+    background-color: #0e2c1d;
     content: "";
     height: 22px;
     left: 0px;
@@ -204,17 +250,24 @@ body{
     color:#fff;
     font-weight: 600;
 }   
+.btn-down:active{
+    border-radius: 20px; 
+    background-image: linear-gradient(-90deg,rgb(185, 3, 139),rgb(89, 102, 241));
+    color: cornsilk;
+    font-weight: 500;
+    font-size: 18px;
+}
 .btn-down{
     border-radius: 20px; 
-    background-color: rgb(45, 137, 153);
+    background-image: linear-gradient(-90deg,rgb(185, 3, 139),rgb(89, 102, 241));
     color: cornsilk;
     font-weight: 500;
     font-size: 18px;
 }
 .btn-down:hover{
-    background-color: rgb(7, 71, 90);
+    box-shadow: 0 6px 10px 0 rgb(177, 20, 169), 0 6px 20px 0 rgb(0, 0, 0, 0.19);
     color:#fff;
-    font-weight: 600;
+    
 }   
 .payment:hover{
     background-color: #0d8567;
@@ -254,13 +307,20 @@ body{
 .blink 
 	{        
 		 animation: blinker 1.5s linear infinite;       
-		   /*color: #dd2121;  */
-			/* font-size: 30x; */    
-				/* font-weight: bold; */    
-					/* font-family: sans-serif; */
-}  
-						 @keyframes blinker {         10% {           opacity: 0;         }       }
-             .blink-one {         animation: blinker-one 1s linear infinite;       }   
+		   /* color: #dd2121;   */
+			/* font-size: 30x;      */
+				/* font-weight: bold;      */
+					/* font-family: sans-serif;  */
+                      }  
+						 @keyframes blinker {         
+                             10%
+                              {          
+                                   opacity: 0;         
+                                }      
+                             }
+             .blink-one {        
+                  animation: blinker-one 2s linear infinite;    
+                   }   
 							   @keyframes blinker-one {         0% {           opacity: 0;         }       }       
 							   .blink-two {         animation: blinker-two 1.4s linear infinite;       }       @keyframes blinker-two {         10% {           opacity: 0;         }       } 
 
@@ -269,3 +329,95 @@ body{
 /************************************************************
 *************************Footer******************************
 *************************************************************/
+.noti-text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px; 
+    color: blue;
+    cursor: pointer;
+    
+}
+.noti-text a {
+    color: blue;
+}
+.noti-text span{
+    font-size: 10px;
+   
+}
+li a{
+    
+}
+.label{
+   
+}
+div.shadow{
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.img-thumbnail{
+    height: 20rem;
+    width: 260px;
+    border-radius: 20px 0px;
+    border:1px solid black
+}
+.panel-default{
+    transition: transform 0.2s ease-in-out;
+    margin-bottom: 1.5em;
+}
+    .panel-default:hover{
+        /* border-radius: 12px 2px; */
+        transform: scale(1.1) ;
+        box-shadow: 0 6px 10px 0 rgba(22, 22, 26, 0.18) 0 4px 12px 0 rgba(22, 22, 26, 0.18);
+       
+    }
+.panel-default .panel-heading{
+   background-image: linear-gradient(-90deg,rgb(156, 250, 218),rgb(87, 245, 245));
+   color:black;
+   /* border-radius: 12px 2px; */
+   
+}
+.panel-default .panel-heading .panel-title {
+    font-weight: 600;
+    
+}
+.panel-default .panel-heading .panel-title a  {
+    color: rgb(1, 1, 175);
+    cursor: pointer;
+    
+}
+.panel-default .panel-body h4  {
+    color: rgb(175, 1, 88);
+    font-weight: 600;
+    padding: 10px;
+    
+}
+.panel-default .panel-body .well-sm a{
+    color: blue;
+    font-weight: 600;
+}
+.thumbnail{
+    /* border:2px solid black; */
+    border-radius: 12px 2px;
+    border:none;
+    
+}
+.thumbnail img{
+    height: 20rem;
+}
+.btn{
+    border-radius:20px ;
+}
+.fee{
+    color:rgb(5, 104, 46);
+    font-weight: bold;
+}
+.fee-head{
+    color:indigo;
+    font-weight: bold;
+}
+.swal-overlay {
+    
+    background-color: rgba(8, 6, 136, 0.45);
+    /* filter: blur(8px); */
+  /* -webkit-filter: blur(8px); */
+  }
