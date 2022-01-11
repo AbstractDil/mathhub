@@ -378,7 +378,11 @@ div.shadow{
 }
 .panel-default .panel-heading .panel-title {
     font-weight: 600;
+	font-size: 18px;
     
+}
+.panel-default .panel-body .well-sm{
+    font-size: 16px;
 }
 .panel-default .panel-heading .panel-title a  {
     color: rgb(1, 1, 175);
@@ -406,6 +410,7 @@ div.shadow{
 }
 .btn{
     border-radius:20px ;
+	font-size: 17px;
 }
 .fee{
     color:rgb(5, 104, 46);
