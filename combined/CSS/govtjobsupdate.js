@@ -151,6 +151,19 @@ function wordPwer(){
             }
         }
         
+ function eBook(){
+            const sscconfirmation = confirm (" ** Attention : If you don't have password, you cann't access this content. \n\n ** Password Hint : Contact the owner of this site.");
+            if(sscconfirmation == true)
+            {
+                window.open("https://nandysagar.in/combined/CombinedBooks/","_blank  ", "toolbar=yes,scrollbars=yes,resizable=yes,left=150,width=1080,height=720");
+                return true;
+            }
+            else{
+               swal("Redirection Failed","Because you clicked 'Cancel' button.","error");
+                return false;
+            }
+        }
+
 
 function about(){
     swal( "About me" , "   Hi dear , Myself Sagar Nandy. I am a student of mathematics honous. I am learning web development as my interest. I am just new to the web development and learn basics of web development. I love to make websites ❤. If you want to know more about me then contact me by filling out the contact form with valid data. \n\n 'Dhoke Ne Tere Haame Coding Sikha Diya' - Sagar Nandy." );
