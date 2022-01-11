@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
+    <title>Download Combined Books</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://nandysagar.in/combined/CSS/main.css">
+  <!-- <link rel="stylesheet" href="https://nandysagar.in/css/responsive.css"> -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<style>
+    .btn-down:visited{
+        color: yellow;
+    }
+   
+</style>
+</head>
+
+
+
+
+<body onload="Sagar()">
+    <div id="loading"></div>
+    <nav class="navbar navbar-default menubar navbar-inverse ">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header ">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+    
+            <a class="navbar-brand" href="https://nandysagar.in/combined">
+              <p
+                style="font-weight: 400; font-size:x-large larger;padding-left: 5px; margin-left: 5px; font-family: Georgia, 'Times New Roman', Times, serif;">
+                Math<span style="color:rgb(251, 255, 0);">Hub</span> - Combined</p>
+            </a>
+          </div>
+    
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    
+    
+            <ul class="nav navbar-nav navbar-right">
+              <li><a class="menu " href="#">Home</a></li>
+              <li><a class="menu" style="cursor: pointer;" onclick="erroralrt()">Syllabus</a></li>
+              <li><a class="menu" href="https://nandysagar.in/CombinedBooks.html" target="_blank">E-Books</a></li>
+              <li><a class="menu " onclick="about()" style="cursor: pointer;">About Us</a></li>
+              <li><a class="menu" href="https://nandysagar.in/Contact/contact_with_us.html" target="_blank">Contact Us</a>
+              </li>
+    
+    
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+
+    
+        <section  style="display: flex; align-items: center; justify-content: center; padding-bottom: 5px; margin-top: 15px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-sm-12">
+                        <div class="panel panel-primary" style="background-color: rgb(243, 232, 215);">
+                            <div class="panel-heading " style="background-image:linear-gradient(90deg,rgb(33, 2, 172),rgb(161, 12, 136)) ; display: flex; justify-content: center; align-items: center;">
+                                <h3 class="panel-title  " style="font-size: 17px;"> <span class="glyphicon glyphicon-bullhorn"> </span> Books For Competitive
+                                    Examination </h3>
+
+                            </div>
+                            <div class="panel-body" style="height: 450;">
+
+                                <table style="background-color: rgb(232, 185, 247);"
+                                    class="table">
+                                    <thead>
+
+                                        <tr>
+                                            <th style="background-color: black; border:1px solid red; color: white;">Book Name</th>
+                                            <th  style="background-color: black; border:1px solid red; color: white;">Download</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody style="border:2px solid rgb(228, 13, 13); margin:5px; padding:5px; ">
+
+                                        <tr>
+                                            <th>Indian Polity by M Laxmikanth</th>
+                                            <td><a class="btn  btn-down"
+                                                    href="https://nandysagar.in/Combined_Books/Indian_Polity_by_M_Laxmikanth.pdf"
+                                                    target="_blank"  role="button"><img src="https://nandysagar.in/images/download.png" alt=""> Download</a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th>Objective General English Book by S.P. Bakshi</th>
+                                            <td><a class="btn btn-down "
+                                       href="https://nandysagar.in/Combined_Books/Objective General English Book.pdf"
+                                                    target="_blank" role="button"><img src="https://nandysagar.in/images/download.png" alt=""> Download</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>English Plinth to Paramount by Neetu Singh</th>
+                                            <td><a class="btn  btn-down"
+                                                    href="https://nandysagar.in/Combined_Books/English Plinth to Paramount by Neetu Singh.pdf  SSC CGL   UPSC - IAS.pdf"
+                                                    target="_blank" role="button"><img src="https://nandysagar.in/images/download.png" alt=""> Download</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>R.S. Aggarwal Quantitative aptitude</th>
+                                            <td><a class="btn btn-md btn-down mr-2 mb-2"
+                                                    href="https://nandysagar.in/Combined_Books/R.S. Aggarwal Quantitative aptitude.pdf"
+                                                    target="_blank" role="button"><img src="https://nandysagar.in/images/download.png" alt=""> Download</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>Reasoning RS AGARWAL </th>
+                                            <td><a class="btn btn-md btn-down "
+                                                    href="https://nandysagar.in/Combined_Books/Reasoning RS AGARWAL EXAMISTHAN.pdf"
+                                                    target="_blank" role="button"><img src="https://nandysagar.in/images/download.png" alt=""> Download</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>M. Laxmikant - Objective Indian Polity </th>
+                                            <td><a class="btn  btn-down"
+                                                    href="https://nandysagar.in/Combined_Books/M. Laxmikant - Objective Indian Polity (2015, McGraw Hill Education) - libgen.lc.pdf"
+                                                    target="_blank" role="button"><img src="https://nandysagar.in/images/download.png" alt=""> Download</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>Disha Computer Knowledge </th>
+                                            <td><a class="btn  btn-down"
+                                                    href="https://nandysagar.in/Combined_Books/Disha Computer Knowledge.pdf"
+                                                    target="_blank" role="button"><img src="https://nandysagar.in/images/download.png" alt=""> Download</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>Objective-Computer-Awareness-by-Arihant </th>
+                                            <td><a class="btn  btn-down"
+                                                    href="https://nandysagar.in/Combined_Books/Objective-Computer-Awareness-by-Arihant.pdf"
+                                                    target="_blank" role="button"><img src="https://nandysagar.in/images/download.png" alt=""> Download</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>Download Economics Notes - Sougata Bagchi</th>
+                                            <td><a class="btn  btn-down"
+                                                    href="https://ln5.sync.com/dl/cd6a83720/x2g83upz-pimuwuwk-cpmnzzcy-7uaneic2"
+                                                    target="_blank"><img src="https://nandysagar.in/images/download.png" alt=""> Download</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>Fast Tract Objective Arithmetic By Rajesh Verma</th>
+                                            <td><a class="btn  btn-down"
+                                                    href="https://www.mediafire.com/file/03v0hkap84bljna/Fastrack+Objective+Mathematics.pdf/file"   onclick="alert('You are redirected you to mediafire page.')"
+                                                    target="_blank"><img src="https://nandysagar.in/images/download.png" alt=""> Download</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>SSC Mathematics By Rakesh Yadav</th>
+                                            <td><a class="btn  btn-down"
+                                                    href=" https://www.mediafire.com/file/amcla6zsz6rpqg5/2017_Rakesh_Yadav_7300_PDF_Download_SSC_MATHEMATICS_UserUpload-+By+EasyEngineering.net.pdf/file"      onclick="alert('You are redirected you to mediafire page.')"
+                                                    target="_blank"><img src="https://nandysagar.in/images/download.png" alt=""> Download</a>
+                                            </td>
+                                        </tr>
+                                    </tr>
+                                    <tr>
+                                        <th>Paid Quantitative Aptitude Cracker 2019 Adda247</th>
+                                        <td><a class="btn  btn-down"  onclick="alert('You are redirected you to mediafire page.')"
+                                                href="https://www.mediafire.com/file/9t5n302zis1b3jv/Paid+Quantitative+Aptitude+Cracker+2019+Adda247.pdf/file "
+                                                target="_blank"><img src="https://nandysagar.in/images/download.png" alt=""> Download</a>
+                                        </td>
+                                    </tr>
+
+
+
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 home-imp-date">
+                        <div class="row">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer1">
+            <div class="container">
+        
+              <div class="row">
+                <!-- row -->
+        
+                <div class="col-lg-3 col-md-3">
+                  <!-- widgets column left -->
+                  <ul class="list-unstyled clear-margins">
+                    <!-- widgets -->
+        
+                    <li class="widget-container widget_nav_menu">
+                      <!-- widgets list -->
+        
+                      <h1 class="title-widget">Official Links</h1>
+        
+                      <ul>
+                        <li><a style="color: rgb(227, 247, 117);"" href=" https://ibps.in" target="_blank">IBPS</a></li>
+                        <li><a style="color: rgb(227, 247, 117);" href="https://ibpsonline.ibps.in/sbijascapr21/"
+                            target="_blank">SBI Clerk 2021</a></li>
+                        <li><a style="color: rgb(227, 247, 117);" href="https://www.sbi.co.in/web/careers#lattest"
+                            target="_blank "> SBI Career </a></li>
+                        <li><a style="color: rgb(227, 247, 117);" href="https://bank.sbi/web/careers" target="_blank">Another
+                            portal SBI Career </a></li>
+                        <li><a style="color: rgb(227, 247, 117);" href="https://ssc.nic.in/" target="_blank"> SSC </a></li>
+                        <li><a style="color: rgb(227, 247, 117);" href="https://ibpsonline.ibps.in/rrbsx23may21/index.php"
+                            target="_blank"> IBPS-RRB</a></li>
+                        <li><a style="color: rgb(227, 247, 117);" href="#"> Test & Discussion</a></li>
+                        <li><a style="color: rgb(227, 247, 117);" href="#"> Fast Track T & D</a></li>
+                      </ul>
+        
+                    </li>
+        
+                  </ul>
+        
+        
+                </div><!-- widgets column left end -->
+        
+        
+        
+                <div class="col-lg-3 col-md-3">
+                  <!-- widgets column left -->
+        
+                  <ul class="list-unstyled clear-margins">
+                    <!-- widgets -->
+        
+                    <li class="widget-container widget_nav_menu">
+                      <!-- widgets list -->
+        
+                      <h1 class="title-widget">Important Links</h1>
+        
+                      <ul>
+                        <li><a style="color: rgb(227, 247, 117);"
+                            href="https://www4.digialm.com/OnlineAssessment/index.html?167@@M152" target="_blank"> IBPS Test</a>
+                        </li>
+                        <li><a style="color: rgb(227, 247, 117);" href="https://www.ibps.in/online-testing/" target="_blank">
+                            Online Mock Test</a></li>
+                        <li><img src="https://nandysagar.in/combined/Images/youtube2.png" width="30" height="32" alt=""> <a
+                            style="color: rgb(227, 247, 117);" href="https://www.youtube.com/watch?v=IUIUt6d2u58"
+                            target="_blank " class="blink two"> Polity Lecture </a></li>
+                        <li><img src="https://nandysagar.in/combined/Images/youtube2.png" width="30" height="32" alt=""><a
+                            style="color: rgb(227, 247, 117);" href="https://www.youtube.com/channel/UCABe2FgVNv2hgBeMu2mySVg">
+                            Current Affairs</a></li>
+                        <li><a style="color: rgb(227, 247, 117);"
+                            href="https://play.google.com/store/apps/details?id=vocab.lalrajivsscenglish.com.englishquiz"
+                            target="_blank"> SSC English Quiz</a></li>
+                        <li><a style="color: rgb(227, 247, 117);"
+                            href="https://play.google.com/store/apps/details?id=com.englishvocabulary" target="_blank"> Vocab
+                            App</a></li>
+                        <li><a style="color: rgb(227, 247, 117);"
+                            href="https://play.google.com/store/apps/details?id=com.merriamwebster" target="_blank">
+                            Dictionary - Merriam-Webster</a></li>
+                        <li><a style="color: rgb(227, 247, 117);"
+                            href="https://www.youtube.com/playlist?list=PLhJT4Hx6LtqrWwyWzBVGv7IjbdrOq12NU" target="_blank">
+                            Word Power Made Easy</a></li>
+        
+                      </ul>
+        
+                    </li>
+        
+                  </ul>
+        
+        
+                </div><!-- widgets column left end -->
+        
+        
+        
+                <div class="col-lg-3 col-md-3">
+                  <!-- widgets column left -->
+        
+                  <ul class="list-unstyled clear-margins">
+                    <!-- widgets -->
+        
+                    <li class="widget-container widget_nav_menu">
+                      <!-- widgets list -->
+        
+                      <h1 class="title-widget">Helpful links</h1>
+        
+                      <ul>
+        
+        
+                        <li><a style="color: rgb(227, 247, 117);" href="https://www.adda247.com/ebooks" target="_blank">
+                            ebooks</a></li>
+                        <li><a style="color: rgb(227, 247, 117);" href="https://libgen.is/" target="_blank"> Library Genesis</a>
+                        </li>
+                        <li><a style="color: rgb(227, 247, 117);" href="https://t.me/adda247youtube" target="_blank"> free Study
+                            Material by Adda247</a></li>
+                        <li><a style="color: rgb(227, 247, 117);" href="#"></i> Subject Wise Test Series</a></li>
+                        <li><a style="color: rgb(227, 247, 117);" href="#"> Smart Book</a></li>
+                        <li><a style="color: rgb(227, 247, 117);" href="#"> Test Centres</a></li>
+                        <li><a style="color: rgb(227, 247, 117);" href="#"> Admission Form</a></li>
+                        <li><a style="color: rgb(227, 247, 117);" href="#"> Computer Live Test</a></li>
+        
+                      </ul>
+        
+                    </li>
+        
+                  </ul>
+        
+        
+                </div><!-- widgets column left end -->
+        
+        
+                <div class="col-lg-3 col-md-3">
+                  <!-- widgets column center -->
+        
+        
+        
+                  <ul class="list-unstyled clear-margins">
+                    <!-- widgets -->
+        
+                    <li class="widget-container widget_recent_news">
+                      <!-- widgets list -->
+        
+                      <h1 class="title-widget">Contact Details </h1>
+        
+                      <div class="footerp">
+        
+                        <h2 class="title-median">Moal-Combined</h2>
+                        <p><img src="https://nandysagar.in/combined/Images/gmail.png" width="25" height="27"><b
+                            style="color: rgb(246, 248, 246);"> Email
+                            id:</b> <a style="color: rgb(56, 253, 56);" href="https://mail.google.com"
+                            target="_blank">mathhub.sagar@gmail.com</a></p>
+                        <p style="color: rgb(56, 253, 56);"><img src="https://nandysagar.in/combined/Images/phone-call.png"
+                            width="25" height="27"> <b style="color: rgb(246, 248, 246);"> Helpline Number </b>
+        
+                          <b style="color:#ff8b06;">(10 A.M. to 10 P.M.):</b> +916295980525
+                        </p>
+        
+                        <p><b style="color: rgb(251, 255, 251);"> <img src="https://nandysagar.in/combined/Images/location.png"
+                              width="25" height="27">
+                            Santipur , Nadia , West Bengal</b></p>
+                        <p> <img src="https://nandysagar.in/combined/Images/whatsapp.png" width="25" height="27"> <b
+                            style="color: ghostwhite;"> Whatsapp
+                            Number : </b> <a style="color: rgb(56, 253, 56);" href="https://wa.me/916295980525?text=Hi%20There!"
+                            target="_blank"> +916295980525</a> </p>
+                        <!-- <p>This is number </p> -->
+                      </div>
+        
+        
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </footer>
+          <!--header-->
+        
+          <div class="footer-bottom">
+        
+            <div class="container">
+        
+              <div class="row">
+        
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        
+                  <div class="copyright">
+        
+                    © 2021 , MathHub-Combined , All rights reserved
+        
+                  </div>
+        
+                </div>
+        
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        
+                  <div class="design">
+        
+                    <a href="https://nandysagar.in">Frontend Developer </a> | <a target="_blank"
+                      href="https://nandysagar.in/combined"> Designed & Developed by Sagar Nandy </a>
+        
+                  </div>
+        
+                </div>
+        
+              </div>
+        
+            </div>
+        
+          </div>
+    
+
+
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+    <script type="text/javascript" src="https://nandysagar.in/combined/CSS/govtjobsupdate.js"></script>
+    <script>
+        var preloader = document.getElementById('loading');
+        function Sagar() {
+          preloader.style.display = 'none';
+        }
+    
+      </script>
+</body>
+
+</html>
