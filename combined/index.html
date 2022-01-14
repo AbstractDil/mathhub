@@ -15,7 +15,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,500&display=swap');
   </style>
 
-  <script type="text/javascript" src="https://nandysagar.in/combined/CSS/disable.js"></script> 
+   <script type="text/javascript" src="https://nandysagar.in/combined/CSS/disable.js"></script>
 
 </head>
 
@@ -47,8 +47,8 @@
 
         <ul class="nav navbar-nav navbar-right">
           <li><a class="menu " href="#">Home</a></li>
-          <li><a class="menu"  style="cursor: pointer;" onclick="erroralrt()">Syllabus</a></li>
-          <li><a class="menu" style="cursor: pointer;" onclick="eBook()" target="_blank">E-Books</a></li>
+          <li><a class="menu" style="cursor: pointer;" onclick="erroralrt()">Syllabus</a></li>
+          <li><a class="menu" href="https://nandysagar.in/CombinedBooks.html" target="_blank">E-Books</a></li>
           <li><a class="menu " onclick="about()" style="cursor: pointer;">About Us</a></li>
           <li><a class="menu" href="https://nandysagar.in/Contact/contact_with_us.html" target="_blank">Contact Us</a>
           </li>
@@ -60,7 +60,7 @@
   </nav>
 
   <!-- Show Modal -->
-  <div class="container">
+  <div class="container" id="book">
     <!-- Modal -->
     <div class="modal fade" id="myModal" role="dialog">
       <div class="modal-dialog modal-md ">
@@ -73,12 +73,13 @@
           </div>
           <div class="modal-body " style="margin-left: 20px; ">
             <ol count="1">
-              <li class="noti-text"><a onclick="JCI()" target="_blank"><img
+              <!-- <li class="noti-text"><a onclick="JCI()" target="_blank"><img
                     src="https://nandysagar.in/combined/Images/new_gif.gif" width="25" height="26"> Apply JCI for
                   recruitment in non-executive cadre.
-                </a> </li>
-              <li class="noti-text"><a onclick="SscCgle()" target="_blank"><img
-                    src="https://nandysagar.in/combined/Images/new_gif.gif" width="25" height="26"> Apply SSC - CGL
+                </a> </li> -->
+              <li class="noti-text"><a onclick="SscCgle()" target="_blank" ><img
+                    src="https://nandysagar.in/combined/Images/new_gif.gif" width="25" height="26"> 
+                    Apply SSC - CGL
                   2021-2022.
                 </a> </li>
 
@@ -98,31 +99,31 @@
   <!-- End Modal -->
   <div class="container  heading" style="background-image: linear-gradient(90deg,rgb(150, 6, 28),rgb(14, 44, 180));">
 
-    <div class="col-md-3 " style="color: wheat; font-size:larger;"><img src="https://nandysagar.in/combined/Images/bulb.gif" alt="" width="30"
-        height="32">Latest News <img src="https://nandysagar.in/combined/Images/next.png" alt="" width="25" height="26">
+    <div class="col-md-3 " style="color: wheat; font-size:larger;"><img
+        src="https://nandysagar.in/combined/Images/bulb.gif" alt="" width="30" height="32">Latest News <img
+        src="https://nandysagar.in/combined/Images/next.png" alt="" width="25" height="26">
 
     </div>
     <div class="col-sm-9 ">
       <marquee class="marquee" onmouseover="this.stop()" onmouseout="this.start()">
 
-        <a class="" style="color: white;" href="https://nandysagar.in/combined"><img 
-          src="https://nandysagar.in/combined/Images/new_gif.gif" alt=""
-            width="40" height="42"><strong style="font-family: 'Times New Roman'; font-size: 18px;">Welcome to MathHub
+        <a class="" style="color: white;" href="https://nandysagar.in/combined"><img
+            src="https://nandysagar.in/combined/Images/new_gif.gif" alt="" width="40" height="42"><strong
+            style="font-family: 'Times New Roman'; font-size: 18px;">Welcome to MathHub
             Combined Portal </strong>
         </a>
         <span style="color:#fff;">&nbsp;||&nbsp;&nbsp;</span>
-        <a style="color: white;"><img src="https://nandysagar.in/combined/Images/new_gif.gif" alt="" width="40" height="42"><strong
-            style="font-family: 'Times New Roman'; font-size: 18px;">ESIC Recruitment of UDC , STENO and MTS 2022
+        <a style="color: white;"><img src="https://nandysagar.in/combined/Images/new_gif.gif" alt="" width="40"
+            height="42"><strong style="font-family: 'Times New Roman'; font-size: 18px;">ESIC Recruitment of UDC , STENO
+            and MTS 2022
             Notification Out. </strong>
         </a>
         <span style="color:#fff;">&nbsp;||&nbsp;&nbsp;</span>
-        <a style="color: white;"><img src="https://nandysagar.in/combined/Images/new_gif.gif" alt="" width="40" height="42"><strong
-            style="font-family: 'Times New Roman'; font-size: 18px;">JCI Recruitment in non-executive cadre 2021-2022
-            Notification Out. </strong>
-        </a>
+        
         <span style="color:#fff;">&nbsp;||&nbsp;&nbsp;</span>
-        <a style="color: white;"><img src="https://nandysagar.in/combined/Images/new_gif.gif" alt="" width="40" height="42"><strong
-            style="font-family: 'Times New Roman'; font-size: 18px;"> SSC-CGLE 2021-22 Notification Out.</strong>
+        <a style="color: white;"><img src="https://nandysagar.in/combined/Images/new_gif.gif" alt="" width="40"
+            height="42"><strong style="font-family: 'Times New Roman'; font-size: 18px;"> SSC-CGLE 2021-22 Notification
+            Out.</strong>
         </a>
         <span style="color:#fff;">&nbsp;||&nbsp;&nbsp;</span>
 
@@ -138,8 +139,8 @@
         <div class="panel panel-primary shadow">
           <div class="panel-heading"
             style="background-image:linear-gradient(-90deg,rgb(75, 67, 74),rgb(245, 43, 12)) ; font-size:x-large;">
-            <img src="https://nandysagar.in/combined/Images/moving star.gif" width="30" height="32" alt=""> Our Featured Photos <img
-              src="https://nandysagar.in/combined/Images/moving star.gif" width="30" height="32" alt="">
+            <img src="https://nandysagar.in/combined/Images/moving star.gif" width="30" height="32" alt=""> Our Featured
+            Photos <img src="https://nandysagar.in/combined/Images/moving star.gif" width="30" height="32" alt="">
           </div>
 
           <div class="panel-body" style="background-image: url('/src/Images/bg.jpg');">
@@ -190,21 +191,26 @@
       <div class="col-md-5">
         <div class="panel-group shadow">
           <div class="panel panel-primary" style="height:368px;">
-            <div class="panel-heading" style="font-size: x-large;"><img src="https://nandysagar.in/combined/Images/Siren.gif" alt="" width="35"
-                height="38"> Jobs Updates <img src="https://nandysagar.in/combined/Images/Siren.gif" alt="" width="35" height="38"> </div>
+            <div class="panel-heading" style="font-size: x-large;"><img
+                src="https://nandysagar.in/combined/Images/Siren.gif" alt="" width="35" height="38"> Jobs Updates <img
+                src="https://nandysagar.in/combined/Images/Siren.gif" alt="" width="35" height="38"> </div>
             <div class="panel-body">
               <marquee scrolldelay="250" onmouseover="stop()" onmouseout="start()" direction="up" height="232">
                 <ul class="noti-text">
 
 
                   <li><img src="https://nandysagar.in//combined/Images/rgt.gif" alt="" width="30" height="32 "> <a
-                      style="color: rgb(206, 7, 7); font-size:larger" onclick="SscCgle()"> Apply SSC CGLE 2021-2022
+                      style="color: rgb(206, 7, 7); font-size:18px" onclick="SscCgle()"> Apply SSC CGLE 2021-2022
                       <img src="https://nandysagar.in/images/10.gif" alt=""></a></li> <br>
-                  <li><img src="https://nandysagar.in/combined/Images/rgt.gif" alt="" width="30" height="32 "> <a
+                  <!-- <li>
+                    <img src="https://nandysagar.in/combined/Images/rgt.gif" alt="" width="30" height="32 "> 
+                    <a
                       style="color: rgb(206, 7, 7); font-size:larger" href="https://www.jutecorp.in/recruitment/"
                       onclick="alert('This link redirected you to the recruitment page of JCI.')" target="_blank">JCI
-                      Recruitment in non-executive cadre 2021-2022 <img
-                        src="https://nandysagar.in/images/10.gif" alt=""></a></li> <br>
+                      Recruitment in non-executive cadre 2021-2022 <img src="https://nandysagar.in/images/10.gif"
+                        alt=""></a>
+                      </li> -->
+                      <br>
 
                 </ul>
 
@@ -219,8 +225,8 @@
   <div class="container heading">
 
     <div class="well" style="background-image:linear-gradient(90deg,rgb(33, 2, 172),rgb(161, 12, 136)) ;"><img
-        src="https://nandysagar.in/combined/Images/bulb.gif" alt="" width="35" height="37"> Upcoming Examinations <img src="https://nandysagar.in/combined/Images/bulb.gif"
-        alt="" width="35" height="37"></div>
+        src="https://nandysagar.in/combined/Images/bulb.gif" alt="" width="35" height="37"> Upcoming Examinations <img
+        src="https://nandysagar.in/combined/Images/bulb.gif" alt="" width="35" height="37"></div>
     <div class="container">
       <div class="row justify content center">
         <!-- 1st card  -->
@@ -262,7 +268,9 @@
                       style="color: green; font-weight: 600;"> Nil </span>
                   </li>
                   <li>
-                    <b>Scheme & Syllabus of the Examination: </b> <span><a href="https://nandysagar.in/Combined_Books/SSC%20CGLE%202021%20SYLLABUS.pdf" target="_blank">Download</a></span>
+                    <b>Scheme & Syllabus of the Examination: </b> <span><a
+                        href="https://nandysagar.in/Combined_Books/SSC%20CGLE%202021%20SYLLABUS.pdf"
+                        target="_blank">Download</a></span>
                   </li>
                   <li>
                     <b>For More Info : </b> <span><a href="https://www.careerpower.in/ssc-cgl-apply-online.html"
@@ -274,10 +282,10 @@
                 </ul>
               </div>
               <div style="display: flex; justify-content: center; align-items: center;">
-                <a style="margin-right: 2px;" onclick="SscCgle()" class="btn btn-success " target="_blank"
+                <a style="margin-right: 2px;" onclick="SscCgle()" class="btn btn-success big " target="_blank"
                   role="button"><span class="glyphicon glyphicon-hand-right" aria-hidden="true"> </span> Apply Now</a>
                 <span>
-                  <a style="margin-left: 3px;" target="_blank" class="btn btn-primary" onclick="SscCgleReg()"
+                  <a style="margin-left: 3px;" target="_blank" class="btn btn-primary big" onclick="SscCgleReg()"
                     role="button"><span class="glyphicon glyphicon-hand-right" aria-hidden="true"> </span> Register
                     Now</a></span>
               </div>
@@ -291,8 +299,9 @@
           <div class="panel panel-default shadow">
             <div class="panel-heading">
               <h3 class="panel-title">JCI 2021-2022
-                (<a target="_blank" onclick="JCI()">Official Site </a>) <img
-                  src="https://nandysagar.in/images/10.gif" alt=""></h3>
+                (<a target="_blank" onclick="JCI()">Official Site </a>)
+                 <!-- <img src="https://nandysagar.in/images/10.gif" alt=""> -->
+                </h3>
             </div>
             <span id="jci"
               style="color: red; font-weight: bolder; align-items: center; justify-content: center; display: flex; "></span>
@@ -301,7 +310,8 @@
                 <img src="https://nandysagar.in/images/jci.jpg" alt="">
               </div>
               <div class="caption">
-                <h4> JCI Recruitment in non-executive cadre 2021-2022 <span class="label label-warning blink-one ">No negative marks</span></h4>
+                <h4> JCI Recruitment in non-executive cadre 2021-2022 <span class="label label-warning blink-one ">No
+                    negative marks</span></h4>
 
                 </span>
               </div>
@@ -331,11 +341,11 @@
                         Now</a></span></li>
                 </ul>
               </div>
-              <div style="display: flex; justify-content: center; align-items: center;">
-                <a style="margin-right: 2px;" onclick="JCIaply()" class="btn btn-success " target="_blank"
+              <div style="display: flex; justify-content: center; align-items: center;" class="butn">
+                <a style="margin-right: 2px;" onclick="JCIaply()" class="btn btn-success big  " target="_blank"
                   role="button"><span class="glyphicon glyphicon-hand-right" aria-hidden="true"> </span> Apply Now</a>
                 <span>
-                  <a style="margin-left: 3px;" target="_blank" class="btn btn-primary" onclick="JCIreg()"
+                  <a style="margin-left: 3px;" target="_blank" class="btn btn-primary big" onclick="JCIreg()"
                     role="button"><span class="glyphicon glyphicon-hand-right" aria-hidden="true"> </span> Register
                     Now</a></span>
               </div>
@@ -361,7 +371,9 @@
               </div>
               <div class="well-sm">
                 <ul style="margin-left: 5px; padding: 10px ;">
-                  <li><b>Download Notification:</b> <span><a href="https://nandysagar.in/Combined_Books/ESIC_Maharashtra_bharti_2021_-_2022.pdf" target="_blank">Download</a></span></li>
+                  <li><b>Download Notification:</b> <span><a
+                        href="https://nandysagar.in/Combined_Books/ESIC_Maharashtra_bharti_2021_-_2022.pdf"
+                        target="_blank">Download</a></span></li>
                   <li>
                     <b>Date For Submission Online Application:</b> <span
                       style="color: red; font-weight: 600;">15/01/2022 to 15/02/2022 </span>
@@ -384,10 +396,10 @@
 
               </div>
               <div style="display: flex; justify-content: center; align-items: center;">
-                <a style="margin-right: 2px;" onclick="erroralrt()" class="btn btn-success " target="_blank"
+                <a style="margin-right: 2px;" onclick="erroralrt()" class="btn btn-success big " target="_blank"
                   role="button"><span class="glyphicon glyphicon-hand-right" aria-hidden="true"> </span> Apply Now</a>
                 <span>
-                  <a style="margin-left: 3px;" target="_blank" class="btn btn-primary" onclick="erroralrt()"
+                  <a style="margin-left: 3px;" target="_blank" class="btn btn-primary big" onclick="erroralrt()"
                     role="button"><span class="glyphicon glyphicon-hand-right" aria-hidden="true"> </span> Register
                     Now</a></span>
               </div>
@@ -448,12 +460,13 @@
   <div class="container heading">
 
     <div class="well" style="background-image:linear-gradient(90deg,rgb(33, 2, 172),rgb(161, 12, 136)) ;"><img
-        src="https://nandysagar.in/combined/Images/bulb.gif" alt="" width="35" height="37"> Study Materials <img src="https://nandysagar.in/combined/Images/bulb.gif" alt=""
-        width="35" height="37"></div>
+        src="https://nandysagar.in/combined/Images/bulb.gif" alt="" width="35" height="37"> Study Materials <img
+        src="https://nandysagar.in/combined/Images/bulb.gif" alt="" width="35" height="37"></div>
 
     <div class="container">
-      
-      <div class="row justify content center " style="margin-top: 5px;"> <!-- study material row div starts-->
+
+      <div class="row justify content center " style="margin-top: 5px;margin-bottom: 8px;">
+        <!-- study material row div starts-->
         <div class="col-md-4">
           <!-- 1st panel -->
           <div class="panel panel-default shadow">
@@ -508,8 +521,8 @@
           <!-- 2nd panel ends -->
         </div>
         <!-- 2nd study material ends -->
-         <!-- 3 study material starts  -->
-         <div class="col-md-4">
+        <!-- 3 study material starts  -->
+        <div class="col-md-4">
           <!-- 3 panel -->
           <div class="panel panel-default shadow">
             <div class="panel-heading">
@@ -523,11 +536,11 @@
                   alt="">
               </div>
               <div class="caption">
-                <h4 class="text-center">	
+                <h4 class="text-center">
                   SSC English Quiz</h4>
               </div>
               <div style="display: flex; justify-content: center; align-items: center;">
-                <a style="margin-right: 2px;" onclick="Vocab24()" class="btn  btn-down " target="_blank"
+                <a style="margin-right: 2px;" onclick="SscQuiz()" class="btn  btn-down " target="_blank"
                   role="button"><span class="glyphicon glyphicon glyphicon-download" aria-hidden="true"> </span>
                   Download Now</a>
 
@@ -538,7 +551,8 @@
         </div>
         <!-- 3 study material ends -->
       </div> <!-- study material row div ends-->
-      <div class="row justify content center " style="margin-top: 5px;"> <!-- 2 study material row div starts-->
+      <div class="row justify content center " style="margin-top: 5px;margin-bottom: 8px;">
+        <!-- 2 study material row div starts-->
         <div class="col-md-4">
           <!-- 4 panel -->
           <div class="panel panel-default shadow">
@@ -548,14 +562,16 @@
             <div class="panel-body">
 
               <div class="thumbnail">
-                <iframe  height="240" src="https://www.youtube.com/embed/uSZ4PHORaEQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe height="240" src="https://www.youtube.com/embed/uSZ4PHORaEQ" title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
               </div>
               <div class="caption">
                 <h4 class="text-center">English Grammar For All Competitive Exams | By Ravi Sir</h4>
               </div>
               <div style="display: flex; justify-content: center; align-items: center;">
-                <a style="margin-right: 2px;" onclick="rvwatch()" class="btn  btn-down " target="_blank"
-                  role="button">
+                <a style="margin-right: 2px;" onclick="rvwatch()" class="btn  btn-down " target="_blank" role="button">
                   Watch Now</a>
 
               </div>
@@ -573,14 +589,16 @@
             <div class="panel-body">
 
               <div class="thumbnail">
-                <iframe  height="240" src="https://www.youtube.com/embed/rzN3PaRMp-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe height="240" src="https://www.youtube.com/embed/rzN3PaRMp-k" title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
               </div>
               <div class="caption">
                 <h4 class="text-center">Word Power Made Easy | By Norman Lewis</h4>
               </div>
               <div style="display: flex; justify-content: center; align-items: center;">
-                <a style="margin-right: 2px;" onclick="wordPwer()" class="btn  btn-down " target="_blank"
-                  role="button">
+                <a style="margin-right: 2px;" onclick="wordPwer()" class="btn  btn-down " target="_blank" role="button">
                   Watch Now</a>
 
               </div>
@@ -589,22 +607,20 @@
           <!-- 5 panel ends -->
         </div>
         <!-- 5 study material ends -->
-         <!-- 6 study material starts  -->
-         <div class="col-md-4">
+        <!-- 6 study material starts  -->
+        <div class="col-md-4">
           <!-- 6 panel -->
           <div class="panel panel-default shadow">
             <div class="panel-heading">
-              <h3 class="panel-title">  The Hindu E-Paper </h3>
+              <h3 class="panel-title"> The Hindu E-Paper </h3>
             </div>
             <div class="panel-body">
 
               <div class="thumbnail">
-                <img
-                  src="https://dailyepaper.in/wp-content/uploads/2020/05/15.png"
-                  alt="">
+                <img src="https://dailyepaper.in/wp-content/uploads/2020/05/15.png" alt="">
               </div>
               <div class="caption">
-                <h4 class="text-center">	
+                <h4 class="text-center">
                   Download The Hindu E-Paper For Free</h4>
               </div>
               <div style="display: flex; justify-content: center; align-items: center;">
@@ -619,7 +635,7 @@
         </div>
         <!-- 6 study material ends -->
       </div> <!-- study material row div ends-->
-       <!-- 3 study material row div start -->
+      <!-- 3 study material row div start -->
       <div class="row justify content center " style="margin-top: 5px; margin-bottom: 8px;" >
        
         <!-- 3-1 study material starts  -->
@@ -649,14 +665,46 @@
           <!-- 3-1 panel ends -->
         </div>
         <!-- 3-1 study material ends -->
+        <!-- 3-2 study material starts  -->
+        <div class="col-md-4">
+          <!-- 7 panel -->
+          <a onclick="dForm()" role="button" style="text-decoration: none;">
+          <div class="panel panel-default shadow">
+            <div class="panel-heading">
+              <h3 class="panel-title"> Dance Forms Of India </h3>
+            </div>
+            <div class="panel-body">
+
+              <div class="thumbnail">
+                <img src="https://is.gd/aWhboE" alt="">
+              </div>
+              <div class="caption">
+                <h4 class="text-center">
+                 Download Difference Dance Forms Of India with States PDF  </h4>
+              </div>
+              <div style="display: flex; justify-content: center; align-items: center;">
+                <a style="margin-right: 2px;" onclick="dFormPdf()" class="btn  btn-down " target="_blank"
+                 role="button"><span class="glyphicon glyphicon-download" aria-hidden="true"> </span>
+                  Download</a>
+
+              </div>
+            </div>
+          </div>
+        </a>
+          <!-- 3-2 panel ends -->
+        </div>
+        <!-- 3-2 study material ends -->
       
       </div>
       <!-- 3 study material row div end -->
-    </div> <!--Conatiner heading div ends-->
+    </div>
+    <!--Conatiner heading div ends-->
 
 
   </div>
   <!-- study material ends  -->
+  </div>
+  
 
   <footer class="footer1">
     <div class="container">
@@ -796,19 +844,22 @@
 
               <div class="footerp">
 
-                <h2 class="title-median">Moal-Combined</h2>
-                <p><img src="https://nandysagar.in/combined/Images/gmail.png" width="25" height="27"><b style="color: rgb(246, 248, 246);"> Email
-                    id:</b> <a style="color: rgb(56, 253, 56);" href="https://mail.google.com"
-                    target="_blank">mathhub.sagar@gmail.com</a></p>
-                <p style="color: rgb(56, 253, 56);"><img src="https://nandysagar.in/combined/Images/phone-call.png" width="25" height="27"> <b
-                    style="color: rgb(246, 248, 246);"> Helpline Number </b>
+                <h2 class="title-median">MathHub-Combined</h2>
+                <p><img src="https://nandysagar.in/combined/Images/gmail.png" width="25" height="27"><b
+                    style="color: rgb(246, 248, 246);"> Email
+                    id:</b> <a style="color: rgb(56, 253, 56);" href="mailto:nandysagar@yahoo.com"
+                    >nandysagar@yahoo.com</a></p>
+                <p style="color: rgb(56, 253, 56);"><img src="https://nandysagar.in/combined/Images/phone-call.png"
+                    width="25" height="27"> <b style="color: rgb(246, 248, 246);"> Helpline Number </b>
 
                   <b style="color:#ff8b06;">(10 A.M. to 10 P.M.):</b> +916295980525
                 </p>
 
-                <p><b style="color: rgb(251, 255, 251);"> <img src="https://nandysagar.in/combined/Images/location.png" width="25" height="27">
+                <p><b style="color: rgb(251, 255, 251);"> <img src="https://nandysagar.in/combined/Images/location.png"
+                      width="25" height="27">
                     Santipur , Nadia , West Bengal</b></p>
-                <p> <img src="https://nandysagar.in/combined/Images/whatsapp.png" width="25" height="27"> <b style="color: ghostwhite;"> Whatsapp
+                <p> <img src="https://nandysagar.in/combined/Images/whatsapp.png" width="25" height="27"> <b
+                    style="color: ghostwhite;"> WhatsApp
                     Number : </b> <a style="color: rgb(56, 253, 56);" href="https://wa.me/916295980525?text=Hi%20There!"
                     target="_blank"> +916295980525</a> </p>
                 <!-- <p>This is number </p> -->
@@ -873,7 +924,7 @@
     }
 
   </script>
-
+    
 
 </body>
 
