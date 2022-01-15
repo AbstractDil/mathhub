@@ -71,7 +71,7 @@ function eSIc(){
     }
 }
 function erroralrt(){
-    swal("Link is not found"," ** Please Note :  Link is not provided yet. Visit official website for more info.","error");
+    swal("Link Is Not Found"," ** Please Note :  Link is not provided yet or, the link is expired.","error");
   }
   function rvwatch(){
     const sscconfirmation = confirm (" This link redirected you to YouTube.\n Are you sure open this external link ?");
