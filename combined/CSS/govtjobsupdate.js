@@ -34,11 +34,11 @@ function JCI(){
         return false;
     }
 }
-function JCIreg(){
-    const sscconfirmation = confirm (" This link redirected you to the registration page of  Jute Corporation of India Ltd. \n (https://jutecorp.in)\n Are you sure open this external link ?");
+function eSicReg(){
+    const sscconfirmation = confirm (" This link redirected you to the registration page of  IBPS.(https://ibpsonline.ibps.in/esiccsmdec21/basic_details.php) \n \n Are you sure open this external link ?");
     if(sscconfirmation == true)
     {
-        window.open("https://jci.onlineregistrationform.org/JCI/LoginAction_registerCandidate.action?","_blank  ", "toolbar=yes,scrollbars=yes,resizable=yes,left=150,width=1080,height=720");
+        window.open("https://ibpsonline.ibps.in/esiccsmdec21/basic_details.php","_blank  ", "toolbar=yes,scrollbars=yes,resizable=yes,left=150,width=1080,height=720");
         return true;
     }
     else{
@@ -46,11 +46,11 @@ function JCIreg(){
         return false;
     }
 }
-function JCIaply(){
-    const sscconfirmation = confirm (" This link redirected you to the Applicant Login page of  Jute Corporation of India Ltd. \n (https://jutecorp.in)\n Are you sure open this external link ?");
+function eSicApply(){
+    const sscconfirmation = confirm (" This link redirected you to the application page of ibps.(https://ibpsonline.ibps.in)\n Are you sure open this external link ?");
     if(sscconfirmation == true)
     {
-        window.open("https://jci.onlineregistrationform.org/JCI/LoginAction_input.action","_blank  ", "toolbar=yes,scrollbars=yes,resizable=yes,left=150,width=1080,height=720");
+        window.open("https://ibpsonline.ibps.in/esiccsmdec21/","_blank  ", "toolbar=yes,scrollbars=yes,resizable=yes,left=150,width=1080,height=720");
         return true;
     }
     else{
@@ -182,7 +182,7 @@ function dForm(){
             }
         }
         function dFormPdf(){
-            const sscconfirmation = confirm (" ** Attention : If you don't have password, you cann't access this content. \n\n ** Password Hint : Contact the owner of this site.");
+            const sscconfirmation = confirm ("  This link redirected you to dance form webpage of cracku.in \n Are you sure to open this external link ?");
             if(sscconfirmation == true)
             {
                 window.open("https://cracku.in/downloads/231","_blank");
