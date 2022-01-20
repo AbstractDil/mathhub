@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Ubuntu', sans-serif;
+   
+    
+}
+
+
+.card-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle-avatar{
+    radius: 50,
+}
+.navbar,.card-footer,.dropdown-menu{
+    background-image: linear-gradient(-90deg,rgb(0, 5, 24),rgb(65, 11, 49));
+    
+}
+
+.navbar-toggler-icon {
+    color: honeydew;
+    background-color: honeydew;
+}
+.navbar-brand{
+    color: rgb(10, 252, 10);
+    font-weight: bold;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+.navbar-brand:hover{
+    color: rgb(10, 252, 10);
+}
+.card-footer{
+    color:rgb(10, 252, 10) ;
+}
+.bg-hack{
+    background-color: black;
+}
+.card{
+    
+    color:rgb(48, 247, 8);
+    
+}
+
+   
+
+.navbar-nav .nav-item .nav-link:hover{
+    color: rgb(0, 255, 13);
+    border-bottom:2px solid rgb(0, 255, 13);
+    
+}
+.navbar-nav .nav-item .nav-link,.dropdown-menu .dropdown-item{
+    color: yellow;
+}
+.dropdown-menu .dropdown-item:hover{
+    background-image: linear-gradient(-90deg,rgb(0, 5, 24),rgb(65, 11, 49));
+    color:rgb(0, 255, 13);
+    
+}
+.navbar-nav .nav-item .nav-link{
+    margin-left: 5px;
+    margin-right: 8px;
+
+    
+
+}
+.card-body .nav-tabs .nav-item .nav-link{
+    color: rgb(255, 0, 0);
+    font-weight: 700;
+    
+
+}
+.card-body   .nav-tabs .nav-item .nav-link:hover{
+    
+    color: rgb(255, 0, 34);
+    border-bottom:2px solid rgb(255, 0, 0);
+    font-weight: 900;
+
+}
+.card-body   .nav-tabs .nav-item .nav-link .active{
+   
+    font-weight: 900;
+
+}
+.txt-animation{
+    animation-name: example;
+  animation-duration:5s;
+  
+}
+@keyframes example {
+    80%   {color: red;}
+    50%  {color: yellow;}
+    75%  {color: rgb(255, 0, 242);}
+    100% {color: rgb(3, 250, 3);}
+  }
+
+.card:hover{
+    box-shadow: 0 6px 15px 0 rgb(0, 255, 13), 0 4px 20px 0 rgb(10, 252, 10);
+}
+.swal-modal {
+    background-color:rgb(220, 220, 221);
+    border: 3px solid rgb(252, 3, 3);
+  }
+  .swal-title,.swal-text{
+      color: rgb(252, 5, 5);
+
+  }
+.swal-text{
+    font-weight: 600;
+    font-size: 17px;
+}
+/* Page Loader Css */
+#preloader{
+width: 100%;
+height: 100%;
+text-align: center;
+background-color:#000;
+padding-top: 300px;
+position: fixed;
+z-index: 100;
+}
