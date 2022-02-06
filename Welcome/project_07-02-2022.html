@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love | Created By Sagar Nandy</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<!-- custom style css  -->
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Mochiy+Pop+P+One&family=Ubuntu:ital,wght@0,500;1,500&display=swap');
+    *{
+        margin: 0;
+        border: 0;
+        box-sizing: border-box;
+        font-family: 'Lora';
+        /* font-family: 'Mochiy Pop P One', sans-serif;
+        font-family: 'Ubuntu', sans-serif */
+    }
+.container{
+    margin-top: 100px;
+}
+
+    
+</style>
+
+</head>
+<body style="background-color: rgb(14, 13, 12);" onload="Load()">
+
+<section>
+    <div class="container">
+        <marquee behavior="left" direction="" style="color: greenyellow;">It is made for fun only.</marquee>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="panel panel-warning">
+                    <div class="panel-heading" style="background-color: black;color: rgb(6, 248, 6);">
+                       
+                        
+                        <div class="row">
+                            <div class="col-md-6"><h4 id="host_name"></h4></div>
+                            <div class="col-md-6"><h4>Time : <span id="clock"></span></h4></div>
+                        </div>
+                    </div>
+                    <div class="panel-body" style="background-color: black;color: rgb(6, 248, 6);">
+                        <div class="alert alert-success">
+                            <strong><h3>Welcome <span id="welcome"></span>!</h3></strong> <h4>Please click the below button.</h4>
+                            
+                          </div>
+                          
+                         
+                        <button onclick="myFunction()" class="btn btn-danger btn-block" >Click Here To See Magic</button>
+                    <h3 id="name" style="border: 2px solid rgb(72, 255, 0);padding: 12px; margin: 15px;"></h3>
+
+
+                    </div>
+                    <div class="panel-footer panel-warning " style="background-color: black;color: rgb(6, 248, 6);"> <center> <h4>Developed By : Sagar Nandy.</h4></center>
+                       
+                    
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-3"></div>
+        
+    </div>
+</div>
+</section>
+
+    
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<script>
+    document.getElementById("host_name").innerHTML = 
+    " Hostname is : " + window.location.hostname;
+
+    setInterval(myTimer);
+
+    function myTimer() {
+  const d = new Date();
+  document.getElementById("clock").innerHTML = d.toLocaleTimeString();
+}
+    </script>
+    <script>
+        function myFunction() {
+          let text;
+          let person = prompt("Please enter your name:", "");
+          if (person == null || person == "") {
+            text = "It's fun. Please try it.";
+          } else {
+            text = "Hello  " + person + ", How are you ? I Think I Love You. Do you love me ?";
+          }
+          document.getElementById("name").innerHTML = text;
+        }
+        </script>
+<script>
+    function Load()
+    {
+        let text;
+          let person = prompt("Please enter your name:", "");
+          if (person == null || person == "") {
+            text = "Friend , whats up ?";
+          } else {
+            text = person ;
+          }
+          document.getElementById("welcome").innerHTML = text;
+        }
+
+    
+</script>
+</body>
+</html>
