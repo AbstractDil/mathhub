@@ -7,6 +7,7 @@
     <title>Love | Created By Sagar Nandy</title>
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- custom style css  -->
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Mochiy+Pop+P+One&family=Ubuntu:ital,wght@0,500;1,500&display=swap');
@@ -30,7 +31,7 @@
 
 <section>
     <div class="container">
-        <marquee behavior="left" direction="" style="color: greenyellow;">It is made for fun only.</marquee>
+        <marquee behavior="left" direction="" style="color: greenyellow;"><i class="fa fa-exclamation-triangle" style="color:red"></i> It is made for fun only.</marquee>
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6">
@@ -40,22 +41,23 @@
                         
                         <div class="row">
                             <div class="col-md-6"><h4 id="host_name"></h4></div>
-                            <div class="col-md-6"><h4>Time : <span id="clock"></span></h4></div>
+                            <div class="col-md-6"><h4>&#128336 Time : <span id="clock"></span></h4></div>
                         </div>
                     </div>
                     <div class="panel-body" style="background-color: black;color: rgb(6, 248, 6);">
                         <div class="alert alert-success">
-                            <strong><h3>Welcome <span id="welcome"></span>!</h3></strong> <h4>Please click the below button.</h4>
+                            <strong><h3>Welcome <span id="welcome"></span>!</h3></strong> <h4>Please click the below button.👇👇👇👇👇👇👇👇👇👇</h4>
                             
                           </div>
                           
                          
-                        <button onclick="myFunction()" class="btn btn-danger btn-block" >Click Here To See Magic</button>
+                        <button onclick="myFunction()" class="btn btn-danger btn-block" ><img src="https://nandysagar.in/combined/Images/rgt.gif" width="25" height="25" alt="">
+                          Click Here To See Magic</button>
                     <h3 id="name" style="border: 2px solid rgb(72, 255, 0);padding: 12px; margin: 15px;"></h3>
 
 
                     </div>
-                    <div class="panel-footer panel-warning " style="background-color: black;color: rgb(6, 248, 6);"> <center> <h4>Developed By : Sagar Nandy.</h4></center>
+                    <div class="panel-footer panel-warning " style="background-color: black;color: rgb(6, 248, 6);"> <center> <h4><i class="fa fa-code"></i> Developed By : Sagar Nandy.</h4></center>
                        
                     
                     </div>
@@ -92,7 +94,7 @@
           if (person == null || person == "") {
             text = "It's fun. Please try it.";
           } else {
-            text = "Hello  " + person + ", How are you ? I Think I Love You. Do you love me ?";
+            text = "Hello  " + person + "💝"+", How are you ? I Think I Love You 🌹🌹🌹🌹. Do you love me ☺ ☺ ☺?";
           }
           document.getElementById("name").innerHTML = text;
         }
@@ -105,7 +107,7 @@
           if (person == null || person == "") {
             text = "Friend , whats up ?";
           } else {
-            text = person ;
+            text = person +"😘😘😍"+"💓💖🌹";
           }
           document.getElementById("welcome").innerHTML = text;
         }
