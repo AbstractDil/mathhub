@@ -63,6 +63,27 @@ document.addEventListener("contextmenu", function(event){
     return false; 
 });
 
+// Onload Modal 
+    $(window).on('load', function()
+     {
+         setTimeout(function(){
+            $('#onLoad').modal('show')
+         },5000);
+        
+    });
+
+    // form submission
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyAxUB09wm-Lqbaw3v6E7D9vi9rMi51vakCIpuUC2f3ZeAiJXFzJr4h0FprNXpLwYBsEg/exec'
+    const form = document.forms['google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => swal({  title: "Thanks!",
+text: " Your response has been sent successfully. ",
+icon: "success",}))
+        .catch(error => console.error('Error!', error.message))
+    })
 
   
    
