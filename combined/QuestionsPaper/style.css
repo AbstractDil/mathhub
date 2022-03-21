@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Nunito:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Hubballi', cursive; */
+font-family: 'Nunito', sans-serif;
+}
+#loading{
+  position: fixed;
+  width:100%;
+  height:100vh;
+  background:#fff url('/loader.gif') no-repeat center;
+  z-index: 99999;
+}
+.jumbotron {
+    background-image: url(./bg.svg);
+    color: #fff;
+    margin-bottom: 0;
+}
+.card-footer {
+    /* background: #130466; */
+    background-image: linear-gradient(-90deg,rgb(6, 93, 74),rgb(9, 93, 86));
+    color: #f8f8f5;
+    padding: 8px;
+    line-height: 20px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    font-size: 15px;
+    bottom: 0;
+    left: 0;
+}
+
+body{
+    background-color: rgb(246, 246, 246);
+    margin: 0 ;
+}
+hr{
+    border: 2px solid #048666;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width:8px;
+    
+  }
+  
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius:100px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(7, 165, 125); 
+    border-radius: 100px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #048666; 
+  }
+
+  .card:hover{
+      
+      border: 2px solid rgb(41, 155, 31);
+      color: rgb(5, 5, 129);
+      
+  
+      
+  }
+  .card .card-body{
+      border: 1px solid rgb(51, 151, 89);
+  }
+  :root {
+    --animate-duration: 1000ms;
+    --animate-delay: 1s;
+  }
+  figure.table table td {
+    padding: 5px;
+    background-color: #fff;
+    color:rgba(0, 0, 0, 0.8);
+    border: 1px solid #404040;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+figure.table table {
+  caption-side: bottom;
+  border-collapse: collapse;
+  width: 100%;
+}
+table {
+  border-collapse: separate;
+  text-indent: initial;
+  border-spacing: 2px;
+}
+table {
+  --bs-table-bg: transparent;
+  --bs-table-striped-color: #212529;
+  --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
+  --bs-table-active-color: #212529;
+  --bs-table-active-bg: rgba(0, 0, 0, 0.1);
+  --bs-table-hover-color: #212529;
+  --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+  vertical-align: top;
+  border-color: #dee2e6;
+}
+.btn-primary {
+  background-color: #06a187;
+  border: none;
+  color: #fff;
+}
+.btn-primary:hover{
+  background-color: #048666;
+  border: none;
+  color: #fff;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
