@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <title>Authentication</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<!-- custom css -->
+<link rel="stylesheet" href="style.css">
+<!-- sweet alert js  -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    .card-footer2 {
+    /* background: #130466; */
+    background-image: linear-gradient(-90deg,rgb(6, 93, 74),rgb(9, 93, 86));
+    color: #f8f8f5;
+    padding: 8px;
+    line-height: 20px;
+    position:fixed;
+    text-align: center;
+    width: 100%;
+    font-size: 15px;
+    bottom: 0;
+    left: 0;
+}
+</style>
+</head>
+<body onload="Sagar()">
+    <div id="loading"></div>
+    <header>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+           <h1 class="display-5">MathHub Combined </h1>  
+              <p class="lead " style="color: aqua;font-weight: 600;">
+                  Free Download SSC-CGL , SSC-CHSL , SBI Clerk & Po , IBPS Clerk & PO Previous Year Questions Paper 
+              </p>
+            </div>
+          </div>
+          
+       
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <form action="" class="was-validated">
+                        <div class="form-group mt-5">
+                          <label for="password" style="font-size: 22px;"><i class="fa fa-lock" style="font-size:25px"></i>
+                            Enter LogIn Password :</label>
+                          <input type="password" class="form-control" style="font-size: 22px;" placeholder="Enter password" id="password" required>
+                          <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" id="loginbutton" style="font-size: 22px;"><i class="fa fa-share-square-o"></i> Continue</button>
+                      </form>
+                </div>
+                <div class="col-md-3"></div>
+
+
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer class="card-footer2 mt-5">
+      
+        <p>
+          © 2022 MathHub Combined - All rights reserved.
+          <br>
+          Design &amp; Developed By : <span style="color:rgb(131, 243, 243);">Sagar Nandy</span>
+        </p>
+     
+
+    </footer>
+
+    <!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- custom js -->
+<script src="main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  var preloader = document.getElementById('loading');
+  function Sagar() {
+    preloader.style.display = 'none';
+  }
+
+</script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+
+	 <script type="text/javascript" src="https://rawcdn.githack.com/chrisveness/crypto/7067ee62f18c76dd4a9d372a00e647205460b62b/sha1.js"></script>
+
+	<script type="text/javascript">
+	"use strict";
+
+
+	function loadPage(pwd) {
+
+		var hash= pwd;
+		hash= Sha1.hash(pwd);
+		var url= hash + "/index.html";
+
+		$.ajax({
+			url : url,
+			dataType : "html",
+			success : function(data) {
+
+				window.location= url;
+
+			},
+			error : function(xhr, ajaxOptions, thrownError) {
+
+
+				parent.location.hash= hash;
+
+				//$("#wrongPassword").show();
+				$("#password").attr("placeholder","Wrong Password");
+				$("#password").val("");
+			}
+		});
+	}
+
+
+	$("#loginbutton").on("click", function() {
+		loadPage($("#password").val());
+	});
+	$("#password").keypress(function(e) {
+		if (e.which == 13) {
+
+			loadPage($("#password").val());
+		}
+	});
+	$("#password").focus();
+
+	</script>
+
+    
+</body>
+</html>
