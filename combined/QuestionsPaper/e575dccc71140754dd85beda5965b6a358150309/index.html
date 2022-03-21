@@ -32,10 +32,57 @@
           
        
     </header>
+    <!--Onload The Modal -->
+  <div class="modal fade" id="onLoad">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Feedback Form</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+            <p  class="alert alert-danger blink" style="color: rgb(185, 8, 8);">
+                
+              Please wait for 5 seconds  after clicking on 'Send Feedback' button.
+                </p>
+            <form method="post" name="google-sheet">
+               
+                
+                <div class="form-row">
+                  <div class="col-md-12 mb-3">
+                    <label for="validationDefault01" class="required">Enter Your Full name</label>
+                    <input type="text" class="form-control " id="validationDefault01" name="Name" required>
+                  </div>
+                  
+                </div>
+                <div class="form-row">
+                  <div class="col-md-12 mb-3">
+                    <label for="validationDefault03" class="required">Your Feedback Message</label>
+                    <textarea type="text" class="form-control" name="YourSMS" id="validationDefault03" required></textarea>
+                  </div>
+                  </div>
+                <button class="btn btn-primary" type="submit" id="submit">Send Feedback</button>
+              </form>
+          
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <!--Onload Modal Feedback Form Ends  -->
     <main>
         <marquee direction="left" class="mt-2" style="color: red;font-size: 20px; ">
             <img src="https://students.nandysagar.in/Images/Siren.gif" height="30" alt="">
-            Last Updated on 21 March,2022 at 09:45 P.M.
+            Last Updated on 22 March,2022 at 12:20 A.M.
             </marquee>
         <!-- SSC-CGL start  -->
         <section class="ssc-chsl ">
