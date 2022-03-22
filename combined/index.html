@@ -13,6 +13,27 @@
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,500&display=swap');
+    /* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 8px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(37, 117, 148); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #193b68; 
+}
   </style>
 
    <script type="text/javascript" src="https://nandysagar.in/combined/CSS/disable.js"></script>
@@ -73,12 +94,11 @@
           </div>
           <div class="modal-body " style="margin-left: 20px; ">
             <ol count="1">
-               <li class="noti-text"><a onclick="CSIROfficalApply()" target="_blank"><img
-                    src="https://nandysagar.in/combined/Images/new_gif.gif" width="25" height="26"> Apply for CSIR Junior Secretariat Assistant , Jammu
+               <li class="noti-text"><a onclick="SscMts()" target="_blank"><img
+                    src="https://nandysagar.in/combined/Images/new_gif.gif" width="25" height="26"> Apply For SSC-MTS 2022
                 </a> </li>
-              <li class="noti-text"><a onclick="eSIc()" target="_blank"><img
-                    src="https://nandysagar.in/combined/Images/new_gif.gif" width="25" height="26"> Apply ESIC for
-                  UDC , STENO , and MTS 2022.
+              <li class="noti-text"><a onclick="WbCs()" target="_blank"><img
+                    src="https://nandysagar.in/combined/Images/new_gif.gif" width="25" height="26"> Apply For WBCS 2022
                 </a> </li>
              <!-- <li class="noti-text"><a onclick="SscCgle()" target="_blank" ><img
                     src="https://nandysagar.in/combined/Images/new_gif.gif" width="25" height="26"> 
@@ -86,7 +106,7 @@
                   2021-2022.
                 </a> </li>-->
 
-
+                <div class="well well-sm " style="background-color: rgb(53, 114, 86); margin-top: 16px;">Download Admit Card </div>
 
 
 
@@ -110,20 +130,16 @@
     <div class="col-sm-9 ">
       <marquee class="marquee" onmouseover="this.stop()" onmouseout="this.start()">
 
-        <a class="" style="color: white;" href="https://nandysagar.in/combined"><img
-            src="https://nandysagar.in/combined/Images/new_gif.gif" alt="" width="40" height="42"><strong
-            style="font-family: 'Times New Roman'; font-size: 18px;">Welcome to MathHub
-            Combined Portal </strong>
-        </a>
-        <span style="color:#fff;">&nbsp;||&nbsp;&nbsp;</span>
-        <a onclick="CSIROfficalApply()" style="color: white; cursor: pointer;"><img src="https://nandysagar.in/combined/Images/new_gif.gif" alt="" width="40"
-          height="42"><strong style="font-family: 'Times New Roman'; font-size: 18px;">Apply for CSIR Junior Secretariat Assistant , Jammu </strong>
+        
+        
+        <a onclick="SscMts()" style="color: white; cursor: pointer;"><img src="https://nandysagar.in/combined/Images/new_gif.gif" alt="" width="40"
+          height="42"><strong style="font-family: 'Times New Roman'; font-size: 18px;">Apply SSC-MTS 2022 </strong>
       </a>
       <span style="color:#fff;">&nbsp;||&nbsp;&nbsp;</span>
-        <a onclick="eSIc()" style="color: white;"><img src="https://nandysagar.in/combined/Images/new_gif.gif" alt="" width="40"
-            height="42"><strong style="font-family: 'Times New Roman'; font-size: 18px;">ESIC Recruitment of UDC , STENO
-            and MTS 2022
-            Notification Out. </strong>
+        <a onclick="WbCs()" style="color: white; cursor: pointer;"><img src="https://nandysagar.in/combined/Images/new_gif.gif" alt="" width="40"
+            height="42"><strong style="font-family: 'Times New Roman'; font-size: 18px;">
+             Apply For   West Bengal Civil Service 2022 
+ </strong>
         </a>
         <span style="color:#fff;">&nbsp;||&nbsp;&nbsp;</span>
         
@@ -202,16 +218,14 @@
                 <ul class="noti-text">
                     <li>
                     <img src="https://nandysagar.in/combined/Images/rgt.gif" alt="" width="30" height="32 "> 
-                    <a
-                      style="color: rgb(206, 7, 7); font-size:18px;" onclick="eSIc()" target="_blank">ESIC Recruitment of UDC , STENO
-            and MTS 2022 <img src="https://nandysagar.in/images/10.gif"
-                        alt=""></a>
+                    <a 
+                      style="color: rgb(206, 7, 7); font-size:18px;" onclick="WbCs()"target="_blank"> West Bengal Civil Service 2022 <img src="https://nandysagar.in/images/10.gif" alt=""></a>
                       </li>
                     <li>
                     <img src="https://nandysagar.in/combined/Images/rgt.gif" alt="" width="30" height="32 "> 
                     <a
                       style="color: rgb(206, 7, 7); font-size:18px; cursor: pointer;" 
-                      onclick="CSIROfficalApply()" target="_blank">Apply CSIR Junior Secretariat Assistant , Jammu <img src="https://nandysagar.in/images/10.gif"
+                      onclick="SscMts()" target="_blank">Apply SSC - MTS 2022 <img src="https://nandysagar.in/images/10.gif"
                         alt=""></a>
                       </li>
                       <br>
@@ -244,6 +258,7 @@
       <div class="row justify content center">
         <!-- 1st card  -->
         <div class="col-md-4">
+            <!-- ssc mts 2022 -->
           <div class="panel panel-default shadow">
             <div class="panel-heading">
 
@@ -286,20 +301,19 @@
                         href="#" onclick="erroralrt()"
                         target="_blank">Download</a></span>
                   </li>
-                  <li>
-                    <b>For More Info : </b> <span><a href="#"
+                  <!-- <li>
+                    <b>  </b> <span><a href="#"
                         target="_blank"
-                        onclick="erroralrt()">Click
-                        Here </a></span>
-                  </li>
+                        onclick="erroralrt()"> </a></span>
+                  </li> -->
 
                 </ul>
               </div>
               <div style="display: flex; justify-content: center; align-items: center;">
-                <a style="margin-right: 2px;" onclick="SscCgle()" class="btn btn-success big " target="_blank"
+                <a style="margin-right: 2px;" onclick="SscMts()" class="btn btn-success big " target="_blank"
                   role="button"><span class="glyphicon glyphicon-hand-right" aria-hidden="true"> </span> Apply Now</a>
                 <span>
-                  <a style="margin-left: 3px;" target="_blank" class="btn btn-primary big" onclick="SscCgleReg()"
+                  <a style="margin-left: 3px;" target="_blank" class="btn btn-primary big" onclick="SscReg()"
                     role="button"><span class="glyphicon glyphicon-hand-right" aria-hidden="true"> </span> Register
                     Now</a></span>
               </div>
@@ -307,132 +321,66 @@
             </div>
           </div>
         </div>
+        <!-- ssc mts 2022 ends  -->
         <!-- end 1st card -->
-       
+       <!-- ===================  WBCS 2022  Start  ==========-->
         <!-- 3rd card start -->
         <div class="col-md-4">
           <div class="panel panel-default shadow">
             <div class="panel-heading">
-              <h3 class="panel-title">ESIC 2021-2022 (<a target="_blank" onclick="eSIc()">Official Site </a>) <img
+              <h3 class="panel-title">WBCS 2022 (<a target="_blank" onclick="WbCs()">Official Site </a>) <img
                   src="https://nandysagar.in/images/10.gif" alt=""></h3>
             </div>
             <div class="panel-body">
               <div class="thumbnail">
-                <img src="https://www.esic.nic.in/attachments/photos/big/61cf0fdf-3460-44ea-9160-6a7b0af63c87.jpg"
+                <img src="http://wbpsc.gov.in/WBPSC_DATA//gallery/11.jpg"
                   alt="" height="100">
               </div>
               <div class="caption">
-                <h4>ESIC Recruitment for UDC , STENO and MTS 2022</h4>
+                <h4>West Bengal Civil Service 2022</h4>
               </div>
               <div class="well-sm">
                 <ul style="margin-left: 5px; padding: 10px ;">
                   <li><b>Download Notification:</b> <span><a
-                        href="https://nandysagar.in/Combined_Books/ESIC_Maharashtra_bharti_2021_-_2022.pdf"
+                        href="https://wbpsc.gov.in/Download?param1=An_20220226175656_advt_02-2022.pdf&param2=advertisement"
                         target="_blank">Download</a></span></li>
                   <li>
                     <b>Date For Submission Online Application:</b> <span
-                      style="color: red; font-weight: 600;">15/01/2022 to 15/02/2022 </span>
+                      style="color: red; font-weight: 600;">03/03/2022 to 05/04/2022 </span>
                   </li>
                   <li>
-                    <b>Syllabus of the Examination: </b> <span><a href="" target="_blank">Download</a></span>
+                    <b>Syllabus of the Examination: </b> <span><a href="https://wbpsc.gov.in/Download?param1=An_20220226175656_advt_02-2022.pdf&param2=advertisement" target="_blank">Download</a></span>
                   </li>
                   <li>
                     <b style="color: rgb(47, 6, 88);">Application Fee For General & OBC & EWS: </b> <span
-                      style="color: green; font-weight: 600;"> Rs. 500/- </span>
+                      style="color: green; font-weight: 600;"> Rs. 210/- + Bank Charge </span>
                   </li>
                   <li>
                     <b style="color: rgb(47, 6, 88);">Application Fee For Others: </b> <span
-                      style="color: green; font-weight: 600;"> Rs. 250/- <span
-                        style="color: black; background-color: yellow;">(Refundable on appearing phase-1)</span> </span>
+                      style="color: green; font-weight: 600;"> Nil For WB Candidates 
+                      <!-- <span style="color: black; background-color: yellow;">(Refundable on appearing phase-1)</span> -->
+                     </span>
                   </li>
 
-                  <li><b style="color: red;"> Application link is not provided yet.</b></li>
+                  <!-- <li><b style="color: red;"> Application link is not provided yet.</b></li> -->
                 </ul>
 
               </div>
               <div style="display: flex; justify-content: center; align-items: center;">
-                <a style="margin-right: 2px;" onclick="eSicApply()" class="btn btn-success big " target="_blank"
+                <a style="margin-right: 2px;" onclick="WbCs()" class="btn btn-success big " target="_blank"
                   role="button"><span class="glyphicon glyphicon-hand-right" aria-hidden="true"> </span> Apply Now</a>
                 <span>
-                  <a style="margin-left: 3px;" target="_blank" class="btn btn-primary big" onclick="eSicReg()"
+                  <a style="margin-left: 3px;" target="_blank" class="btn btn-primary big" onclick="WbCsOTReg()"
                     role="button"><span class="glyphicon glyphicon-hand-right" aria-hidden="true"> </span> Register
                     Now</a></span>
               </div>
             </div>
           </div>
         </div>
+        <!-- ==================WBCS 2022 ENDS =========== -->
         <!-- 3rd card ends -->
           <!--  CSIR Indian Institure of Interative Medicine, Jammu start -->
-        <div class="col-md-4">
-          <div class="panel panel-default shadow">
-            <div class="panel-heading">
-              <h3 class="panel-title"> CSIR-Indian Institute of Integrative Medicine, Jammu
-                (<a target="_blank" onclick="CSIROfficalSite()">Official Site </a>)
-                 <img src="https://nandysagar.in/images/10.gif" alt="">
-                </h3>
-            </div>
-            <span id="jci"
-              style="color: red; font-weight: bolder; align-items: center; justify-content: center; display: flex; "></span>
-            <div class="panel-body">
-              <div class="thumbnail">
-                <img src="https://iiim.res.in/wp-content/uploads/2017/10/cropped-Council_of_Scientific_and_Industrial_Research_logo.png" alt="">
-              </div>
-              <div class="caption">
-                <h4> 
-                  Junior Secretariat Assistant Recruitment 
-                  <span class="label label-info ">Advertisement No. : 29/2021</span>
-                  </h4>
-
-                </span>
-              </div>
-              <div class="well-sm">
-                <ul style="margin-left: 5px; padding: 10px ;">
-                  <li>
-                    <b>Download Notification:</b><span><a
-                        href="https://iiim.res.in/wp-content/uploads/2021/12/JSA-ADVT.pdf"
-                        target="_blank" onclick="Thanks()"> Download</a></span>
-                  </li>
-                  <li>
-                    <b>Date For Submission Online Application:</b> <span
-                      style="color: red; font-weight: 600;">07.01.2022 to 28.01.2022 till 5:00 p.m.</span>
-                  </li>
-                  <li>
-                    <b style="color: rgb(47, 6, 88);">Application Fee:</b><span style="color: green; font-weight: 600;">
-                      Candidates are to deposit a non- refundable fee of Rs. 100/- &<span  style="color: rgb(236, 48, 15); background-color: rgb(248, 248, 149);">  SC/ST/PWD/Women/CSIR Employees are exempted
-                        from payment of application fee.
-                        </span> </span>
-                  </li>
-                  <li>
-                    <b>Syllabus of the Examination: </b> <span><a
-                        onclick="syllabusCSIR()" style="cursor:pointer;"
-                        target="_blank">Download</a></span>
-                  </li>
-                  <li><b>  How To Apply:</b> <span><a
-                        href="https://recruit.iiim.res.in:8081/HTA_JSA292021.pdf" target="_blank"
-                        onclick="Thanks()">Download</a></span></li>
-                    <li>
-                      <b>Fee Payment Procedure </b> <span><a onclick="Thanks()"
-                          href="https://recruit.iiim.res.in:8081/FEE_PAYMENT_PROCEDURE06_2021.pdf"
-                          target="_blank">Download</a></span>
-                    </li>
-                    <li><b> Registered Candidate Login :</b> <span><a style="cursor: pointer;"
-                       target="_blank"
-                      onclick="CSIROfficalLogin()">Click Here</a></span></li>
-                  
-                </ul>
-              </div>
-              <div style="display: flex; justify-content: center; align-items: center;" class="butn">
-                <a style="margin-right: 2px;" onclick="CSIROfficalApply()" class="btn btn-success big  " target="_blank"
-                  role="button"><span class="glyphicon glyphicon-hand-right" aria-hidden="true"> </span> Apply Now</a>
-                <span>
-                  <a style="margin-left: 3px;" target="_blank" class="btn btn-primary big" onclick="CSIROfficalReg()"
-                    role="button"><span class="glyphicon glyphicon-hand-right" aria-hidden="true"> </span> Register
-                    Now</a></span>
-              </div>
-            </div>
-          </div>
-
-        </div>
+        
         <!-- CSIR Indian Institure of Interative Medicine, Jammu  end -->
 
       </div>
@@ -492,7 +440,36 @@
 
     <div class="container">
 
+
+        <!-- Some Buttons start here  -->
+         <!-- Trigger the modal with a button -->
+  <button type="button" class="blink btn-down btn-lg " data-toggle="modal" data-target="#ImpDate" style="margin-bottom:17px;">Important Dates Of 2021</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="ImpDate" role="dialog">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Important Days Of 2021 </h4>
+        </div>
+        <div class="modal-body">
+          <p>No data is available.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+        <!-- Buttons Ends  -->
       <div class="row justify content center " style="margin-top: 5px;margin-bottom: 8px;">
+
+        
         <!-- study material row div starts-->
         <div class="col-md-4">
           <!-- 1st panel -->
@@ -721,6 +698,38 @@
           <!-- 3-2 panel ends -->
         </div>
         <!-- 3-2 study material ends -->
+
+        <!--========== Question Paper Download Link Start =========== -->
+
+        <div class="col-md-4">
+            <!-- 7 panel -->
+            <a onclick="dForm()" role="button" style="text-decoration: none;">
+            <div class="panel panel-default shadow">
+              <div class="panel-heading">
+                <h3 class="panel-title"> Previous Year Question Paper </h3>
+              </div>
+              <div class="panel-body">
+  
+                <div class="thumbnail">
+                  <img src="https://source.unsplash.com/1600x900/?exam" alt="">
+                </div>
+                <div class="caption">
+                  <h4 class="text-center">
+                   Download Previous Year Question Paper PDF  </h4>
+                </div>
+                <div style="display: flex; justify-content: center; align-items: center;">
+                  <a style="margin-right: 2px;" href="https://nandysagar.in/combined/QuestionsPaper" class="btn  btn-down " target="_blank"
+                   role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"> </span>
+                    Click Here</a>
+  
+                </div>
+              </div>
+            </div>
+          </a>
+            <!-- 3-2 panel ends -->
+          </div>
+        <!-- =============== Question Paper Download Link Ends ================== -->
+
       
       </div>
       <!-- 3 study material row div end -->
@@ -900,7 +909,22 @@
     </div>
   </footer>
   <!--header-->
+  <div style="background-color: #160769;">
 
+    <div class="container">
+
+      <div class="row">
+
+       <center>
+           <p style="color: #fff; margin-top: 5px;">
+               Last Updated On 22.03.2022 at 11:15 P.M.
+           </p>
+       </center>
+      </div>
+
+    </div>
+
+  </div>
   <div class="footer-bottom">
 
     <div class="container">
