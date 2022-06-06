@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <title>Admission</title>
+    <!-- bootstrap V5.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="overlay">
+        <div class="overlayDoor"></div>
+        <div class="overlayContent">
+          
+          <div class="loader">
+            <div class="inner">
+                  
+                  </div>
+          </div>
+        </div>
+      </div>
+      <!-- header start -->
+      <div class="bg-info ">
+        <table class="table table-responsive text-white fw-bold " width="950" border="0" cellspacing="0" cellpadding="0" align="center">
+            <tr >
+                <td width="50%" align="left">
+                    &#9742;: +9112456789 (Student Support Services) / 033 1234 56789  (Information Desk) 
+                </td>
+                <td align="right">
+                    <span id="date_time"></span>
+                    <script type="text/javascript">
+                        const d = new Date();
+                        document.getElementById("date_time").innerHTML =  d.toLocaleString();
+                    </script>
+                </td>
+            </tr>
+        </table>
+        </div>
+    <header class="mt-0">
+        <div class="container-fluid px-3 pb-2 border-bottom border-5 border-primary d-flex ">
+           
+               
+                    <img src="images/BNGM-logo.png" alt="">
+            <div class="fs-2 px-2 fw-bold heading"> BANGABASI MORNING COLLEGE  <p class="mt-0 fs-6 fw-normal">Re-Accredited with Grade "A" by NAAC | Affiliated with the University of Calcutta</p> </div>
+            
+                
+           
+
+        </div>
+
+    </header>
+    <!-- header end -->
+
+
+    <!-- navbar start  -->
+    <nav class="navbar navbar-expand-lg bg-primary ">
+        <div class="container-fluid ">
+          
+          <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center mx-auto  ">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"><i class="bi bi-house-fill"></i> Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="admission.html" target="_blank"><i class="bi bi-flag-fill"></i> Admission</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="academics.html" target="_blank"> <i class="bi bi-mortarboard-fill"></i> Academics</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html" target="_blank"><i class="bi bi-image-fill"></i> Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html" target="_blank"><i class="bi bi-info-circle-fill"></i> About</a>
+              </li>
+             
+              
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+
+    <!-- navbar end -->
+
+
+
+    <div class="container-fluid">
+        <div class="alert alert-secondary mt-2 pb-0 fw-bold fs-4 " role="alert">
+            <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item active text-dark" aria-current="page">Admission</li>
+                </ol>
+              </nav>
+          </div>
+
+
+
+       
+
+
+    </div>
+
+    <!-- main content start -->
+
+    <div class="container-md">
+        <div class="card mb-5 border-0 shadow p-3">
+           
+            <div class="card-body">
+              <h1 class="card-title fw-bold text-primary text-center fs-1 ">Online Admission</h1> 
+              <div class="alert alert-danger my-3 p-1">
+                
+                <marquee behavior="alternate" onmouseover="this.stop();" onmouseout="this.start();"  scrolldelay="3" width="100%"><b class="text-danger fs-5"><i class="bi bi-megaphone-fill"></i> Please provide the correct information below.</b></marquee>
+              </div>
+              
+              <form id="loginForm" role="form" class="form-horizontal" action="#" method="post" enctype="multipart/form-data" novalidate="novalidate">
+
+  
+<div class="card">
+    <h5 class="card-header bg-info fw-bold text-white">
+  Basic Details
+    </h5>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-sm-6 ">
+                <div class="form-group ">
+                    <label class="col-sm-4 control-label ">Name</label>
+                    <div class="col-sm-8 ">
+                        <input class="form-control" type="text" name="name" id="name" value="" placeholder="Name">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="col-sm-4 control-label">Email</label>
+                    <div class="col-sm-8">
+                        <input class="form-control" type="text" name="email" id="email" value="" placeholder="Email">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="col-sm-4 control-label">Mobile</label>
+                    <div class="col-sm-8">
+                        <input class="form-control" type="text" name="phone" id="phone" value="" placeholder="Mobile" maxlength="10">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                <label class="col-sm-4 control-label">Whatsapp number</label>
+                    <div class="col-sm-8">
+                        <input class="form-control" type="text" name="whatsapp" id="whatsapp" value="" placeholder="Whatsapp" maxlength="10">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="col-sm-4 control-label">Address</label>
+                    <div class="col-sm-8">
+                        <input class="form-control" type="text" name="address" id="address" value="" placeholder="Address">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="col-sm-4 control-label">City</label>
+                    <div class="col-sm-8">
+                        <input class="form-control" type="text" name="city" id="city" value="" placeholder="City">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="col-sm-4 control-label">PIN</label>
+                    <div class="col-sm-8">
+                        <input class="form-control" type="text" name="zip" id="zip" value="" placeholder="PIN">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="col-sm-4 control-label">Identity Proof</label>
+                    <div class="col-sm-8">
+                        <input class="form-control" type="text" name="orgstudentid" id="orgstudentid" value="" placeholder="Aadhar No.">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="col-sm-4 control-label">DOB</label>
+                    <div class="col-sm-8">
+                        <input class="form-control" type="text" name="dob" id="dob" value="" placeholder="DOB" readonly="readonly">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="col-sm-4 control-label">Mother's name</label>
+                    <div class="col-sm-8">
+                        <input class="form-control" type="text" name="mname" id="mname" value="" placeholder="Mother's full name" >
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="col-sm-4 control-label">Father's Name</label>
+                    <div class="col-sm-8">
+                        <input class="form-control" type="text" name="fathername" id="fathername" value="" placeholder="Father's Name">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="col-sm-4 control-label">Gender</label>
+                    <div class="col-sm-8">
+                        <label class="radio-inline mx-1"><input type="radio" name="sex" value="Male" class="mx-1">Male</label>
+                        <label class="radio-inline  mx-1"><input type="radio" name="sex" value="Female" class="mx-1">Female</label>
+                        <label class="radio-inline  mx-1"><input type="radio" name="sex" class="mx-1" value="ORS">ORS</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="col-sm-4 control-label">Category</label>
+                    <div class="col-sm-8">
+                        <select class="form-control select2 select2-hidden-accessible" name="caste" id="caste" tabindex="-1" aria-hidden="true">
+                            <option value="" selected="selected">Please select category</option>
+                            <option value="GENERAL">GENERAL</option>
+                            <option value="SC">SC</option>
+                            <option value="ST">ST</option>
+                            <option value="OBC-A">OBC-A</option>
+                            <option value="OBC-B">OBC-B</option>
+                            <option value="PH">PH</option>
+                            <option value="ORS">ORS</option>
+                        </select><span class="text-primary">Please select category</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="col-sm-4 control-label">Nationality</label>
+                    <div class="col-sm-8">
+                        <input class="form-control" type="text" name="Nationality" id="Nationality" value="" placeholder="Nationality">
+                    </div>
+                </div>
+            </div>
+            
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="col-sm-4 control-label">Course</label>
+                    <div class="col-sm-8">
+                        <select class="form-control select2 select2-hidden-accessible" name="courseid" id="courseid" tabindex="-1" aria-hidden="true">
+                            <option value="" selected="selected">Please select course</option>
+                                                       </select><span class="text-primary fs-bold">Please select a course</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="col-sm-4 control-label"> Subject</label>
+                    <div class="col-sm-8">
+                        <select class="form-control select2 select2-hidden-accessible" name="optionalsubject" id="optionalsubject" tabindex="-1" aria-hidden="true">
+                            <option value="" selected="selected">Please select optional subject</option>
+                            <option value="Bengali">Bengali</option><option value="English">English</option><option value="Anthropology">Anthropology</option><option value="Botany">Botany</option><option value="Chemistry">Chemistry</option><option value="Commerce and Accountancy">Commerce and Accountancy</option><option value="Computer Science">Computer Science</option><option value="Economics">Economics</option><option value="Geography">Geography</option><option value="Geology">Geology</option><option value="History">History</option><option value="Law">Law</option><option value="Mathematics">Mathematics</option><option value="Philosophy">Philosophy</option><option value="Physiology">Physiology</option><option value="Physics">Physics</option><option value="Political Science">Political Science</option><option value="Psychology">Psychology</option><option value="Sociology">Sociology</option><option value="Statistics">Statistics</option><option value="Zoology">Zoology</option>									
+                        </select><span class="text-primary">Please select your subject</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="card mt-3 border-0">
+    <h5 class="card-header border border-2 text-white border-info bg-info rounded-0" width="100%">
+        <b>Qualifications Details</b>
+    </h5>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Examination</th>
+                                <th>Board/University</th>
+                                <th>Passing Year</th>
+                                <th>% Marks Obtained</th>
+                                <th>Subject</th>
+                                <th>Div/Grade/Class</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>10th Standard</td>
+                                <td><input class="form-control" type="text" name="10thb" value=""></td>
+                                <td><input class="form-control" type="text" name="10thy" value=""></td>
+                                <td><input class="form-control" type="text" name="10thp" value=""></td>
+                                <td><input class="form-control" type="text" name="10ths" value=""></td>
+                                <td><input class="form-control" type="text" name="10thc" value=""></td>
+                            </tr>
+                            <tr>
+                                <td>12th Standard</td>
+                                <td><input class="form-control" type="text" name="12thb" value=""></td>
+                                <td><input class="form-control" type="text" name="12thy" value=""></td>
+                                <td><input class="form-control" type="text" name="12thp" value=""></td>
+                                <td><input class="form-control" type="text" name="12ths" value=""></td>
+                                <td><input class="form-control" type="text" name="12thc" value=""></td>
+                            </tr>
+                            <tr>
+                                <td>Graduation</td>
+                                <td><input class="form-control" type="text" name="graduationb" value=""></td>
+                                <td><input class="form-control" type="text" name="graduationy" value=""></td>
+                                <td><input class="form-control" type="text" name="graduationp" value=""></td>
+                                <td><input class="form-control" type="text" name="graduations" value=""></td>
+                                <td><input class="form-control" type="text" name="graduationc" value=""></td>
+                            </tr>
+                            <tr>
+                                <td>Master</td>
+                                <td><input class="form-control" type="text" name="masterb" value=""></td>
+                                <td><input class="form-control" type="text" name="mastery" value=""></td>
+                                <td><input class="form-control" type="text" name="masterp" value=""></td>
+                                <td><input class="form-control" type="text" name="masters" value=""></td>
+                                <td><input class="form-control" type="text" name="masterc" value=""></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<div class="card border-0 mt-3">
+    <h5 class="card-header rounded-0 bg-info text-white">
+         <b>Documents Upload</b>
+    </h5>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="col-sm-4 control-label">Picture</label>
+                    <div class="col-sm-8">
+                        
+                        <input type="file" id="imginput" name="picture" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="col-sm-4 control-label">Signature</label>
+                    <div class="col-sm-8">
+                        <input type="file" name="signature" class="form-control">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="row mt-3">
+    
+    <div class="col-sm-12">
+        <div class="form-group mx-3">
+            <label class="col-sm-12"><input type="checkbox" name="agree2" value="1"> &nbsp; I do hereby solemnly affirm that all the information furnished by me are correct to the best of my knowledge and belief. </label>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12 pb-3 px-3">
+        <div class="modal-footer" style="text-align: center;">
+            <button type="submit" class="btn btn-success mx-1" id="btnSubmit">Submit</button>
+            
+        </div>
+    </div>
+</div>
+<input type="hidden" name="mode" value="registration">
+<input type="hidden" name="imgdata" id="imgdata" value="">
+</form>
+              
+            </div>
+          </div>
+    </div>
+</div>
+
+    
+
+
+    <!-- main content ends  -->
+
+
+<!-- footer start -->
+<div class=" bg-info mb-0 px-3 pb-5 pt-5 ">
+    <div class="container">
+      <div class="row">
+       
+        <div class="col-md-5  pt-2">
+          
+  
+          <div class="card mt-3 pt-3">
+            <div class="card-title">
+              <h3 class="text-center  fw-bold pt-3">Contact Us</h3>
+            </div>
+            <div class="card-body pt-1 p-4">
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Registration Number</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                 
+                </div>
+                <div class="mb-3">
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Comments</label>
+                  </div>
+                </div>
+                <div class="d-grid gap-2 ">
+                  <button type="submit" class="btn btn-success">Submit</button>
+                  
+                </div>
+               
+                
+              </form>
+  
+            </div>
+          </div>
+  
+        </div>
+        <div class="col-md-7 mt-3 pt-2">
+          <iframe width="100%" height="360" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Bangabasi+Morning+College&amp;aq=&amp;sll=24.372814,87.850498&amp;sspn=6.491447,8.470459&amp;ie=UTF8&amp;hq=Bangabasi+Morning+College&amp;hnear=&amp;t=m&amp;cid=11910152357611198219&amp;ll=22.604344,88.374367&amp;spn=0.076068,0.109863&amp;z=13&amp;iwloc=A&amp;output=embed"></iframe>
+        </div>
+      </div>
+    </div>
+  
+  
+  
+  
+  
+    
+    
+  </div>
+      
+  
+  
+  
+  
+  
+   <footer class=" mt-4">
+       <table class="table  fixed-bottom mb-0" style="background-color: rgb(44, 49, 110)">
+           <tr class="text-warning text-center fw-bold">
+               <td>Design & Developed By : <a href="https://nandysagar.in/" style="color: rgb(251, 6, 10)">Sagar Nandy</a></td>
+           </tr>
+       </table>
+  
+       <!-- Program is created by Sagar Nandy,Student Of Applied Mathematics,University Of Kalyani, Mobile : +916295980525.My Website : https://nandysagar.in  -->
+   </footer>
+   <!-- footer ends -->
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+
+    <script>
+      $(document).ready(function () {
+          // Users can skip the loading process if they want.
+          $('.skip').click(function () {
+              $('.overlay, body').addClass('loaded');
+          })
+  
+          // Will wait for everything on the page to load.
+          $(window).bind('load', function () {
+              $('.overlay, body').addClass('loaded');
+              setTimeout(function () {
+                  $('.overlay').css({ 'display': 'none' })
+              }, 1000)
+          });
+  
+          // Will remove overlay after 1min for users cannnot load properly.
+          setTimeout(function () {
+              $('.overlay, body').addClass('loaded');
+          }, 60000);
+      })
+  </script>
+  </body>
+</html>
