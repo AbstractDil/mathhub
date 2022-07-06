@@ -90,6 +90,6 @@ const Username = prompt("Enter Username");
 }
 else{
     alert("Access Denied.")
-    window.location="error.html"
+    window.location="https://nandysagar.in/combined/error.html "
 }
 
