@@ -55,6 +55,16 @@ document.addEventListener("contextmenu", function(event){
             swal(" CTRL+A Key is Disabled By Administrator.","","warning"); 
             return false;
         }
+        //C disable 
+        if(e.ctrlKey && e.keyCode == 67) {
+            swal(" CTRL+C Key is Disabled By Administrator. ","Our system detected that you are trying to copy our content. \n Your public ip address is sent to our server.","warning"); 
+            return false;
+        }
+        //V disable 
+        if(e.ctrlKey && e.keyCode == 67) {
+            swal(" CTRL+V Key is Disabled By Administrator.","","warning"); 
+            return false;
+        }
         
     }
  $('body').bind('copy paste',function(e) {
