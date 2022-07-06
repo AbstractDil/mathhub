@@ -61,7 +61,7 @@ document.addEventListener("contextmenu", function(event){
             return false;
         }
         //V disable 
-        if(e.ctrlKey && e.keyCode == 67) {
+        if(e.ctrlKey && e.keyCode == 86) {
             swal(" CTRL+V Key is Disabled By Administrator.","","warning"); 
             return false;
         }
