@@ -11,10 +11,166 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 <!-- sweet alert js  -->
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-<link rel="stylesheet" href="style.css">
-<script src="print.js"></script>
+<style>
+ 
+ #loading {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #fff url('loading.gif') no-repeat center center;
+        z-index: 9999;
+        }
+         .footer{
+          position:fixed;
+          padding:6px;
+          left:0;
+          bottom:0;
+          width:100%;
+          background-color:rgb(75, 75, 158);
+          color:#fff;
+          text-align:center;
+         }
+          body{
+        background: #f5f5f5 url(bg.png);
+        font-size: 18px;
+        
+          }
     
+        /* font-size:18px; */
+    
+     /* Track */
+     ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey; 
+        border-radius: 10px;
+      }
+       
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: rgb(171, 172, 173); 
+        border-radius: 10px;
+      }
+      
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555151; 
+      }
+      .panel-primary .panel-heading{
+       background-image:  linear-gradient(-90deg,rgb(255, 80, 16),rgb(111, 10, 179)) ;
+      }
+        .center-item{
+            margin-top: 22rem;
+        }
+       a{
+        text-decoration: none;
+        font-weight: bold;
+       }
+       .panel-body{
+           font-size: 18px;
+           
+       }
+       .table{
+        color:#1b1a1a;
+       }
+       
+       .panel-heading{
+           font-weight: 800;
+           font-size: 16px;
+       }
+        .panel-footer{
+            
+            padding: 10px;
+        line-height: 14px;
+        position: fixed;
+        text-align: center;
+        width: 100%;
+        font-size: 13px;
+        bottom: 0;
+        left: 0;
+        
+        }
+        .blink 
+        {        
+             animation: blinker 1.5s linear infinite;       
+               color: #ffffff;  
+                font-size: 30x;     
+                    font-weight: bold;     
+                        font-family: sans-serif;       }
+                        @keyframes blinker {         10% {           opacity: 0;         }       }
+                        .blink-one {         animation: blinker-one 1s linear infinite;       }   
+                                          @keyframes blinker-one {         0% {           opacity: 0;         }       }       
+                                           .blink-two {         animation: blinker-two 1.4s linear infinite;       }       @keyframes blinker-two {         10% {           opacity: 0;         }       } 
+          
+    
+                        .modal-header {
+                            display: flex;
+                            justify-content: space-between;
+                            /* Border */
+                            border-bottom: #fff;
+                        }
+    
+                        .modal-footer {
+                            display: flex;
+                            /* Push the buttons to the right */
+                            justify-content: flex-end;
+                            /* Border */
+                            border-top: #fff;
+                        }
+                        .layered-card {
+                            position: relative;
+                        }
+    
+                        .layered-card::before {
+                            background: rgba(92, 91, 91, 0.3);
+                            content: '';
+    
+                            /* Position */
+                            top: 0;
+                            left: 0;
+                            position: absolute;
+                            transform: translate(1rem, 1rem);
+    
+                            /* Size */
+                            height: 100%;
+                            width: 100%;
+    
+                            /* Display under the main content */
+                            z-index: -1;
+                        }
+                        .fa {
+        float: right;
+    }
+    
+    .label{
+        font-size: 18px;
+    }
+    @media print {
+    body:before{
+      content: 'S.BAGCHI COMBINED \ Contact : +919851282917';
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 2;
+  
+      color: #0d745e;
+      font-size: 60px;
+      font-weight: 500px;
+      font-family: 'Times New Roman', Times, serif;
+      display: grid;
+      justify-content: center;
+      align-content: center;
+      opacity: 0.2;
+      transform: rotate(-45deg);
+    }
+  }
 
+
+
+ 
+    
+</style>
+<script src="print.js"></script>
 
 
 </head>
@@ -1043,32 +1199,106 @@
                             <tbody>
                                 <tr >
                                     <td colspan="3">                    
-                                        <strong > <center><span class="label label-danger">Important Days 2022 - S.Bagchi Combined</span></center> </strong> 
+                                        <strong > <center><span class="label label-danger">Important Days Of July 2022 - S.Bagchi Combined</span></center> </strong> 
                                     </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"><strong class="label label-primary">List of Important Days in July</strong></td>
-                                    <td><strong class="label label-primary">Theme</strong></td>
+                                    <td><strong class="label label-primary">Theme / Key Points</strong></td>
                                 </tr>
                                 <tr>
                                     <td>1 July</td>
-                                    <td>National Doctor’s Day, <br>GST Day, <br>National CA Day, <br>National Postal Worker's Day, <br>Foundation Day Of State Bank Of India , <br> Canada Day</td>
+                                    <td>
+                                        <ol>
+                                            <li>National Doctor’s Day,</li>
+                                            <li>GST Day,</li>
+                                            <li>National CA Day,</li>
+                                            <li>National Postal Worker's Day,</li>
+                                            <li>Foundation Day Of State Bank Of India , </li>
+                                            <li>Canada Day</li>
+
+                                        </ol>
+                                          </td>
                                     <td></td>
                                 </tr>
                                 <tr>
                                     <td>2 July</td>
-                                    <td>World UFO Day, <br> World Sports Journalists Day</td>
-                                    <td></td>
+                                    <td>
+                                        <ol>
+                                            <li> World UFO Day,</li>
+                                            <li>World Sports Journalists Day,</li>
+                                            <li>International Day of Cooperatives (1st Saturday)</li>
+
+                                        </ol>
+                                        <br> </td>
+                                    <td>
+                                        <ol>
+                                            <li>
+                                                <span class="text-info">Key Points:</span>
+                                                This day was first observed by UFO researcher Haktan Akdogan in 2001.
+                                         </li>
+                                            <li>
+                                                <span class="text-info">Key Points:</span>
+                                                The day commemorates the formation of the International Sports Press Association (AIPS)
+                                         </li>
+                                            <li>
+                                                <span class="text-info">Theme:</span>Cooperative Build a Better World.
+
+                                                
+                                            </li>
+
+                                        </ol>
+                                        
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>2 July (1st Saturday)</td>
-                                    <td>International Day of Cooperatives</td>
-                                    <td></td>
+                                    <td> 3 July</td>
+                                    <td>International Plastic Bag Free Day</td>
+                                    <td>
+                                        <span class="text-info">Theme:</span>
+                                        Global initiative that aims to eliminate the use of single-use plastic bags.
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>4 July</td>
-                                    <td>American Independence Day 246<sup>th</sup></td>
-                                    <td></td>
+                                    <td><ol>
+                                        <li>
+                                            American Independence Day 246<sup>th</sup>
+                                        </li>
+                                        <li>
+                                            125th birth anniversary of Alluri Sitarama Raju
+                                        </li>
+                                        <li>Swami Vivekananda’s death anniversary</li>
+                                    </ol></td>
+                                    <td>
+                                        <ol>
+                                            <li>
+                                        <span class="text-info">Theme:</span>
+
+                                            </li>
+                                            <li>
+                                        <span class="text-info">Key Points:</span>
+                                        PM Modi has unveiled a 30-feet tall bronze statue of freedom fighter Alluri Sitarama Raju at Bhimavaram, Andhra Pradesh
+
+                                            </li>
+                                            <li>
+                                        <span class="text-info">Key Points:</span>
+                                        He founded the Ramakrishna Mission at Belur Math by the river Ganga
+                                            </li>
+
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>5 July</td>
+                                    <td>World Badminton Day</td>
+                                    <td>
+                                        <span class="text-info">Key Points:</span>
+                                        India host 2026 World Badminton Championships.
+                                        <ul>
+                                            <li>Himanta Biswa Sarma re-elected as President of Badminton Association of India</li>
+                                        </ul>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>6 July</td>
@@ -1076,19 +1306,70 @@
                                     <td></td>
                                 </tr>
                                 <tr>
+                                    <td>7 July</td>
+                                    <td>World Kishwahili Language Day</td>
+                                    <td>
+                                        <span class="text-info">Key Points:</span>
+                                        Kiswahili is the only African language that is an official language of the African Union.
+                                    </td>
+
+                                </tr>
+                                <tr>
                                     <td>10 July </td>
                                     <td>National Fish Farmer's Day</td>
-                                    <td></td>
+                                    <td>
+                                        <span class="text-info">Key Points:</span>
+                                        <ul>
+                                            <li>
+                                        Blue Revolution in India related to fisheries production.
+
+                                            </li>
+                                            <li>Pradhan Mantri Matsya Sampada Yojana (PMMSY) was launched on 10th September 2020.</li>
+                                            <li>The study of fish culture is called Pisciculture.</li>
+                                        </ul>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>11 July</td>
                                     <td>World Population Day</td>
-                                    <td></td>
+                                    <td>
+                                        <span class="text-info">Theme:</span>
+
+                                        A world of 8 billion- Towards a resilient future for all – Harnessing opportunities and ensuring rights and choices for all.
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>12 July</td>
-                                    <td>World Malala Day, <br>National Simplicity Day </td>
-                                    <td></td>
+                                    <td>
+                                        <ol>
+                                            <li>World Malala Day,</li>
+                                            <li>National Simplicity Day</li>
+
+                                        </ol>
+                                          </td>
+                                    <td>
+                                        <ol>
+                                            <li>
+                                                <span class="text-info">Key Points:</span>
+                                                Pakistani activist Malala Yousafzai was the youngest recipient of Nobel Peace Prize (2014).
+                                            </li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>13 July </td>
+                                    <td>Bhanubhakta Acharya’s 209th birth anniversary</td>
+                                    <td>
+                                        <span class="text-info">Key Points:</span>
+                                        <ul>
+                                            <li>He was Renowned Nepali poet.</li>
+                                            <li>He was the first author to translate the epic Ramayana from Sanskrit into Nepali.</li>
+                                            <li>He is known as ‘Adikabi’ for laying the foundation stone of Nepali language.</li>
+
+                                        </ul>
+
+
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>14 July </td>
@@ -1098,7 +1379,10 @@
                                 <tr>
                                     <td>15 July </td>
                                     <td>World Youth Skill Day</td>
-                                    <td></td>
+                                    <td>
+                                        <span class="text-info">Theme:</span>
+                                        Transforming youth skills for the future.
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>16 July </td>
@@ -1108,23 +1392,93 @@
                                 <tr>
                                     <td>17 July </td>
                                     <td>World Day For International Justice </td>
-                                    <td></td>
+                                    <td>
+                                        <span class="text-info">Theme:</span>
+                                        Achieving Social Justice through Formal Employment.
+                                    </td>
                                 </tr>
                             
                                 <tr>
                                     <td>18 July</td>
-                                    <td>Nelson Mandela International Day</td>
-                                    <td>For Freedom, Justice and Democracy</td>
+                                    <td>
+                                        <ol>
+                                            <li>Nelson Mandela International Day</li>
+                                            <li>Tamil Nadu Day</li>
+
+                                        </ol>
+                                        </td>
+                                    <td>
+                                        <ol>
+                                            <li>
+                                        <span class="text-info">Theme:</span>
+                                        Do what you can, with what you have, where you are <br>
+                                        <span class="text-info">Key Points:</span>
+                                        Nelson Mandela was conferred with the Nobel Peace Prize in October 1993.
+
+                                            </li>
+                                            <li>
+                                        <span class="text-info">Key Points:</span>
+                                        On this day that a resolution was adopted by the then Madras Presidency in 1967 and it came to be called Tamil Nadu.
+                                            </li>
+
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Mangal Pandey birth anniversary</td>
+                                    <td>
+                                        <span class="text-info">Key Points:</span>
+                                        He was the leader of theIndia’s first major rebellion against the British Empire in 1857 which is also known as the First War of Independence.
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>20 July </td>
-                                    <td>World Chess Day [Int. Chess Fedaration (FIDE) Formation,July 20, 1924; H.Q - Lausanne,Swizerland]</td>
-                                    <td></td>
+                                    <td><ol>
+                                        <li>
+                                            World Chess Day [Int. Chess Fedaration (FIDE) Formation,July 20, 1924; H.Q - Lausanne,Swizerland]
+                                        </li>
+                                        <li>
+                                            International Moon Day
+                                        </li>
+                                    </ol></td>
+                                    <td>
+                                        <ol>
+                                            <li>
+                                        <span class="text-info">Key Points:</span>
+                                        The day marks the date of the establishment of the International Chess Federation (FIDE) in Paris in 1924.
+
+                                            </li>
+                                            <li>
+                                        <span class="text-info">Key Points:</span>
+                                        On this day in 1969, astronauts Neil Armstrong and Buzz Aldrin conducted their moonwalk , becoming the first batch of astronauts to set foot on the lunar surface.
+
+                                            </li>
+                                        </ol>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>22 July </td>
-                                    <td>World Brain Day, <br> Pi Approximation Day</td>
-                                    <td></td>
+                                    <td>
+                                        <ol>
+                                            <li>
+
+                                                World Brain Day, 
+                                            </li>
+                                            <li>
+
+                                                Pi Approximation Day
+                                            </li>
+                                        </ol>
+                                        </td>
+                                    <td>
+                                        <ol>
+                                            <li>
+                                        <span class="text-info">Theme:</span>
+                                        Brain Health for all.
+                                            </li>
+                                            <li></li>
+                                        </ol>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>23 July </td>
@@ -1133,45 +1487,148 @@
                                 </tr>
                                 <tr>
                                     <td>24 July </td>
-                                    <td>National Thermal Engineering Day</td>
-                                    <td></td>
+                                    <td>
+                                        <ol>
+                                        <li>
+
+                                            National Thermal Engineering Day
+                                        </li>
+                                        <li>
+                                            Income Tax Day
+                                        </li>
+                                        </ol>
+                                    </td>
+                                    <td>
+                                        <ol>
+                                            <li>
+                                        <span class="text-info">Key Points:</span>
+                                        Celebrated to honour the importance of thermal management in the electronics sectors along with the engineers
+                                            </li>
+                                        <li>
+                                        <span class="text-info">Key Points:</span>
+                                        Income tax was first introduced in India by Sir James Wilson on 24 July 1860.
+                                        </li>
+                                        </ol>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>25 July </td>
                                     <td>World Drowning Prevantion Day</td>
-                                    <td></td>
+                                    <td>
+                                        <span class="text-info">Key Points:</span>
+                                        WHO suggests using the hashtag #DrowningPrevention for this occasion on social media.
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>26 July </td>
-                                    <td>World Mangrove Day, <br> Kargil Vijay Diwas</td>
-                                    <td></td>
+                                    <td>
+                                        <ol>
+                                            <li>
+
+                                                World Mangrove Day, 
+                                            </li>
+                                            <li>
+
+                                                Kargil Vijay Diwas
+                                            </li>
+                                        </ol>
+                                        </td>
+                                    <td>
+                                        <ol>
+                                            <li>
+                                        <span class="text-info">Theme:</span>
+                                            </li>
+                                            <li>
+                                        <span class="text-info">Key Points:</span>
+                                        Celebrated to commemorate India’s victory over Pakistan in the Kargil War in 1999. (Operation Vijay)
+                                            </li>
+                                        </ol>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>27 July </td>
-                                    <td>CrPF 34th Raising Day</td>
-                                    <td></td>
+                                    <td><ol>
+                                        <li>
+                                            Dr. A. P. J. Abdul Kalam’s 7th death anniversary
+                                        </li>
+                                        <li>
+                                            83rd Raising Day of Central Reserve Police Force (CRPF)
+                                        </li>
+                                    </ol></td>
+                                    <td>
+                                        <ol>
+                                            <li>
+                                        <span class="text-info">Theme:</span>
+                                        <ul>
+                                            <li>Popularly known as the Missile Man of India.</li>
+                                            <li> He was elected 11th President of India on 25th July 2002.</li>
+                                            <li> Major awards received by Kalam: Padma Bhushan (1981), Padma Vibhushan (1990), and Bharat Ratna, India’s highest civilian honour (1997).</li>
+
+                                        </ul>
+                                            </li>
+                                            <li>
+                                        <span class="text-info">Key Points:</span>
+                                        The force was established on July 27, 193.
+                                            </li>
+                                        </ol>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>28 July</td>
-                                    <td>World Nature Conservation Day, <br> World Hepatitis Day</td>
+                                    <td>
+                                        <ol>
+                                            <li>
+                                                    
+                                                    World Hepatitis Day,
+                                            </li>
+                                            <li>
+                                                        
+                                                        World Nature Conservation Day
+                                            </li>
+                                        </ol>
+                                    </td>
                     
-                                    <td><br>Achieving the elimination of viral hepatitis  evolving health systems</td>
+                                    <td>
+                                        <ol>
+                                            <li>
+                                        <span class="text-info">Theme:</span>
+                                        Bringing hepatitis care closer to you
+                                            </li>
+                                            <li>
+                                        <span class="text-info">Theme:</span>
+                                        Living Sustainable in Harmony with Nature
+                                            </li>
+                                        </ol>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>29 July</td>
                                     <td>Global  Tiger Day</td>
-                                    <td></td>
+                                    <td>
+                                        <span class="text-info">
+                                            Theme:
+                                        </span>
+                                        India launches Project Tiger to revive the tiger population
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>30 July</td>
-                                    <td>World Day Against Trafficking In Persons, <br>International Day Of Friendship</td>
+                                    <td>
+                                        <ol>
+                                            <li>
+                                                World Day Against Trafficking in Persons
+                                            </li>
+                                            <li>
+                                                International Day Of Friendship
+                                            </li>
+                                    </td>
                                     <td></td>
                                 </tr>
                     
                                 
                             </tbody>
                           </table>
-<p style="font-size: 12px;">**Notes prepared by Hrithick Bhowmick.**</p>
+
 
 
 
@@ -1215,59 +1672,265 @@
                             <tbody>
                                 <tr >
                                     <td colspan="3">                    
-                                        <strong > <center><span class="label label-danger">Important Days 2022 - S.Bagchi Combined</span></center> </strong> 
+                                        <strong > <center><span class="label label-danger">Important Days Of August 2022 - S.Bagchi Combined</span></center> </strong> 
                                     </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"><strong class="label label-primary">List of Important Days in August</strong></td>
-                                    <td><strong class="label label-primary">Theme</strong></td>
+                                    <td><strong class="label label-primary">Theme / Key Points</strong></td>
+                                </tr>
+
+
+                                <tr>
+                                    <td>1 August - 7 August</td>
+                                    <td>World Breastfeeding Week</td>
+                                    <td>
+                                        <span class="text-info">Key Points:</span>
+                                        The World Alliance for Breastfeeding Action (WABA) was established in 1991.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1 August</td>
+                                    <td>
+                                        <ol>
+                                            <li>
+                                                Muslim Women's Rights Day,
+
+                                            </li>
+                                            <li>
+
+                                                Yorkshire Day
+                                            </li>
+                                            <li>
+                                                World Wide Web Day
+                                            </li>
+
+                                        </ol>
+                                    </td>
+                                    <td>
+                                        <ol>
+                                            <li></li>
+                                            <li></li>
+                                            <li>
+                                                <span class="text-info">Key Points:</span>
+                                                The WWW was deveoped by English computer scientist Tim Berners-Lee in 1989
+                                            </li>
+
+                                        </ol>
+                                    </td>
                                 </tr>
 
                                 <tr>
-                                    <td>1 August</td>
-                                    <td>Muslim Women's Rights Day, <br>Yorkshire Day</td>
-                                    <td></td>
+                                    <td>2 August</td>
+                                    <td>146th birth anniversary of Pingali Venkayya</td>
+                                    <td>
+                                        <span class="text-info">Key Points:</span>
+                                        He is known for designing the Swaraj flag used by Mahatma Gandhi during the Indian independence movement
+                                    </td>
                                 </tr>
                                 
                                 <tr>
                                     <td>6 August</td>
                                     <td>Hiroshima Day</td>
-                                    <td></td>
+                                    <td>
+                                        <span class="text-info">Key Points:</span>
+                                        Commemorating the atomic bombing (known as Little Boy) of Hiroshima, Japan in 1945 at the end of World War II.
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>7 August</td>
-                                    <td>National Handloom Day <br> Javelin Throw Day (Neeraj Chopra B' Day)</td>
-                                    <td></td>
+                                    <td>
+                                        <ol>
+                                            <li>
+
+                                                National Handloom Day ,
+                                            </li>
+                                            <li>
+
+                                                Javelin Throw Day (Neeraj Chopra B' Day)
+                                            </li>
+                                        </ol>
+                                    </td>
+                                    <td>
+                                        <ol>
+                                            <li>
+                                                <span class="text-info">Key Points:</span>
+                                                It commemorates the Swadeshi movement that started on August 7, 1905
+                                            </li>
+                                            <li>
+                                                <span class="text-info">Key Points:</span>
+                                              
+                                            </li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>8 August</td>
+                                    <td>
+                                        Quit India Movement Day
+                                    </td>
+                                    <td>
+                                        <span class="text-info">Key Points:</span>
+                                        <ul>
+                                            <li>
+
+                                                The Quit India movement was started on August 8, 1942.
+                                            </li>
+                                            <li>
+
+                                                Famous slogan of Quit India movement ‘Do or die’ ( given by MK Gandhi)
+                                            </li>
+                                        </ul>
+                                                                            </td>
+
                                 </tr>
                                 <tr>
                                     <td>9 August</td>
-                                    <td>International day of World’s indigenous people, <br>Quit India Movement, <br>Nagasaki Day</td>
-                                    <td></td>
+                                    <td>
+                                        <ol>
+                                            <li>
+
+                                                International Day of the World’s Indigenous Peoples,
+                                            </li>
+                                           
+                                            <li>
+
+                                                Nagasaki Day
+                                            </li>
+                                        </ol>
+                                        </td>
+                                    <td>
+                                        <ol>
+                                            <li>
+                                                <span class="text-info">Theme:</span>
+                                                The Role of Indigenous Women in the Preservation and Transmission of Traditional Knowledge
+
+                                            </li>
+                                            <li>
+
+                                            </li>
+                                        </ol>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>10 August</td>
-                                    <td>World Biofuel Day, <br>World Lion Day</td>
-                                    <td></td>
+                                    <td>
+                                        <ol>
+                                            <li>
+                                                World Biofuel Day,
+
+                                            </li>
+                                            <li>
+
+                                                World Lion Day
+                                            </li>
+                                        </ol>
+                                    </td>
+                                    <td>
+                                        <ol>
+                                            <li>
+                                                <span class="text-info">Key Points:</span>
+                                                The Role of Indigenous Women in the Preservation and Transmission of Traditional Knowledge
+                                            </li>
+                                            <li>
+                                                <span class="text-info">Key Points:</span>
+
+                                                Gir National Park in Gujarat is famous for the Asiatic Lion.
+                                            </li>
+                                        </ol>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>12-August</td>
-                                    <td>International Youth Day [ National Youth Day - 12 January] <br> World Elephant Day</td>
-                                    <td></td>
+                                    <td><ol>
+                                        <li>
+
+                                            International Youth Day [ National Youth Day - 12 January]
+                                        </li>
+                                        <li>
+                                            World Sanskrit Diwas 2022
+                                        </li>
+                                        <li>
+
+                                            World Elephant Day
+                                        </li>
+                                    </ol>
+                                        </td>
+                                    <td>
+                                        <li>
+                                            <span class="text-info">Key Points:</span>
+                                            Intergenerational Solidarity: Creating a World for All Ages
+                                        </li>
+                                        <li>
+                                            <span class="text-info">Key Points:</span>
+                                            World Sanskrit Day or Sanskrit Diwas is celebrated annually on the occasion of Shraavana Poornima.
+                                        </li>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>13 August</td>
-                                    <td>World Organ Donation Day </td>
-                                    <td></td>
+                                    <td>
+                                        <ol>
+                                            <li>
+
+                                                World Organ Donation Day 
+                                            </li>
+                                            <li>International Lefthanders Day</li>
+                                        </ol>
+                                    </td>
+                                    <td>
+                                       <ol>
+                                        <li>
+                                            <span class="text-info">Theme:</span>
+                                            “let’s pledge to donate organs and save lives”
+                                        </li>
+                                        <li>
+                                            <span class="text-info">Theme:</span>
+                                            The day is observed to raise awareness of left-wingers’ experiences with living in a right-handed dominant world.
+                                        </li>
+                                       </ol>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td> 14 August </td>
                                     <td>Partition Horrors Remembrance Day</td>
-                                    <td></td>
+                                    <td>
+                                        <span class="text-info">Key Points:</span>
+                                        :first declared by prime minister Narendra Modi in 2021
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>15 August</td>
-                                    <td>Independence Day of India</td>
-                                    <td></td>
+                                    <td>
+                                        <ol>
+                                            <li>
+                                    Independence Day of India
+
+                                            </li>
+                                            <li>Sri Aurobindo’s 150th birth anniversary</li>
+                                        </ol>
+                                    </td>
+                                       
+                                
+                                    <td>
+                                        <ol>
+                                            <li>
+
+                                            </li>
+                                            <li>
+                                                <span class="text-info">Key Points:</span>
+                                                Important literary works of Sri Aurobindo : ‘The Life Divine’, ‘Synthesis of Yoga’, and ‘Savitri: A Legend and a Symbol
+                                            </li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>16 August </td>
+                                    <td>Atal Bihari Vajpayee’s death anniversary</td>
+                                    <td>
+                                        <span class="text-info">Key Points:</span>
+                                        He was awarded India’s highest civilian honour Bharat Ratna in 2015
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>17 August </td>
@@ -1276,28 +1939,174 @@
                                 </tr>
                                 <tr>
                                     <td>19 August</td>
-                                    <td>World Photography Day, <br>  World Humanitarian Day</td>
-                                    <td></td>
+                                    <td>
+                                        <ol>
+                                            <li>
+
+                                                World Photography Day, 
+                                            </li>
+                                            <li>
+
+                                                World Humanitarian Day
+                                            </li>
+                                        </ol>
+                                        </td>
+                                    <td>
+                                        <ol>
+                                            <li>
+                                                <span class="text-info">Theme:</span>
+                                                Pandemic Lockdown through the lens
+
+                                            </li>
+                                            <li>
+                                                <span class="text-info">Theme:</span>
+                                                It Takes a Village
+                                            </li>
+                                        </ol>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>20 August</td>
-                                    <td>World Mosquito Day,<br> Harmony Day</td>
-                                    <td></td>
+                                    <td>
+                                        <ol>
+                                            <li>
+                                                World Mosquito Day,
+                                            </li><li>
+                                                Harmony Day
+                                            </li>
+                                            <li>
+                                                78th birth anniversary of Rajiv Gandhi
+                                            </li>
+                                            <li>Akshay Urja Diwas</li>
+                                        </ol>
+                                       <br> </td>
+                                    <td>
+                                        <ol>
+                                            <li>
+                                                <span class="text-info">Theme:</span>
+                                                Harness innovation to reduce the malaria disease burden and save lives.
+                                            </li>
+                                            <li></li>
+                                            <li>The Vir Bhumi is a memorial dedicated to the former Indian Prime Minister, Rajiv Gandhi</li>
+                                            <li>
+                                                To raise awareness of developments related to renewable energy adoption in India.
+                                            </li>
+                                        </ol>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>23 August</td>
-                                    <td>International Day for the remembrance of the slave trade and its abolition</td>
-                                    <td></td>
+                                    <td>
+                                        <ol>
+                                            <li>
+
+                                                International Day for the Remembrance of Slave Trade and its Abolition
+                                            </li>
+                                            <li>
+                                                Internaut Day
+                                            </li>
+                                        </ol>
+                                    </td>
+                                    <td>
+                                        <ol>
+                                            <li>
+                                                <span class="text-info">
+                                                    Key Points:
+                                                </span>
+                                                This day was first celebrated on 23 August 1998 by UNESCO
+                                            </li>
+                                            <li>
+                                                <span class="text-info">
+                                                    Key Points:
+                                                </span>
+                                                Tim Berners-Lee invented the World Wide Web in 1989.
+                                            </li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>24 August</td>
+                                    <td>Independence Day of Ukraine</td>
+                                    <td>
+                                        <span class="text-info">Key Points:</span>
+                                        Ukraine is the second largest European country after Russia.
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>23 August to 1 September 2022</td>
+                                    <td>World Water Week 2022</td>
+                                    <td>
+                                        <span class="text-info">Theme:</span>
+                                        Seeing the Unseen: The Value of Water
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>26 August 2022</td>
+                                    <td>International Dog Day</td>
+                                    <td>   <span class="text-info">Key Points:</span>
+                                        The day was first celebrated by animal welfare activist and pet lifestyle expert Colleen Paige.</td>
                                 </tr>
                                 <tr>
                                     <td>29 August</td>
-                                    <td>National Sports Day <br> International Day Against Nuclear Tests.</td>
-                                    <td></td>
+                                    <td>
+                                        <ol>
+                                            <li>
+
+                                                National Sports Day 
+                                            </li>
+                                            <li>
+
+                                                International Day Against Nuclear Tests.
+                                            </li>
+                                        </ol>
+                                        </td>
+                                    <td>
+                                        <ol>
+                                            <li>
+                                                <span class="text-info">Key Points:</span>
+                                                The day commemorates the birth anniversary of India’s hockey wizard Major Dhyan Chand.
+                                            </li>
+                                            <li>
+                                                <span class="text-info">Key Points:</span>
+                                                The first nuclear test ‘Trinity’ was conducted on July 16, 1945, by the US Army in a desert in New Mexico.
+                                            </li>
+                                        </ol>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>30 August</td>
-                                    <td>Small Industry Day, <br> International Day of the victims of enforced disappearances.</td>
-                                    <td></td>
+                                    <td>
+                                        <ol>
+                                            <li>
+
+                                                National Small Industry Day,
+                                            </li>
+                                            <li>
+
+                                                International Day of the victims of enforced disappearances.
+                                            </li>
+                                            <li>
+                                                International Whale Shark Day
+                                            </li>
+                                        </ol>
+                                        </td>
+                                    <td>
+                                        <ol>
+                                            <li>
+                                                <span class="text-info">Key Points:</span>
+                                                On August 30, 2000, the Ministry of Small Scale Industries announced a comprehensive policy package for small businesses.
+                                            </li>
+                                            <li>
+
+                                            </li>
+                                            <li>
+                                                <span class="text-info">Key Points:</span>
+                                                The day was started in 2008, at the International Whale Shark Conference in Isla Holbox islands of Mexico
+                                            </li>
+                                        </ol>
+                                    </td>
                                 </tr>
                                 <tr> <td>31 August</td> 
                                     <td>International Day for people of African Descent.</td>
@@ -1306,7 +2115,7 @@
                                 
                             </tbody>
                           </table>
-<p style="font-size: 12px;">**Notes prepared by Hrithick Bhowmick.**</p>
+
 
 
 
@@ -1350,42 +2159,96 @@
                             <tbody>
                                 <tr >
                                     <td colspan="3">                    
-                                        <strong > <center><span class="label label-danger">Important Days 2022 - S.Bagchi Combined</span></center> </strong> 
+                                        <strong > <center><span class="label label-danger">Important Days Of September 2022 - S.Bagchi Combined</span></center> </strong> 
                                     </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"><strong class="label label-primary">List of Important Days in September </strong></td>
-                                    <td><strong class="label label-primary">Theme</strong></td>
+                                    <td><strong class="label label-primary">Theme / Key Points</strong></td>
                                 </tr>
 
                                 <tr>
                                     <td>1-7 September </td>
                                     <td>National Nutrition Week  </td>
-                                    <td></td>
+                                    <td><span class="text-info">
+                                        Theme:
+                                        </span> Celebrate a World of Flavours</td>
+                                </tr>
+                                <tr>
+                                    <td>1-30 September </td>
+                                    <td> Rashtriya Poshan Maah </td>
+                                    <td><span class="text-info">
+                                        Key Points:
+                                        </span>Key focus – “Mahila aur Swasthya” and “Bacha aur Shiksha”.</td>
                                 </tr>
                                 <tr>
                                     <td>2 September</td>
                                     <td>World Coconut Day</td>
-                                    <td></td>
+                                    <td><span class="text-info">
+                                        Theme:
+                                        </span> Growing Coconut for a Better Future and Life</td>
                                 </tr>
                                 <tr>
                                     <td>5 September</td>
-                                    <td>Teachers’ Day (Dr. Radhakrishnan’s birthday) <br> International Day Of Charity </td>
-                                    <td></td>
+                                    <td>
+                                        <ol>
+                                            <li>
+                                                Teachers’ Day (Dr. Radhakrishnan’s birthday) 
+                                            </li>
+                                            <li>
+                                                International Day Of Charity
+                                            </li>
+                                        </ol>
+
+                                          </td>
+                                    <td>
+                                       <ol>
+                                        <li><span class="text-info">
+                                            Theme:
+                                            </span>Leading in crisis, reimaging the future <br><span class="text-info">
+                                            Key points:
+                                            </span>World Teachers’ Day is observed on 5 October</li>
+                                     <li>
+                                        <span class="text-info">Key Points:</span>The day mark the death anniversary of Mother Teresa.
+                                     </li>   
+                                </ol> </td>
                                 </tr>
                                 <tr>
                                     <td>7 September</td>
                                     <td>International Day   Of Clean Air For Blue Skies </td>
-                                    <td></td>
+                                    <td><span class="text-info">
+                                        Theme:
+                                        </span> Air We Share</td>
                                 <tr>
                                     <td>8 September</td>
-                                    <td>International  Literacy Day</td>
-                                    <td></td>
+                                    <td>
+                                        <ol>
+                                            <li>
+                                                International  Literacy Day
+                                            </li>
+                                            <li>
+                                                World Physiotherapy Day
+                                            </li>
+                                        </ol>
+                                        </td>
+                                    <td><ol>
+                                        <li>
+                                            <span class="text-info">Theme:</span>Transforming Literacy Learning Spaces
+                                        </li>
+                                        <li>
+                                            <span class="text-info">Theme:</span> “Prevention and Management of Osteoarthritis”.
+                                        </li>
+                                    </ol></td>
                                 </tr>
                                 <tr>
                                     <td>9 September</td>
                                     <td>International Day To Protect Education From Attack </td>
-                                    <td></td>
+                                    <td>
+                                        <span class="text-info">
+                                            Key Points:
+                                            </span>
+                                            It makes people aware of how conflict between countries affects the education of an entire generation of children.
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td> 10 September </td>
@@ -1394,8 +2257,34 @@
                                 </tr>
                                 <tr>
                                     <td>11 September </td>
-                                    <td>World First Aid Day, <br> National Forest Martyrs Day </td>
-                                    <td></td>
+                                    <td><ol>
+                                        <li>National Forest Martyrs Day</li>
+                                        <li>World First Aid Day</li>
+                                        <li>Vinoba Bhave’s Birth Anniversary</li>
+                                    </ol>  </td>
+                                    <td>
+                                        <ol>
+                                            <li>
+
+                                                <span class="text-info">
+                                                    Key Points:
+                                                    </span>On this day in 1730, the infamous <a href="https://en.wikipedia.org/wiki/Khejarli_massacre" target="_blank"> Khejarli massacre</a> took place
+                                            </li>
+                                            <li>    </li>
+                                            <li>
+                                                <span class="text-info">
+                                                    Key Points:
+                                                    </span>Notable works of Vinoba Bhava
+                                                    <ul>
+                                                        <li>Translated The Gita into Marathi and named it as Geetai.</li>
+                                                        <li>Selected as the ‘First Individual Satyagrahi’ against the British Raj by Gandhiji. (1940)</li>
+                                                        <li>Started ‘Bhoodan’ (gift of land) movement in India in 1951.</li>
+                                                        <!-- <li></li> -->
+
+                                                    </ul>
+                                            </li>
+                                        </ol>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>12 September </td>
@@ -1403,81 +2292,336 @@
                                     <td></td>
                                 </tr>
                                 <tr>
+                                    <td>12th September-23rd October 2022 </td>
+                                    <td>Ayurveda Day 2022</td>
+                                    <td>
+                                        <span class="text-info">
+                                            Theme:
+                                            </span> Har Din Har Ghar Ayurveda
+                                    </td>
+                                </tr>
+                                <tr>
                                     <td>14 September</td>
-                                    <td>Hindi day [ World Hindi Day 10 January] </td>
-                                    <td></td>
+                                    <td>Hindi Diwas </td>
+                                    <td>
+                                        <ol>
+                                            <li>
+                                                <span class="text-info">
+                                                    Key Points:
+                                                    </span> World Hindi Day 10 January
+                                            </li>
+                                        </ol>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>15 September</td>
-                                    <td>Engineer’s day in India, <br>International Day Of Democracy</td>
-                                    <td></td>
+                                    <td>
+                                        <ol>
+                                            <li>International Day Of Democracy</li>
+                                            <li>Engineer’s day in India</li>
+                                        </ol>
+                                         </td>
+                                    <td>
+                                        <ol>
+                                            <li>
+                                                <span class="text-info">Theme:</span>Importance of media freedom to democracy, peace, and delivering on the Sustainable Development Goals
+                                            </li>
+                                            <li>
+                                                <span class="text-info">Key Points:</span>Birth anniversary of India’s pioneer engineer Mokshagundam Visvesvaraya
+                                            </li>
+                                        </ol>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>16 September</td>
-                                    <td>International day for the prevention of the ozone layer</td>
-                                    <td></td>
+                                    <td>World Ozone Day</td>
+                                    <td>
+                                        <span class="text-info">
+                                            Theme:
+                                            </span> Global Cooperation Protecting Life on Earth
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td> 17 September</td>
-                                    <td>World Patient Safety Day</td>
-                                    <td></td>
+                                    <td>
+                                        <ol>
+                                            <li> World Patient Safety Day</li>
+                                            <li>International Red Panda Day (3rd Saturday of September),</li>
+
+
+                                        </ol>
+                                       </td>
+                                    <td>
+                                        <ol>
+                                            <li>
+
+                                                <span class="text-info">
+                                                    Theme:
+                                                    </span> Medication Safety
+                                            </li>
+                                            <li>
+                                                <span class="text-info">
+                                                    Key Points:
+                                                    </span>The red panda also known as the lesser panda.
+                                            </li>
+                                        </ol>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td> 18 September </td>
-                                    <td>International Equal Day, <br> World Water Monitoring Day, <br>International Red Panda Day,<br>International Costal Clean Up Day,<br>World Bamboo Day</td>
-                                    <td></td>
+                                    <td>
+                                        
+                                        <ol>
+                                            <li>International Equal Day,</li>
+                                            <li>World Water Monitoring Day, </li>
+                                            <li>International Costal Clean Up Day,</li>
+                                            <li>World Bamboo Day</li>
+
+
+                                        </ol>
+
+                                         </td>
+                                    <td>
+                                        <ol>
+                                            <li></li>
+                                        
+                                            <li></li>
+                                            <li></li>
+                                            <li>
+                                                <span class="text-info">
+                                                    Key Points:
+                                                    </span>Bamboo is also known as “Green Gold”.
+                                            </li>
+
+                                        </ol>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>21-September</td>
-                                    <td>Alzheimer’s Day, <br> International day of peace and non-violence (UN)</td>
-                                    <td></td>
+                                    <td>19 to 25 September 2022</td>
+                                    <td>International Week of Deaf People 2022</td>
+                                    <td>
+                                        <span class="text-info">
+                                            Theme:
+                                            </span> Building Inclusive Communities for All
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>21 September</td>
+                                    <td>
+                                        <ol>
+                                            <li>
+                                                International Day Of Peace and Non-Violence (UN)
+                                            </li>
+                                            <li>
+                                                World Alzheimer’s Day
+                                        </ol>
+                                        </td>
+                                    <td>
+                                        <ol>
+                                            <li>
+                                                <span class="text-info">
+                                                    Theme:
+                                                    </span> End racism, Build peace
+                                            </li>
+                                            <li>
+                                                <span class="text-info">
+                                                    Key Points:
+                                                    </span>Know dementia, Know Alzheimer’s
+                                            </li>
+                                        </ol>
+                                    </td>
                                 </tr>
                                 <tr> <td>
                     22 September 
                                 </td>
-                                <td>Rhino Day</td>
-                                <td></td>
+                                <td>World Rhino Day</td>
+                                <td>
+                                    <span class="text-info">Theme:</span>Five Rhino Species Forever
+                                </td>
                             </tr>
                             <tr>
                                 <td>23 September</td>
                                 <td>International Day Of Sign Languages</td>
-                                <td></td>
+                                <td>
+                                    <span class="text-info">
+                                        Theme:
+                                        </span> Sign Language Unite Us
+                                </td>
                             </tr>
                                 <tr>
                                     <td>25 September</td>
-                                    <td>World Pharmacist Day,<br> Social justice day</td>
-                                    <td></td>
+                                    <td>
+                                        <ol>
+                                            <li>
+                                                World Pharmacist Day,
+                                            </li>
+                                            <li>International Daughters Day (4th Sunday of September.)</li>
+                                            <li>
+                                                Social justice day
+                                            </li>
+                                            <li>
+                                                World Rivers Day (4th Sunday of September)
+                                            </li>
+                                            <li>
+                                                Antyodaya Diwas
+                                            </li>
+                                        </ol>
+                                       </td>
+                                    <td>
+                                        <ol>
+                                            <li>
+                                                <span class="text-info">
+                                                    Theme:
+                                                    </span> Pharmacy united in action for a healthier world
+                                            </li>
+                                            <li></li>
+                                            <li></li>
+                                            <li>
+                                                <span class="text-info">
+                                                    Theme:
+                                                    </span>The importance of Rivers to Biodiversity
+                                            </li>
+                                            <li>
+                                                <span class="text-info">
+                                                    Key Points:
+                                                    </span>Birth anniversary of Indian leader Pandit Deendayal Upadhyaya.
+                                            </li>
+
+                                        </ol>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>26 September</td>
-                                    <td>World Day of the Deaf,<br>International Day for the total elemination of the Nuclear Weapons,<br>World Environment Health Day,<br>CSIR 80<sup>th</sup> Foundation Day, <br>World Contraception Day</td>
-                                    <td></td>
+                                    <td>
+                                        <ol>
+                                            <li>World Day of the Deaf,</li>
+                                            <li>International Day for the total elemination of the Nuclear Weapons,</li>
+                                            <li>World Environment Health Day,</li>
+                                            <li>CSIR 80<sup>th</sup> Foundation Day,</li>
+                                            <li>World Contraception Day</li>
+                                            <!-- <li></li> -->
+
+                                        </ol>
+                                        
+                                       </td>
+                                    <td>
+                                        <ol>
+                                            <li></li>
+                                            <li></li>
+                                            <li>
+                                                <span class="text-info">
+                                                    Theme:
+                                                    </span> Strengthening Environmental Health Systems for the implementation of the Sustainable Development Goal.
+                                            </li>
+                                            <li></li>
+                                            <li></li>
+
+                                        </ol>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>27 September</td>
-                                    <td>World Tourism Day</td>
-                                    <td></td>
+                                    <td>
+                                        <ol>
+                                            <li>World Tourism Day,</li>
+                                            <li>Death anniversary of Raja Ram Mohan Roy</li>
+                                        </ol>
+                                    </td>
+                                    <td>
+                                        <ol>
+                                            <li></li>
+                                            <li>
+                                                <span class="text-info">
+                                                    Key Points:
+                                                    </span>Founder of Atmiya Sabha.
+                                            </li>
+
+                                        </ol>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>28 September </td>
-                                    <td>International Day for Universal Access to Information, <br>World Rabies Day</td>
-                                    <td></td>
+                                    <td>
+                                        <ol>
+                                            <li>
+                                                World Rabies Day,
+                                            </li>
+                                            <li>
+                                                International Day for Universal Access to Information
+                                            </li>
+                                            <li>
+                                                Bhagat Singh’s 115th birth anniversary
+                                            </li>
+                                        </ol>
+                                     </td>
+                                    <td>
+                                        <ol>
+                                            <li>
+                                                <span class="text-info">
+                                                    Theme:
+                                                    </span> Rabies: One Health, Zero Deaths
+                                            </li>
+                                            <li>
+                                                <span class="text-info">
+                                                    Theme:
+                                                    </span> Artificial Intelligence, e-Governance and Access to Information
+                                            </li>
+                                            <li>
+                                                <span class="text-info">
+                                                    Key Points:
+                                                    </span>He gave the slogan ‘Inquilab Zindabad’ and formed the Hindustan Republican Association (HRA) in 1928.
+                                            </li>
+
+                                        </ol>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>29 September</td>
-                                    <td>International Day Of Awarness on Food Loss and Waste Reduction. <br>World Heart Day</td>
-                                    <td></td>
+                                    <td>
+                                        <ol>
+                                            <li>International Day Of Awarness on Food Loss and Waste Reduction,</li>
+                                            <li>World Heart Day</li>
+                                            <li>World Maritime Day (last Thursday of September)</li>
+
+                                        </ol>
+                                         </td>
+                                    <td>
+                                        <ol>
+                                            <li>
+                                                <span class="text-info">
+                                                    Theme:
+                                                    </span> 
+                                            </li>
+                                            <li>
+                                                <span class="text-info">
+                                                    Theme:
+                                                    </span> Use Heart for Every Heart
+                                            </li>
+                                            <li>
+                                                <span class="text-info">
+                                                    Theme:
+                                                    </span> ‘New technologies for greener shipping’
+
+                                            </li>
+
+                                        </ol>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>30 September </td>
-                                    <td>International Translation Day, <br>World Maritime Day</td>
-                                    <td></td>
+                                    <td>International Translation Day</td>
+                                    <td>
+                                        <span class="text-info">
+                                            Theme:
+                                            </span> ‘A world without barriers’.
+                                    </td>
                                 </tr>
-                                <tr>
-                                    <td>4th Sunday </td>
+
+                                <!-- <tr>
+                                    <td></td>
                                     <td>World River's Day</td>
                                     <td></td>
-                                </tr>
+                                </tr> -->
                                 
                             </tbody>
                           </table>
@@ -1520,149 +2664,706 @@
                           <div class="panel-body  " >
   
                           <div id="october">
-                          <table border="1"  class="table table-bordered table-responsive table-hover">
-                            <tbody>
-                                <tr >
-                                    <td colspan="3">                    
-                                        <strong > <center><span class="label label-danger">Important Days 2022 - S.Bagchi Combined</span></center> </strong> 
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2"><strong class="label label-primary">List of Important Days in October</strong></td>
-                                    <td><strong class="label label-primary">Theme</strong></td>
-                                </tr>
-
-                                <tr>
-                                    <td>1 October</td>
-                                    <td>International day of the Older person, <br>International Coffee Day, <br>world Vegetarian Day</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>2 October</td>
-                                    <td>International day of non-violence</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>3-October</td>
-                                    <td>World Habitat Day, <br> World nature day</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>4 October</td>
-                                    <td>World Animal Welfare Day</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>5 October</td>
-                                    <td>World Teacher’s day</td>
-                                    <td></td>
-                                </tr>
-                                <!-- <tr>
-                                    <td>6 October</td>
-                                    <td>World Wildlife day, <br> World Food Security day</td>
-                                    <td></td>
-                                </tr> -->
-                                <tr>
-                                    <td>7 October </td>
-                                    <td>World Cotton Day</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>8 October</td>
-                                    <td>Indian Air Force Day</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>9 October</td>
-                                    <td>World Post Office day, <br>Indian Foreign Service Day,<br>World Migratory Bird Day</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>10 October</td>
-                                    <td>National Postal Day, <br> World Mental Health Day, <br>World Day Against Death Penalty</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>11 October</td>
-                                    <td>International Girl Child Day</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>12 October</td>
-                                    <td>World Arthritis day</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>13 October</td>
-                                    <td>International Day For  Disaster Risk Reduction</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>14 October</td>
-                                    <td>World Standards Day, <br>World Sight Day</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>15 October</td>
-                                    <td>International Day Of Rural Women, <br>Global Handwashing Day,<br>World Student's Day <br> World White Cane Day (guiding the Blind)</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>16 October</td>
-                                    <td>World Food Day</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>17 October</td>
-                                    <td>International Day For The Eradication Of Poverty</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>20 October</td>
-                                    <td>World Statistics Day</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>21 October </td>
-                                    <td> National Police Commemoration Day</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>23 October</td>
-                                    <td>International Snow Leopard Day  </td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>24 October</td>
-                                    <td>United Nation's Day,<br> World Development Information Day,<br>World Polio Day, <br>Indo-Tibetan Boarder Police Raising Day</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>27 October</td>
-                                    <td>World Day For Audiovisual Heritage,<br>Indian Army : 76th Infanty Day</td>
-                                    <td></td>
-                    
-                                </tr>
-                                <tr>
-                                    <td>29 October</td>
-                                    <td>International Interest Day</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>30 October</td>
-                                    <td>World Thrift Day</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>31 October</td>
-                                    <td>National Unity Day, <br>World Cities Day</td>
-                                    <td></td>
-                                </tr>
-                    
-                                
-                            </tbody>
-                          </table>
-<p style="font-size: 12px;">**Notes prepared by Hrithick Bhowmick.**</p>
+                            <table border="1"  class="table table-bordered table-responsive table-hover">
+                                <tbody>
+                                  <tr  class="bg-primary">
+                                      <td colspan="4">                    
+                                          <strong > <center><span >Important Days Of October 2022 - S.Bagchi Combined</span></center> </strong> 
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td  class="bg-danger"><strong>Date </strong></td>
+                                      <td  class="bg-danger"><strong>Day </strong></td>
+                          
+                                      <td class="bg-danger"><strong>Theme / Key Points</strong></td>
+                                  </tr>
+                          
+                                    <tr>
+                                        <td>1 October</td>
+                                        <td>
+                                          <ol>
+                                              <li>
+                                                  International day of the Older Person, 
+                          
+                                              </li>
+                                          
+                                              <li>
+                                          International Coffee Day,
+                          
+                                              </li>
+                                              <li>
+                                          World Vegetarian Day
+                          
+                                              </li>
+                                          </ol>
+                          
+                                          
+                                      </td>
+                                        <td>
+                                          <ol>
+                                              <li>
+                                                  <span class="text-info ">Theme:</span>
+                                                  Resilience of Older Persons in a Changing World
+                          
+                                              </li>
+                                              <li>
+                                                  <span class="text-info ">Key Points:</span>
+                                          The International Coffee Organization (ICO) was set up in 1963 in London, by United Nations (UN)
+                          
+                                              </li>
+                                              <li>
+                                                  <span class="text-info">Key Points:</span>
+                                                  World Vegetarian Day was established by the North American Vegetarian Society (NAVS)
+                                              </li>
+                                          </ol>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2 October</td>
+                                        <td>
+                                          <ol>
+                                              <li>
+                                                  International Day of Non-Violence
+                          
+                                              </li>
+                                              <li>World Day For Farmed Animals</li>
+                                          </ol>
+                                      </td>
+                                        <td>
+                                        <ol>
+                                          <li>
+                                              <span class="text-info ">Key Points:</span>
+                                              This day will mark the 153rd birth anniversary of Mahatma Gandhi.
+                                          </li>
+                                          <li>
+                                              <span class="text-info ">Key Points:</span>
+                                              The day is organised by the International animal welfare organization, World Animal Protection.
+                                          </li>
+                                        </ol>              
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>1-31 October</td>
+                                      <td>
+                                          <ol>
+                                              <li>Breast Cancer Awareness Month</li>
+                                          </ol>
+                                      </td>
+                                      <td>
+                          <ol>
+                              <li>
+                                  <span class="text-info">Key Points:</span>
+                                  The pink ribbon is an international symbol of breast cancer awareness
+                              </li>
+                          </ol>
+                                      </td>
+                          
+                                    </tr>
+                                    <tr>
+                                      <td>2-8 October</td>
+                                      <td>
+                                          <ol>
+                                              <li>68th National Wildlife Week</li>
+                                          </ol>
+                                      </td>
+                                      <td>
+                          <ol>
+                              <li>
+                                  <span class="text-info">Key Points:</span>
+                                  The Indian Board of Wildlife established Wildlife Week in 1952.
+                              </li>
+                          </ol>
+                                      </td>
+                          
+                                    </tr>
+                                    <tr>
+                                        <td>3 October</td>
+                                        <td>
+                                          <ol>
+                                              <li>
+                                                  World Habitat Day
+                                              </li>
+                                              <li>
+                                                  World Nature Day
+                                              </li>
+                                          </ol>
+                                          </td>   
+                                        <td>
+                                          <ol>
+                                              <li>
+                                                  <span class="text-info ">Theme:</span>
+                                                  Mind the Gap. Leave No One and Place Behind.
+                                              </li>
+                                          </ol>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4 October</td>
+                                        <td>
+                                          <ol>
+                                              <li>
+                          
+                                                  World Animal Welfare Day
+                                              </li>
+                                          </ol>
+                          
+                                      </td>
+                                        <td>
+                                      <ol>
+                                          <li>
+                                              <span class="text-info ">Theme:</span>
+                                              Shared planet
+                          
+                                          </li>
+                                      </ol>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                          4-10 October
+                                      </td>
+                                      <td>
+                                          <ol>
+                                              <li>
+                                                  World Space Week
+                                              </li>
+                                          </ol>
+                                      </td>
+                                      <td>
+                                          <ol>
+                                              <li>
+                                                  <span class="text-info ">Theme:</span>
+                                                  Space and Sustainability.
+                                              </li>
+                                          </ol>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                        <td>5 October</td>
+                                        <td>
+                                          <ol>
+                                              <li>
+                          
+                                                  World Teacher’s Day
+                                              </li>
+                                          </ol>
+                                      </td>
+                                        <td>
+                                          <ol>
+                                              <li>
+                                                  <span class="text-info ">Theme:</span>
+                                                  The Transformation of Education Begins with Teachers.
+                                              </li>
+                                          </ol>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>6 October</td>
+                                        <td>
+                                          <ol>
+                                              <li>World Cerebral Palsy Day</li>
+                                          </ol>
+                                        </td>
+                                        <td>
+                                          <ol>
+                                              <li>
+                                                  <span class="text-info">Theme:</span>
+                                                  Millions of Reasons.
+                                              </li>
+                                          </ol>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>7 October </td>
+                                        <td>
+                                          <ol>
+                                              <li>
+                          
+                                                  World Cotton Day
+                                              </li>
+                                              <li>World Smile Day</li>
+                                          </ol>
+                          
+                                        </td>
+                                        <td>
+                                      <ol>
+                                          <li>
+                                              <span class="text-info ">Theme:</span>
+                                              Weaving a better future for cotton.
+                                          </li>
+                                          <li>
+                                              <span class="text-info ">Theme:</span>
+                                              Do an act of kindness, Help one person smile.
+                                          </li>
+                                      </ol>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>8 October</td>
+                                        <td>
+                                          <ol>
+                                              <li>
+                          
+                                                  Indian Air Force Day
+                                              </li>
+                                              <li>
+                                                  World Migratory Bird Day
+                                              </li>
+                          
+                                          </ol>
+                          
+                                      </td>
+                                        <td>
+                                          <ol>
+                                              <li>
+                                                  <span class="text-info ">Key Points:</span>
+                                                  This year marks the 90th-anniversary celebration of the Indian Air Force (IAF).
+                                              </li>
+                                              <li>
+                                                  <span class="text-info ">Theme:</span>
+                                                  Commemorated twice a year, second Saturday of May and the second Saturday of October.
+                                              </li>
+                                          </ol>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>9 October</td>
+                                        <td>
+                                          <ol>
+                                              <li>
+                                                  World Post Office Day, 
+                          
+                                              </li>
+                                              <li>
+                          
+                                                  Indian Foreign Service Day,
+                                              </li>
+                                              <li>
+                          
+                                                  World Migratory Bird Day
+                                              </li>
+                                          </ol>
+                                      </td>
+                                        <td>
+                                          <ol>
+                                              <li>
+                                                  
+                                              </li>
+                                              <li>
+                                                  <span class="text-info ">Theme:</span>
+                                                  Indian Foreign Service Day is celebrated to commemorate the day the Indian Cabinet created the Foreign Service.
+                                              </li>
+                                          </ol>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>10 October</td>
+                                        <td>
+                                          <ol>
+                                              <li>
+                          
+                                                  World Mental Health Day, 
+                                              </li>
+                                              <li>
+                          
+                                                  World Day Against Death Penalty
+                                              </li>
+                                              <li>
+                          
+                                                  National Postal Day,  
+                                              </li>
+                                          </ol>
+                                          
+                                          
+                                      </td>
+                                        <td>
+                                          <ol>
+                                              <li>
+                                                  <span class="text-info ">Theme:</span>
+                                                  Make mental health & well-being for all a global priority.
+                                              </li>
+                                              <li></li>
+                                              <li>
+                                                  <span class="text-info ">Theme:</span>
+                                                  Post for Planet.
+                                              </li>
+                                          </ol>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>11 October</td>
+                                        <td>
+                                          <ol>
+                                              <li>
+                          
+                                                  International Girl Child Day
+                                              </li>
+                                          </ol>
+                                          
+                                      </td>
+                                        <td>
+                                          <ol>
+                                              <li>
+                                                  <span class="text-info ">Theme:</span>
+                                                  Our time is now—our rights, our future.
+                                              </li>
+                                          </ol>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>12 October</td>
+                                        <td>
+                                          <ol>
+                                              <li>
+                          
+                                                  World Arthritis day
+                                              </li>
+                                          </ol>
+                                      </td>
+                                        <td>
+                                          <ol>
+                                              <li>
+                                                  <span class="text-info ">Theme:</span>
+                                                  It’s in your hands, take action.
+                                              </li>
+                                          </ol>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>13 October</td>
+                                        <td>
+                                          <ol>
+                                              <li>
+                                                  International Day For  Disaster Risk Reduction
+                          
+                                              </li>
+                                              <li>
+                                                  World Sight Day
+                                              </li>
+                                          </ol>
+                                      </td>
+                                        <td>
+                                          <ol>
+                                              <li>
+                                                  <span class="text-info ">Theme:</span>
+                                                  “Substantially increase the availability of and access to multi-hazard early warning systems and disaster risk information and assessments to people by 2030.”
+                                              </li>
+                                              <li>
+                                                  <span class="text-info ">Theme:</span>
+                                                  Love Your Eyes.
+                                              </li>
+                                          </ol>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>14 October</td>
+                                        <td>
+                                          <ol>
+                                              <li>
+                                                  World Standards Day, 
+                          
+                                              </li>
+                                              <li>
+                                                  International E-Waste Day
+                                              </li>
+                                          </ol>
+                          
+                                        </td>
+                                        <td>
+                                          <ol>
+                                              <li>
+                                                  <span class="text-info ">Theme:</span>
+                                                  Shared Vision for a Better World
+                                              </li>
+                                              <li>
+                                                  <span class="text-info "> Slogan 2022:</span>
+                                                 Recycle it all, no matter how small!
+                                              </li>
+                                          </ol>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>15 October</td>
+                                        <td>
+                                          <ol>
+                                              <li>
+                          
+                                                  International Day Of Rural Women, 
+                                              </li>
+                                              <li>
+                          
+                                                  Global Handwashing Day,
+                                              </li>
+                                              <li>
+                          
+                                                  World Student's Day,
+                                              </li>
+                                              <li>
+                          
+                                                  World White Cane Day (guiding the Blind)
+                                              </li>
+                                          </ol>
+                                          </td>
+                                        <td>
+                                          <ol>
+                                              <li>
+                                                  <span class="text-info">Theme:</span>
+                                                  Rural Women Cultivating Good Food for All.
+                                              </li>
+                                              <li>
+                                                  <span class="text-info ">Theme:</span>
+                                                  Universal Hand Hygiene.
+                                              </li>
+                                              <li>
+                                                  <span class="text-info ">Key Points:</span>
+                                                  To commemorate the birth anniversary of Dr. APJ Abdul Kalam.
+                                              </li>
+                                              <li></li>
+                                          </ol>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>16 October</td>
+                                        <td>World Food Day</td>
+                                        <td>
+                                          <span class="text-info ">Theme:</span>
+                                          Leave No One behind.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>17 October</td>
+                                        <td>
+                                          <ol>
+                                              <li>
+                          
+                                                  International Day For The Eradication Of Poverty
+                                              </li>
+                                              <li>
+                                                  World Trauma Day
+                                              </li>
+                                          </ol>
+                                      </td>
+                                        <td>
+                                          <ol>
+                                              <li>
+                                                  <span class="text-info ">Theme:</span>
+                                                  Dignity For All in Practice.
+                                              </li>
+                                              <li>
+                                                  <span class="text-info ">Theme:</span>
+                                                  The first annual World Trauma Day was established in 2011 in New Delhi, India.
+                                              </li>
+                                          </ol>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                      <td>18 October</td>
+                                      <td>World Menopause Day</td>
+                                      <td>
+                                          <span class="text-info ">Theme:</span>
+                                          Cognition and Mood.
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                        <td>20 October</td>
+                                        <td>
+                                          <ol>
+                                              <li>
+                          
+                                                  World Statistics Day
+                                              </li>
+                                              <li>
+                                                  World Osteoporosis Day 
+                                              </li>
+                                          </ol>
+                                      </td>
+                                        <td>
+                                          <ol>
+                                              <li>
+                                                  <span class="text-info ">Theme:</span>
+                                                  Data for Sustainable Development.
+                                              </li>
+                                              <li>
+                                                  <span class="text-info ">Theme:</span>
+                                                  Step Up For Bone Health.
+                                              </li>
+                                          </ol>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>21 October </td>
+                                        <td> National Police Commemoration Day</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>23 October</td>
+                                        <td>
+                                          <ol>
+                                              <li>
+                          
+                                                  International Snow Leopard Day,
+                                              </li>
+                                              <li>
+                                                  7th National Ayurveda Day
+                                              </li>
+                                          </ol>
+                                      </td>
+                                        <td>
+                                          <ol>
+                                              <li></li>
+                                              <li>
+                                                  <span class="text-info ">Theme:</span>
+                                                  Har Din Har Ghar Ayurveda.
+                                              </li>
+                                          </ol>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>24 October</td>
+                                        <td>
+                                          <ol>
+                                              <li>
+                                                      
+                                                      United Nations Day
+                                              </li>
+                                              <li>
+                                                  World Development Information Day,
+                                              </li>
+                                              <li>
+                                                  World Polio Day,
+                                              </li>
+                                              <li>
+                          
+                                                  Indo-Tibetan Boarder Police Raising Day
+                                              </li>
+                                          </ol>
+                                      
+                                        
+                                      </td>
+                                        <td>
+                                          <ol>
+                                              <li>
+                                                  <span class="text-info ">Theme:</span>
+                                                  Building Back Together for Peace and Prosperity.
+                                              </li>
+                                              <li></li>
+                                              <li>
+                                                  <span class="text-info ">Theme:</span>
+                                                  A healthier future for mothers & children.
+                                              </li>
+                                              <li></li>
+                                          </ol>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                      <td>24-31 October</td>
+                                      <td>Global Media and Information Literacy Week</td>
+                                      <td>
+                                          <ol>
+                                              <li>
+                                                  <span class="text-info ">Theme:</span>
+                                                  Nurturing trust: A Media and Information Literacy Imperative.
+                                              </li>
+                                          </ol>
+                                      </td>
+                          
+                                    </tr>
+                                    <tr>
+                                      <td>24-30 October</td>
+                                      <td>Disarmament Week</td>
+                                      <td>
+                                          <ol>
+                                              <li>
+                                                  <span class="text-info ">Theme:</span>
+                                                  Observed by United Nation to elimination of all elements that have the potential for catastrophic destruction.
+                                              </li>
+                                          </ol>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                        <td>27 October</td>
+                                        <td>
+                                          <ol>
+                                              <li>
+                                                  World Day for Audiovisual Heritage
+                                              </li>
+                                              <li>
+                                                  Indian Army : 76th Infanty Day
+                                              </li>
+                                          </ol>
+                                          
+                                      </td>
+                                        <td>
+                                          <ol>
+                                              <li>
+                                                  <span class="text-info ">Theme:</span>
+                                                  Enlisting documentary heritage to promote inclusive, just and peaceful societies.
+                                              </li>
+                                              <li>
+                                                  <span class="text-info ">Theme:</span>
+                                                  On this day the Indian Army’s infantry troops landed in Kashmir for the first time in 1947.
+                                              </li>
+                                          </ol>
+                                        </td>
+                          
+                                    </tr>
+                                    <tr>
+                                        <td>29 October</td>
+                                        <td>
+                                          <ol>
+                                              <li>
+                                                  International Internet Day,
+                          
+                                              </li>
+                                              <li>
+                                                  World Stroke Day
+                                              </li>
+                                          </ol>
+                                      </td>
+                                        <td>
+                                          <ol>
+                                              <li>
+                          
+                                                  <span class="text-info ">Key Points:</span>
+                                                  First message was sent electronically from one computer to another using the Internet on October 29, 1969.
+                                              </li>
+                                              <li>
+                                                  <span class="text-info ">Theme:</span>
+                                                  Precious Timme.
+                                              </li>
+                                          </ol>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>30 October</td>
+                                        <td>World Thrift Day</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>31 October</td>
+                                        <td>
+                                          <ol>
+                                              <li>
+                                                  National Unity Day or, Rashtriya Ekta Diwas,
+                                              </li>
+                                              <li>
+                                                  World Cities Day
+                                              </li>
+                                          </ol>
+                                          </td>
+                                        <td>
+                                          <ol>
+                                              <li>
+                                                  <span class="text-info ">Key Points:</span>
+                                                  The day mark the birth anniversary of the “Iron Man of India”, Sardar Vallabhbhai Patel.
+                                              </li>
+                                          </ol>
+                                        </td>
+                                    </tr>
+                          
+                                    
+                                </tbody>
+                              </table>
 
 
 
@@ -2038,23 +3739,22 @@
        
         <div class="modal-body"style="list-style: none; ">
             <div class="alert alert-danger ">
-                <strong> <span class="glyphicon glyphicon-exclamation-sign"></span> All of you are requested to dowload updated days list and delete the previouly downloaded list.</strong> 
+                <strong> <span class="glyphicon glyphicon-exclamation-sign"></span> All of you are requested to dowload updated days list and delete the previouly downloaded list. Please select ISO A4 page before print.</strong> 
               </div>
 
-              <div class="alert alert-danger ">
-                <strong> <span class="glyphicon glyphicon-exclamation-sign"></span> Please select ISO A4 page before print.</strong> 
-              </div>
+             
 
               <div>
-                <a href="planning-in-India.html" type="button" class="btn btn-success"><span class="glyphicon glyphicon-link"></span> Click here to Planning-in-India</a>
                 <a href="jan-dec.pdf" type="button" class="btn btn-primary"><span class="glyphicon glyphicon-file"></span> Click here to Download Jan-Dec 2022 Pdf</a>
+                <a href="planning-in-India.html" type="button" class="btn btn-success"><span class="glyphicon glyphicon-link"></span> Click here to Planning-in-India</a>
+               
 
               </div>
           
          
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-danger " data-dismiss="modal" style="border-radius: 18px; "> Close</button>
+          <button type="button" class="btn btn-danger " data-dismiss="modal" style="border-radius: 18px; ">Close</button>
         </div>
       </div>
     </div>
